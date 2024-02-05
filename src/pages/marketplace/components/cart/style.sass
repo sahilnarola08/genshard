@@ -1,0 +1,151 @@
+.cart
+    width: 100%
+    background: #fff
+    box-sizing: border-box
+    padding: 0 15px
+    .cart-wrapper
+        width: 100%
+        max-width: 794px
+        margin: 30px auto 70px
+        box-sizing: border-box
+        .cart-text
+            font-weight: 300
+            font-size: 87.5265px
+            line-height: 130px
+            text-align: center
+            color: #117DCC
+        .cart-text-line
+            width: 46px
+            height: 3px
+            background-color: #6e6e6e
+        .clear-cart-div
+            display: flex
+            justify-content: end
+            button
+                background: #397cc6
+                color: white
+                border: none
+                border-radius: 30px
+                padding: 3px 19px 5px
+                font-weight: 400
+                font-size: 18px
+        .cart-items-wrapper
+            margin: 30px 0
+            .remove-cart-item
+                border: 1.5px solid black
+                border-radius: 30px
+                padding: 0px 12px 2px
+                font-weight: 300
+                cursor: pointer
+                font-size: 16px
+            table
+                tr
+                    td,th
+                        color: #000
+                        padding: 24px
+                        .cart-item-wrapper
+                            display: flex
+                            align-items: center
+                            gap: 10px
+                            .item-img
+                                width: 100%
+                                max-width: 95px
+                                img
+                                    width: 100%
+                        .item-labels
+                            .main-label
+                                font-weight: 200
+                                font-size: 31.5122px
+                                line-height: 47px
+                                color: #117DCC
+                            .sub-label
+                                font-weight: 300
+                                font-size: 13.0792px
+                                line-height: 19px
+                                color: #000
+                    th
+                        border-bottom: 3px solid #6a6a6a
+                        font-weight: 300
+                        font-size: 24.2402px
+                        line-height: 36px
+                    td
+                        font-weight: 200
+                        font-size: 29.0882px
+                        line-height: 43px
+                tr:last-child td
+                    border-top: 3px solid #117DCC
+            .checkout-btn-wrapper
+                width: 100%
+                max-width: 590px
+                margin: 57px auto 0
+                button
+                    width: 100%
+                    background: #117DCC
+                    box-shadow: 0px 7.86966px 7.86966px rgba(0, 0, 0, 0.25)
+                    border-radius: 16.1328px
+                    border: none
+                    font-weight: 300
+                    font-size: 29.039px
+                    line-height: 50px
+                    text-align: center
+                    color: #FFFFFF
+                    letter-spacing: 2px
+                    font-weight: 500
+
+@media ( max-width: 768px )
+    .cart
+        .cart-wrapper
+            .cart-text
+                font-size: 68px
+                line-height: 96px
+            .cart-items-wrapper
+                table
+                    tr
+                        th
+                            font-size: 20px
+                            line-height: 24px
+                            padding: 11px
+
+                        td
+                            padding: 11px
+                            font-size: 20px
+                            line-height: 24px
+                            .cart-item-wrapper
+                                gap: 8px
+                                .item-img
+                                    max-width: 60px
+                            .item-labels
+                                .main-label
+                                    font-size: 20px
+                                    line-height: 24px
+
+@media ( max-width: 480px )
+    .cart
+        .cart-wrapper
+            .cart-text
+                font-size: 52px
+                line-height: 64px
+            .cart-items-wrapper
+                margin: 40px 0
+                table
+                    tr
+                        th,td
+                            font-size: 16px
+                            line-height: 20px
+                        td
+                            .cart-item-wrapper
+                                .item-img
+                                    max-width: 40px
+                            .item-labels
+                                .main-label
+                                    font-size: 16px
+                                    line-height: 20px
+                                .sub-label
+                                    font-size: 11px
+                                    line-height: 14px
+                .checkout-btn-wrapper
+                    button
+                        font-size: 24px
+                        line-height: 50px
+                        letter-spacing: 2px
+                        font-weight: 500

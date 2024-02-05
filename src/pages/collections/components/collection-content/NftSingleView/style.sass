@@ -1,0 +1,256 @@
+.nft-single-container
+    min-height: 635px
+    max-width: 800px
+    border-radius: 12px
+    padding: 10px
+    box-sizing: border-box
+    background: #26262c
+    border: 2px solid #4f5058
+    .single-card-loader
+        position: absolute
+        height: 100%
+        width: 100%
+        margin: -1rem
+        display: flex
+        z-index: 10
+        background: #10101082
+        border-radius: 16px
+        .loading-icon
+            margin: auto
+    .remaining-card-disable
+        position: absolute
+        height: 100%
+        width: 100%
+        margin: -1rem
+        border-radius: 16px
+        background: transparent
+        z-index: 10
+    .nft-single-item
+        display: flex
+        margin-top: 2rem
+        .image-section
+            min-width: 320px
+            width: 50%
+            height: 550px
+            padding: 1rem
+            box-sizing: border-box
+            position: relative
+            z-index: 1
+            .image-div
+                width: 100%
+                height: 100%
+                padding: 1rem
+                box-sizing: border-box
+                border: 2px solid #4f5058
+                border-radius: 12px
+                background: #26262c
+                position: relative
+                img
+                    border-radius: 12px
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                video
+                    border-radius: 12px
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                .like-count
+                    cursor: pointer
+                    position: absolute
+                    right: 26px
+                    top: 25px
+                    background: #FF0071
+                    border-radius: 24px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    padding: 4px 12px
+                    z-index: 1
+                    span
+                        margin-left: 5px
+                        font-size: 0.9rem
+                        font-weight: 500
+            .total-nft-left
+                position: absolute
+                bottom: -17px
+                left: 50%
+                margin-left: auto
+                margin-right: auto
+                width: 150px
+                transform: translate(-50%, 0)
+                background: #33333e
+                display: flex
+                justify-content: center
+                align-self: center
+                border-radius: 20px
+                height: 35px
+                z-index: -1
+                span
+                    align-self: center
+                    font-size: 1.1rem
+                    span
+                        font-weight: 500
+                        font-size: 1.2rem
+                &:before
+                    content: ""
+                    height: 50px
+                    background: #33333e
+                    position: absolute
+                    left: -10px
+                    width: 50px
+                    transform: rotate(56deg)
+                    z-index: -1
+                    top: -24px
+                    border-radius: 0px 0px 12px 0px
+                &:after
+                    content: ""
+                    height: 50px
+                    background: #33333e
+                    position: absolute
+                    right: -10px
+                    width: 50px
+                    transform: rotate(34deg)
+                    z-index: -1
+                    top: -24px
+                    border-radius: 0px 0px 12px 0px
+        .single-nft-info
+            width: 50%
+            min-width: 320px
+            padding: 1rem
+            height: 100%
+            padding: 1rem
+            box-sizing: border-box
+            .nft-heading
+                display: flex
+                justify-content: space-between
+                h3
+                    margin: 0
+                h1
+                    margin: 0.5rem 0 1rem
+                    font-size: 1.7rem
+                    font-weight: 500
+                .nft-duration
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    .duration-chip
+                        display: flex
+                        padding: 1px 6px
+                        border-radius: 12px
+                        background: #FFFFFF33
+                        position: relative
+                        .remaining-text
+                            position: absolute
+                            font-size: 13px
+                            top: -22px
+                            left: 6px
+                        img
+                            margin-right: 4px
+                        span
+                            font-size: 14px
+                        &.active-chip
+                            background: #FF0071
+
+            .nft-element-rarity
+                display: flex
+                justify-content: space-between
+                width: 100%
+                .nft-element
+                    // width: 50%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    label
+                        display: block
+                        color: #bbbbbb
+                        margin-top: 5px
+                    span
+                        text-transform: capitalize
+                        margin-left: 10px
+                        display: block
+                        font-size: 1.5rem
+                        font-weight: 500
+            .progress-status-card
+                margin: 1rem 0
+                .status-text
+                    margin-left: 2px
+                    margin-bottom: 6px
+                    display: block
+                    font-weight: 500
+                    color: #bbbbbb
+                .progress-status
+                    background: #313640
+                    border-radius: 12px
+                    padding: 1rem
+                    box-sizing: border-box
+            .stake-info-button
+                display: flex
+                justify-content: space-around
+                align-items: center
+                .stake-info
+                    display: block
+                    label
+                        display: block
+                        color: #bbbbbb
+                    span
+                        width: 100%
+                        display: block
+                        text-align: center
+                        font-size: 1.6rem
+                        font-weight: 500
+                button
+                    height: 46px
+                    border-radius: 12px
+                    border: none
+                    outline: none
+                    display: flex
+                    align-items: center
+                    justify-content: space-evenly
+                    padding: 0rem 1rem
+                    cursor: pointer
+                    font-weight: 400
+                    font-size: 1rem
+                    img
+                        margin-right: 0.4rem
+                        width: 18px
+            .mint-button-div
+                margin-top: 1rem
+                button
+                    width: 100%
+                    height: 46px
+                    border-radius: 12px
+                    border: none
+                    outline: none
+                    display: flex
+                    align-items: center
+                    justify-content: space-evenly
+                    padding: 0rem 1rem
+                    cursor: pointer
+                    background: #FF0071
+                    color: white
+                    font-weight: 500
+                    font-size: 1.2rem
+                    &.disable-button
+                        background: grey
+                        cursor: default
+
+.custom-progress-bar
+    .progress-bar-label
+        display: flex
+        justify-content: space-between
+        margin-bottom: 6px
+        label
+
+        span
+
+    .progress-bar-count
+        width: 100%
+        height: 4px
+        background: #4f5058
+        border-radius: 12px
+        margin: 0 0 0.8rem 0
+        div
+            border-radius: 12px
+            height: 100%
+            background: #FF0071

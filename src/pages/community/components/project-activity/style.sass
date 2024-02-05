@@ -1,0 +1,119 @@
+.project-activity-container
+    padding: 30px 0px
+    .confirmation-modal
+        background: #09090A
+        border: 2px solid #292932
+        box-sizing: border-box
+        border-radius: 16px
+        padding: 20px
+        .confirmation-modal-body
+            background: #45454957
+            height: 300px
+            border-radius: 16px
+            align-items: center
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            padding: 0px 20px
+            height: 280px
+            width: 310px
+            h1
+                text-transform: uppercase
+                margin: 0
+                padding: 0
+                font-weight: 400
+                letter-spacing: 0.01em
+            p
+                margin: 0
+                padding: 0
+                font-size: 1.3rem
+            h3
+                text-transform: uppercase
+                margin: 0
+                padding: 0
+                font-weight: 400
+                letter-spacing: 0.01em
+        .modal-actions
+            margin-top: 20px
+            .action-btn
+                width: 100%
+                height: 45px
+                font-size: 1.1rem
+                text-transform: uppercase
+                font-weight: 400
+                background: #454549
+                color: #ffffff
+                border: none
+                outline: none
+                cursor: pointer
+                border-radius: 9px
+    .project-activity-header
+        .project-activity-header-title
+            text-align: center
+            font-size: 2rem
+            margin-bottom: 30px
+    .activity-container
+        max-width: 900px
+        margin: auto
+        .activity-item
+            padding: 10px
+            box-sizing: border-box
+            .activity-item-div
+                display: flex
+                width: 100%
+                justify-content: space-between
+                background: linear-gradient(180deg, rgba(118, 134, 142, 0.2) 0%, rgba(118, 134, 142, 0) 100%), #09090A
+                border: 1px solid #76868E
+                border-radius: 8px
+                align-items: center
+                padding: 15px 25px
+                box-sizing: border-box
+                .project-icon-name
+                    display: flex
+                    align-items: center
+                    .activity-item-icon
+                        width: 70px
+                        height: 70px
+                        border-radius: 50%
+                        overflow: hidden
+                        background: grey
+                        img
+                            width: 100%
+                            height: 100%
+                            object-fit: cover
+
+                    .activity-item-name
+                        span
+                            font-weight: 500
+                            font-size: 1.6rem
+                            margin-top: -4px
+                            display: block
+                            margin-left: 20px
+                .activity-actions
+                    display: flex
+                    align-items: center
+                    button
+                        border: 1px solid #76868E
+                        height: 50px
+                        text-transform: uppercase
+                        color: #ffffff
+                        background: #16161D
+                        width: 160px
+                        font-size: 1rem
+                        font-weight: 400
+                        border-radius: 4px
+                        cursor: pointer
+                        &.participate-btn
+                            margin-right: 10px
+                            &:hover
+                                border-color: #FF0071
+                        &.active-claim
+                            span
+                                color: #F3BA2F
+                                font-weight: 500
+                            &:hover
+                                border-color: #F3BA2F
+                        &.disable-claim
+                            cursor: default
+                            opacity: 0.5

@@ -1,0 +1,41 @@
+
+    
+.lock
+    position: relative
+
+    &.locked,
+    &.checking
+        .lock__overlay,
+        .lock__content
+            opacity: 1
+            visibility: visible
+
+        *
+            pointer-events: none
+
+    .lock__overlay,
+    .lock__content
+        opacity: 0
+        visibility: hidden
+
+    .lock__overlay
+        position: absolute
+        top: -0.5rem
+        left: -2rem
+        right: -2rem
+        bottom: -0.5rem
+        z-index: 2
+        background-color: rgba(#15141D, 0.8)
+
+    .lock__content
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        z-index: 3
+        text-align: center
+
+    .lock__title
+        color: var(--color-on-primary)
+        font-size: 15px
+        

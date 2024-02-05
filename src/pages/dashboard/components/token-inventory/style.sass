@@ -1,0 +1,135 @@
+@import '../../../../_variables.sass';
+// .token-inventory::before
+//     content: ""
+//     position: absolute
+//     top: 0
+//     left: 0
+//     right: 0
+//     bottom: 0
+//     border-radius: 0.625rem
+//     padding: 3px
+//     background: linear-gradient(45deg,#FF0071,#A73791) 
+//     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+//     -webkit-mask-composite: destination-out 
+//     mask-composite: exclude 
+
+//     @media not all and (min-resolution:.001dpcm) 
+//         @supports (-webkit-appearance:none) 
+//             border: 2px solid red 
+
+.token-inventory-wrapper
+    position: relative
+
+    .empty-layer
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        background-color: rgba(#000, 0.7)
+        display: flex
+        align-items: center
+        justify-content: center     
+        color: var(--color-on-primary)
+        flex-direction: column
+        
+        img
+            width: 4rem
+
+.token-inventory
+    padding: 1.5rem 2rem 1rem 2rem
+    position: relative
+    box-sizing: border-box
+    border: 2px solid
+    
+    border-image-source: linear-gradient(180deg, #743AD5, #D53A9D)
+    border-image-slice: 1
+    border-radius: 0.625rem
+
+    .token-inventory__logo
+        text-align: center
+
+    .button-redeem-wrapper
+        text-align: center
+        font-size: 0
+        margin-top: 1rem
+        .redeemReturntoken
+            display: flex
+            justify-content: space-between
+            .small
+                font-size: 0.7rem
+                border-radius: 6px
+                padding: 6px 12px
+                width: 100%
+                max-width: 95px
+
+            .button-returnNFT
+                background-color: transparent
+                color: #FFF
+                border: 1px solid #D53A9D
+
+
+    &__ticket
+        margin-top: 0.5rem
+
+        .name-number-ticket
+            display: grid
+            grid-template-columns: 6fr 4fr
+            grid-gap: 1rem
+
+            .ticket
+                .ticket__title
+                    color: var(--color-on-secondary)
+                    font-size: 0.75rem
+                .ticket__value
+                    color: var(--color-on-primary)
+                    font-size: 0.875rem
+
+            .ticket--number
+                justify-self: end
+
+                .ticket__value--number
+                    text-align: center
+                    font-size: 1.1875rem
+        .ticket-size-tokens
+            margin-top: 1.25rem
+            font-size: 0.6875rem
+            display: grid
+            grid-template-columns: 50%
+            grid-template-areas: 'item item'
+
+            .ticket-tokens
+                display: flex
+                flex-direction: column
+
+                &__title
+                    color: var(--color-on-secondary)
+                    margin-right: 0.5rem
+                &__value
+                    color: var(--color-on-primary)
+                    text-transform: uppercase
+
+        
+    &__btn
+        position: absolute
+        top: 0.1rem
+        right: 0.8rem
+
+        .btn-token-inventory
+            padding: 0.1rem 1.3125rem
+            border-radius: 0.25rem
+            font-size: 0.5625rem
+            text-transform: uppercase
+
+
+@media screen and (max-width: $screen-medium)
+    .token-inventory-wrapper
+        max-width: 300px
+        margin: 0 auto
+        
+@media screen and (max-width: $screen-small)
+    .token-inventory
+        &__logo 
+            .inventory-ticket-logo-wrapper
+                width: 6.5rem 
+                height: 6.5rem

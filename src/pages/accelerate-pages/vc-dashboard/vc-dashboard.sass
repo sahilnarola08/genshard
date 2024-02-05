@@ -1,0 +1,49 @@
+
+.vc-dashbord-main-page
+    position: relative
+    // overflow: hidden
+    .dashboard-tabs-section
+        .css-lfwcke-MuiTabs-flexContainer, .css-j7qwjs
+            margin-top: 20px !important
+        .css-1h9z7r5-MuiButtonBase-root-MuiTab-root, .css-1q2h7u5
+            font-weight: 700
+            padding-left: 40px
+            min-height: 35px !important
+        .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected, .css-1q2h7u5.Mui-selected
+            border-radius: 45px 0px 0px 45px !important
+    &:after
+        content: ""
+        position: absolute
+        right: 0
+        left: 0
+        bottom: -30%
+        background-image: url('../../../images/accelerate/pages/deshbord-bg-light.svg')
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+        width: 100%
+        height: 100%
+        z-index: -1
+        opacity: 0.2
+    &::before
+        content: ""
+        position: absolute
+        right: -50%
+        top: -50%
+        background-image: url('../../../images/accelerate/pages/deshbord-bg-light.svg')
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+        width: 100%
+        height: 100%
+        z-index: -1
+        opacity: 0.2
+.form-section
+    .public-btn
+        button
+            i
+                color: #54C4FC
+                margin-right: 5px
+        &:hover
+            i
+                color: #fff

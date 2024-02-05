@@ -1,0 +1,202 @@
+.explore-nfts
+    width: 100%
+    background: #fff
+    .explore-nfts-main-text
+        box-sizing: border-box
+        font-weight: 300
+        font-size: 60px
+        line-height: 110px
+        text-align: center
+        color: #117DCC
+    .explore-nft-hr
+            width: 100% 
+            max-width: 90px 
+            background: #117DCC 
+            color: #117DCC 
+            height: 2px 
+            margin: 20px auto 
+    .explore-nft-collection-item-activity
+        box-sizing: border-box
+        width: 100%
+        max-width: 1550px
+        margin: 44px auto
+        display: flex
+        justify-content: center
+        padding: 0px 40px
+        flex-wrap: wrap
+        grid-gap: 27px
+        gap: 27px
+        .content-tab
+            border: 1.01494px solid #117DCC
+            border-radius: 20.4502px
+            width: fit-content
+            // min-width: 80px
+            padding: 5px 20px
+            // min-width: 140px
+            text-align: center
+            color: #000
+            cursor: pointer
+            background-color: transparent
+            cursor: pointer
+            &.selected-tab
+                background-color: #117DCC
+                color: #fff
+    .explore-nfts-wrapper
+        box-sizing: border-box
+        display: flex
+        align-items: center
+        gap: 57px
+        width: 100%
+        max-width: 1640px
+        margin: 0 auto 100px
+        justify-content: center
+        flex-wrap: wrap
+        .collection-loader
+            width: 100%
+            min-height: 200px
+            display: flex
+            justify-content: center
+            align-items: center
+            color: white
+        .explore-nfts-card
+            width: 100%
+            max-width: 487.37px
+            .explore-nfts-card-image
+                width: 100%
+                height: 240px
+                box-sizing: border-box
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+            .explore-nfts-card-description
+                width: 100%
+                background-color: #F3F4F5
+                padding: 25px
+                position: relative
+                box-sizing: border-box
+                .explore-nfts-card-user
+                    position: absolute
+                    right: 38.15px
+                    top: 0
+                    transform: translateY(-50%)
+                    width: 100%
+                    width: 100px
+                    height: 100px
+                    border-radius: 50%
+                    overflow: hidden
+                    img
+                        width: 100%
+                        height: 100%
+                        object-fit: cover
+                .explore-nfts-card-main-title
+                    font-weight: 500
+                    font-size: 20px
+                    line-height: 30px
+                    letter-spacing: 0.02em
+                    color: #16161C
+                    text-transform: capitalize
+                .explore-nfts-card-sub-label
+                    margin-top: 9.34px
+                    font-weight: 200
+                    font-size: 15.5709px
+                    color: #181818
+                    overflow: hidden
+                    display: -webkit-box
+                    -webkit-line-clamp: 2
+                    -webkit-box-orient: vertical
+                    height: 2.6em
+                    line-height: 1.3em
+                .explore-nfts-card-teams
+                    margin-top: 25px
+                    width: 100%
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    .explore-nfts-card-team-wrapper
+                        .explore-nfts-card-team-value
+                            font-weight: 200
+                            font-size: 20.2422px
+                            line-height: 30px
+                            color: #117DCC
+                            text-align: center
+                        .explore-nfts-card-team-label
+                            font-weight: 300
+                            font-size: 15.5709px
+                            line-height: 23px
+                            text-transform: uppercase
+                            color: #16161C
+    
+    .no-listing-data
+        width: auto
+        margin: 0 auto
+        text-align: center
+        padding: 25px 0
+        img
+            width: 100%
+            max-width: 105px
+        .description
+            color: #000
+            font-size: 24px
+            line-height: 32px
+            margin-top: 12px
+
+@media ( max-width: 1620px )
+    .explore-nfts
+        .explore-nfts-wrapper
+            .explore-nfts-card
+                max-width: 29%
+
+@media ( max-width: 1440px )
+    .explore-nfts
+        .explore-nfts-wrapper
+            gap: 36px
+            .explore-nfts-card
+                .explore-nfts-card-description
+                    .explore-nfts-card-user
+                        right: 20px
+                    .explore-nfts-card-sub-label
+                        font-size: 14px
+                        line-height: 20px
+                    .explore-nfts-card-teams
+                        .explore-nfts-card-team-wrapper
+                            .explore-nfts-card-team-value
+                                font-size: 16px
+                                line-height: 20px
+                            .explore-nfts-card-team-label
+                                font-size: 14px
+                                line-height: 18px
+
+@media ( max-width: 991px )
+    .explore-nfts
+        .explore-nfts-wrapper
+            padding: 20px
+            gap: 28px
+            justify-content: space-between
+            .explore-nfts-card
+                max-width: 46%
+
+@media ( max-width: 570px )
+    .explore-nfts
+        .explore-nfts-main-text
+            font-size: 64px
+            line-height: 80px
+        .explore-nft-collection-item-activity
+            gap: 10px
+            padding: 0 15px
+        .explore-nfts-wrapper
+            padding: 15px
+
+            .explore-nfts-card
+                box-sizing: border-box
+                max-width: 500px
+
+@media ( max-width: 320px )
+    .explore-nfts
+        .explore-nfts-wrapper
+            .explore-nfts-card
+                .explore-nfts-card-description
+                    .explore-nfts-card-teams
+                        align-items: flex-start
+                        gap: 15px
+        

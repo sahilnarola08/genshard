@@ -1,0 +1,274 @@
+.offers-made-table
+    background-color: #fff
+    width: 100%
+    padding: 10px
+    .offers-made-main-label
+        width: 100%
+        max-width: 1248px
+        margin: 61px auto 0
+        font-weight: 300
+        font-size: 87.5265px
+        line-height: 130px
+        color: #117DCC
+
+    .no-offer-data,.no-listing-data
+        width: auto
+        margin: 0 auto
+        text-align: center
+        padding: 200px 0
+        img
+            width: 100%
+            max-width: 105px
+        .description
+            color: #black
+            font-size: 24px
+            line-height: 32px
+            margin-top: 12px
+    i
+        color: #e00164
+
+.data-table
+    max-width: 1248px
+    width: 100%
+    margin: 63px auto 0
+    box-sizing: border-box
+    .no-offer-data,.no-listing-data
+        width: auto
+        margin: 0 auto
+        text-align: center
+        padding: 25px 0
+        img
+            width: 100%
+            max-width: 105px
+        .description
+            color: #black
+            font-size: 24px
+            line-height: 32px
+            margin-top: 12px
+
+table
+    border-collapse: collapse
+    margin: 0
+    padding: 0
+    width: 100%
+    table-layout: auto
+
+    tr
+        color: black
+        text-align: left
+        max-width: 1248px
+        width: 100%
+
+        th
+            font-weight: 300
+            font-size: 20px
+            line-height: 30px
+            text-transform: uppercase
+            color: #000000
+
+        td
+            font-weight: 200
+            font-size: 24px
+            line-height: 36px
+            color: #000000
+            padding: 10px 5px
+            &.item-btn-wrapper
+                display: flex
+                align-items: center
+                gap: 6px
+                padding: 30px 0
+                button
+                    width: 100%
+                    padding: 7px 43px
+                    background-color: transparent
+                    border: 1px solid #117DCC
+                    border-radius: 17.8469px
+                    &:first-child
+                        background-color: #117DCC
+                        color: #fff
+
+            .item-logo-text-wrapper
+                display: flex
+                align-items: center
+                gap: 8px
+                img
+                    width: 80px
+                    height: 80px
+                    object-fit: cover
+                    background: #bdbdbd
+    &.item-btn-wrapper
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+    .text-wrapper
+        .item-main-text
+            font-weight: 200
+            font-size: 26px
+            line-height: 39px
+            color: #117DCC
+        .item-sub-text
+            font-weight: 300
+            font-size: 10.7913px
+            line-height: 16px
+            color: #000000
+
+.block
+    height: 70px
+    width: 65px
+    background-color: white
+    margin-right: 10px
+
+.item-text
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    text-align: left
+
+    p
+        margin: 0
+        font-size: 26px
+        color: #e00164
+
+    small
+        font-size: 10.7913px
+
+td
+    &[data-label="QTY"], &[data-label="TIME"]
+        margin: 0
+        color: #117DCC
+
+.item-text
+    font-size: 11px
+
+
+@media screen and (max-width: 1366px)
+    .activity_table
+        padding: 0 20px
+
+        table
+            border: 0
+
+        thead
+            border: none
+            clip: rect(0 0 0 0)
+            height: 1px
+            margin: -1px
+            overflow: hidden
+            padding: 0 15px
+            position: absolute
+            width: 1px
+
+        tr
+            color: black
+            display: block
+            margin-bottom: 50px !important
+
+            td
+                border-bottom: 1px solid rgba(169, 166, 166, 0.338)
+                padding-top: 15px
+                display: block
+                font-size: 20px
+                text-align: right
+
+            img
+                display: inline
+                padding-right: 5px
+
+            &::before
+                color: #000
+                content: attr(data-label)
+                float: left
+                font-weight: bold
+                text-transform: uppercase
+
+            &:last-child
+                border-bottom: 0
+
+    td br
+        display: none
+
+    .item-wrapper
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-between
+
+        .block
+            all: unset
+            display: none
+
+        p, small
+            text-align: right
+
+@media screen and (max-width: 1024px)
+    .data-table
+        tr
+            border-bottom: 1px solid #b3b3b3
+        th
+            font-size: 15px
+            padding: 0px 5px
+        td
+            font-size: 19px
+    .item-main-text
+        font-size: 19px !important
+    .item-btn-wrapper
+        display: block !important
+        button
+
+            padding: 5px 4px !important
+
+@media screen and (max-width: 768px)
+    .data-table
+        overflow: scroll
+    .offers-made-main-label
+        margin: 45px auto 0 !important
+        font-size: 47.5265px !important
+        line-height: 30px !important
+        th
+            font-size: 17px
+            padding: 0px 10px
+        td
+            font-size: 17px
+            padding: 10px 15px
+    .item-logo-text-wrapper
+        img
+            height: 15px
+    .item-main-text
+        font-size: 17px !important
+    .item-btn-wrapper
+        display: block !important
+        button
+            padding: 0 !important
+
+@media screen and (max-width: 425px)
+    .offers-made-table
+        padding: 0px
+    .offers-made-main-label
+        margin: 45px auto 0 !important
+        font-size: 40.5265px !important
+        line-height: 30px !important
+    .data-table
+        overflow: scroll
+        th
+            font-size: 17px
+            padding: 0px 15px
+            line-height: 25px
+        td
+            font-size: 17px
+            padding: 10px 15px
+    .item-logo-text-wrapper
+        img
+            height: 21px
+    .item-main-text
+        font-size: 23px !important
+        line-height: 25px !important
+    .item-btn-wrapper
+        display: flex !important
+        button
+            padding: 5px 25px !important

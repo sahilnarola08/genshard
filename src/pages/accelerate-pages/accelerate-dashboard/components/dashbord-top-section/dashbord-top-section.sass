@@ -1,0 +1,104 @@
+.dashboard-profile-section
+    .dashboard-title
+        height: 35px
+    .profile-banner
+        // position: absolute
+        // width: 100%
+        position: relative
+        z-index: -1
+        &::after
+            content: ""
+            top: 0
+            left: 0
+            position: absolute
+            width: 50%
+            height: 100%
+            // z-index: -2
+            background: linear-gradient(89.89deg, #972E15 19.17%, rgba(217, 217, 217, 0) 94.12%)
+        img
+            object-fit: cover
+
+    .profil-text
+        // position: relative
+        // top: 260px
+        .profil-text-section
+            display: flex
+            justify-content: space-between
+            align-items: end
+            margin-top: -120px
+            .user-profile
+                border-radius: 50%
+                padding: 10px
+                width: 215.8px
+                height: 215.8px
+            .deshboard-social
+                i
+                    font-size: 25px
+                    color: #000
+                    background: #2479DF
+                    border-radius: 50%
+                    padding: 5px
+                    margin-right: 10px
+                    cursor: pointer
+            .duelist-king
+                font-family: 'Space Grotesk'
+                font-style: normal
+                font-weight: 300
+                font-size: 38.8571px
+                line-height: 50px
+                color: #FFFFFF
+.profile-section
+    .back-btn
+        p
+            text-decoration: underline
+    .your-profile
+        h2
+            font-family: 'Space Grotesk'
+            font-style: normal
+            font-weight: 400
+            font-size: 60.8947px
+            line-height: 104.5%
+            text-align: center
+            color: #FFFFFF
+    .public-btn
+        button
+            i
+                color: #54C4FC
+.form-slider
+    display: flex
+    justify-content: center
+    .percentage-slider
+        gap: 15px
+        .CircularProgressbar
+            width: 70px
+@media screen and (max-width: 992px)
+    .dashboard-profile-section
+        .profil-text
+            .profil-text-section
+                margin-top: -65px !important
+                .user-profile
+                    width: 145.8px !important
+                    height: 145.8px !important
+                .deshboard-social 
+                    i
+                        font-size: 18px !important
+
+@media screen and (max-width: 767px)
+    .dashboard-profile-section 
+        .profil-text 
+            .profil-text-section
+                display: block !important
+                margin-top: -45px !important
+                .deshboard-social
+                    justify-content: end
+                .user-profile
+                    width: 100px !important
+                    height: 100px !important
+                .new-primary-button-small
+                    font-size: 7.8154px
+                .profile-btn
+                    justify-content: space-between
+                .deshboard-social 
+                    i
+                        font-size: 14px !important
+                        padding: 4px

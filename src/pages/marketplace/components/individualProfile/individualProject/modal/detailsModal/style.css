@@ -1,0 +1,46 @@
+.modal-content{
+    background-color: white !important;
+    color: black;
+    padding: 20px;
+}
+  .model-text{
+    display: flex !important;
+    justify-content: space-between !important;
+    
+  }
+  .modal-header{
+    border: none !important;
+  }
+  .item-img{
+    height: 80px !important;
+  }
+  .item-details{
+    display: flex !important;
+  }
+  .item-cotent{
+    padding: 15px !important;
+  }
+  .item-price{
+    padding: 15px !important ;
+  }
+  .item-price div{
+    float: right !important;
+  }
+  .item-price h6{
+    display: flex !important;
+    justify-content: flex-end !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    width: 180px !important;
+  }
+  .footer{
+    display: block !important;
+    padding-bottom: 30px !important;
+    border-top: 1px solid #e2e2e2 !important;
+  }
+  .footer div{
+    font-weight: 500 !important;
+  }
+  h6{
+    font-weight: 700 !important;
+  }

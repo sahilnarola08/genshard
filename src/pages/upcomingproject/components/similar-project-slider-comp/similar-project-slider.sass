@@ -1,0 +1,30 @@
+.media-slider
+    .slick-slide
+        .slide-content
+            width: 95% !important
+            margin: auto !important
+            img, video
+                border-radius: 28.6875px
+                height: 300px
+                min-height: 300px
+                width: 100%
+                object-fit: cover
+.similar-slider
+    margin-left: 5%
+    .slick-prev, .slick-next
+        transition: all 0.3s ease-in-out
+        visibility: hidden
+        opacity: 0
+    &:hover
+        .slick-prev, .slick-next
+            transition: all 0.3s ease-in-out
+            visibility: visible
+            opacity: 1
+    .slick-next
+        right: 15px
+        z-index: 4
+    .slick-prev
+        left: 15px
+        z-index: 4
+    .slick-prev:before, .slick-next:before
+        font-size: 30px

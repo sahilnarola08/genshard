@@ -1,0 +1,35 @@
+.many-more-section
+    p
+        color: #FFFFFF
+        width: max-content
+    .tag-slider
+        .slick-slide
+            &:nth-child(1)
+                margin-right: 20px
+            &:nth-child(2)
+                margin-left: 20px
+        .tag-slider-item
+            display: flex
+            align-items: center
+            gap: 10px
+            padding: 10px 15px
+            background-color: #6A8C99
+            border-radius: 40px
+            width: fit-content
+            img
+                width: 30px
+                height: 30px
+                min-width: 30px
+                min-height: 30px
+                border-radius: 50%
+                object-fit: cover
+@media screen and (max-width: 767px)
+    .many-more-section
+        .tag-slider
+            .tag-slider-item
+                padding: 5px 10px
+                img
+                    width: 20px
+                    height: 20px
+                    min-width: 20px
+                    min-height: 20px

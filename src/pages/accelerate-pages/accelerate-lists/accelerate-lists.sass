@@ -1,0 +1,121 @@
+.list-section
+    position: relative
+    .thank-text-section
+        background: rgba(68, 68, 68, 0.25)
+        border: 2px solid #54C4FC
+        border-radius: 25.93px
+        width: 100%
+        text-align: center
+        padding: 30px 100px
+        .connection-section
+            .all-mentor-section
+                p
+                    display: -webkit-box
+                    -webkit-line-clamp: 1
+                    -webkit-box-orient: vertical
+                    overflow: hidden
+                    text-overflow: ellipsis
+                img
+                    border-radius: 21px
+                    object-fit: cover
+                    height: 175px
+                    width: 175px
+                    margin: auto
+
+@media screen and (max-width: 1600px)
+    .list-section
+        .thank-text-section
+            padding: 30px 50px
+            .connection-section
+                .all-mentor-section
+                    img
+                        height: 150px
+                        width: 150px
+
+@media screen and (max-width: 1400px)
+    .list-section
+        .thank-text-section
+            .connection-section
+                .all-mentor-section
+                    img
+                        height: 130px
+                        width: 130px
+
+@media screen and (max-width: 1200px)
+    .list-section
+        .thank-text-section
+            .connection-section
+                .all-mentor-section
+                    img
+                        height: 100px
+                        width: 100px
+    .form-header-section
+        .acce-logo
+            max-height: 50px
+            margin-bottom: 15px
+
+@media screen and (max-width: 992px)
+    .list-section
+        .thank-text-section
+            .paragraph-new
+                br
+                    display: none
+            .connection-section
+                .all-mentor-section
+                    margin-bottom: 20px
+                    img
+                        height: 120px
+                        width: 120px
+
+@media screen and (max-width: 767px)
+    .list-section
+        .thank-text-section
+            padding: 20px
+            .paragraph-new
+                br
+                    display: none
+            .connection-section
+                .accelerate-list-slider
+                    padding: 0 30px
+                    .slick-prev, .slick-next
+                        z-index: 11
+                    .slick-prev
+                        border: 1px solid #fff
+                        border-radius: 50%
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        height: 20px
+                        width: 20px
+                        &::before
+                            font-size: 12px
+                            content: "\ea64"
+                            font-family: remixicon!important
+                            font-style: normal
+                            -webkit-font-smoothing: antialiased
+                    .slick-next
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        height: 20px
+                        border: 1px solid #fff
+                        border-radius: 50%
+                        width: 20px
+                        &::before
+                            font-size: 12px
+                            content: "\ea6e"
+                            font-family: remixicon!important
+                            font-style: normal
+                            -webkit-font-smoothing: antialiased
+                .all-mentor-section
+                    margin-bottom: 0
+                    img
+                        height: 90px
+                        width: 90px
+
+@media screen and (max-width: 330px)
+    .list-section 
+        .thank-text-section 
+            .connection-section 
+                .accelerate-list-slider
+                    padding: 0 15px

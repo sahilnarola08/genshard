@@ -1,0 +1,303 @@
+// @import '../../../_variables.sass'
+
+@import '../../../../../_variables'
+h1,h2,h3,h4,h5,h6
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+.genpad-card
+    height: fit-content
+    border-radius: 20px
+    width: 100%
+    max-width: 473px
+    position: relative
+    background: rgba(68, 68, 68, 0.25)
+    border: 2px solid #2F2F2F
+    border-radius: 42.8155px
+    padding: 40px 20px 20px 20px
+    z-index: 1
+    max-width: 400px
+    // margin: auto
+    .notch
+        position: absolute
+        left: 50%
+        transform: translateX( -50%)
+        background: #181818
+        border-radius: 35.965px
+        font-family: 'Space Grotesk'
+        font-style: normal
+        font-weight: 700
+        font-size: 19.5728px
+        line-height: 104.5%
+        width: 70%
+        text-align: center
+        padding: 10px
+        top: -20px
+        color: #FFFFFF
+    .inner-div
+        hr
+            color: #117DCC
+            border: 1px solid
+            margin-top: 28px
+        .banner-image
+            img
+                height: 146px !important
+                min-height: 146px !important
+                width: 100%
+                object-fit: cover
+                border-radius: 17px !important
+    .overview-container
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        grid-gap: 1rem
+        margin-top: 20px
+
+        .overview-info
+            h1
+                overflow: hidden
+                text-overflow: ellipsis
+                display: -webkit-box
+                -webkit-line-clamp: 2
+                line-clamp: 2
+                -webkit-box-orient: vertical
+                font-family: 'Space Grotesk'
+                font-style: normal
+                font-weight: 700
+                font-size: 29.3592px
+                line-height: 104.5%
+                background: linear-gradient(90deg, #54C4FC 0%, #2479DF 58.11%)
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+                background-clip: text
+                text-fill-color: transparent
+            h3
+                font-family: 'Space Grotesk'
+                font-style: normal
+                font-weight: 700
+                font-size: 19.5728px
+                line-height: 104.5%
+                color: #FFFFFF
+                &:nth-child(2)
+                    color: $secondary-text-color
+                &:last-child
+                    color: #117DCC
+            .chain-img
+                background: rgba(68, 68, 68, 0.25)
+                border: 0.286195px solid #2F2F2F
+                border-radius: 10.0168px
+                padding: 4px 20px
+        .image-placeholder
+
+        .image
+            width: 100%
+            min-width: 70px
+            height: 70px
+            width: 70px
+            min-height: 70px
+            border-radius: 50%
+            background-color: $theme-gray
+            border-radius: 50%
+            overflow: hidden
+            img
+                width: 100%
+    .privat-public
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-top: 20px
+        .white-border-button
+            font-family: 'Space Grotesk'
+            font-style: normal
+            font-weight: 300
+            font-size: 10px
+            line-height: 104.5%
+            text-align: center
+            color: #FFFFFF
+            border: 1px solid #FFFFFF
+            background: transparent
+            border-radius: 5.2381px
+            padding: 5px 25px
+    .social-icon
+        gap: 10px
+        div
+    .links
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 20px
+        box-sizing: border-box
+        margin-top: 20px
+        a
+            background: #2479DF
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            align-items: center
+            display: flex
+            justify-content: center
+            padding: 5px
+
+    .starting-info
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 10px
+        .project-start-badge
+            background: linear-gradient(90deg, #65DB6A 4.29%, #0F6212 100%)
+            border-radius: 55.0485px
+            padding: 6px 20px
+    .paragraph-new-medium
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 2
+        line-clamp: 2
+        -webkit-box-orient: vertical
+        text-align: center
+        margin-top: 20px
+
+    .progress-container
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        flex-direction: column
+        .progress-info
+            margin: 30px 0 11px
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            font-weight: 400
+            font-size: 18px
+            line-height: 27px
+            span:first-child
+                h2
+                    font-weight: 300
+                    color: #000000
+                    font-size: 27.5294px
+                    line-height: 41px
+            h2
+                margin: 0
+                color: #000000
+                font-weight: 400
+                font-size: 31.7647px
+                line-height: 47px
+            span
+                color: #000000
+        .progress-bar
+            border: 1px solid $primary-theme-color
+            height: 9px
+            width: 100%
+    .total-info
+        margin-top: 30px
+        margin-bottom: 28px
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        grid-gap: 0.938rem
+        h3
+            color: $secondary-text-color
+            font-weight: 400
+            font-size: 25px
+            line-height: 37px
+            &:nth-child(2)
+                color: #000000
+    .kyc-section
+        margin-top: 18px
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        grid-gap: 0.938rem
+        h4
+            padding: 0px
+            color: #000000
+            margin: 0px 0px 10px 0px
+            font-weight: 400
+            font-size: 18px
+            line-height: 27px
+        button
+            font-weight: 300
+            font-size: 21.6393px
+            line-height: 32px
+            text-align: center
+            height: 33px
+            width: auto
+            background-color: transparent
+            border: 1px solid #117DCC
+            border-radius: 8px
+            color: #000000
+            cursor: pointer
+            margin-bottom: 14px
+            &:hover
+                background-color: #117DCC
+                color: #FFFFFF
+            &:active
+                background-color: #117DCC
+            &:focus
+                outline: #117DCC solid 2px
+
+@media screen and (max-width: 1400px)
+    .swapClaimSection
+        .swap .swapContent
+            .clelebrateIcon-part
+                .top-celebration
+                    .congratulationsText
+                        font-size: 25.1048px
+                        line-height: 35px
+//     .inner-div
+//         padding: 20px !important
+//         .image
+//             width: 100% !important
+//     .overview-info
+//         h1
+//             font-size: 40px !important
+//             height: 110px !important
+//     .links
+//         margin: 30px 0 0 0 !important
+//     .starting-info
+//         margin-top: 30px !important
+//     .total-info
+//         margin-top: 20px !important
+//         margin-bottom: 20px !important
+@media screen and (max-width: 320px)
+    .genpad-card
+        border-radius: 26.8155px
+        padding: 30px 10px 20px 10px
+        .notch
+            font-size: 8.5728px
+            line-height: 85.5%
+            width: 50%
+            span
+                font-size: 12px
+        .inner-div
+            .banner-image
+                img
+                    height: 91px !important
+                    min-height: 91px !important
+            .overview-container
+                margin-top: 10px
+                .image
+                    min-width: 50px
+                    height: 50px
+                    width: 50px
+                    min-height: 50px
+                .overview-info
+                    h1
+                        overflow: hidden
+                        text-overflow: ellipsis
+                        display: -webkit-box
+                        -webkit-line-clamp: 1
+                        line-clamp: 1
+                        font-size: 17.3592px
+                    h3
+                        font-size: 13.5728px
+                    img
+                        padding: 4px 9px
+            .links
+                a
+                    width: 20px
+                    height: 20px
+                    padding: 3px

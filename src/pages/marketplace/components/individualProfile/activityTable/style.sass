@@ -1,0 +1,164 @@
+.activity_table
+  background-color: #fff
+  width: 100%
+  .activity-main-label
+    width: 100%
+    max-width: 1248px
+    margin: 61px auto 0
+    font-weight: 300
+    font-size: 87.5265px
+    line-height: 130px
+    color: #117DCC
+
+  .no-offer-data,.no-listing-data
+    width: auto
+    margin: 0 auto
+    text-align: center
+    padding: 200px 0
+    img
+      width: 100%
+      max-width: 105px
+    .description
+      color: #black
+      font-size: 24px
+      line-height: 32px
+      margin-top: 12px
+
+  .data-table
+    max-width: 1248px
+    width: 100%
+    margin: 63px auto 0
+
+  table
+    border-collapse: collapse
+    margin: 0
+    padding: 0
+    width: 100%
+    table-layout: auto
+
+  tr
+    color: black
+    text-align: left
+    max-width: 1248px
+    width: 100%
+
+  th:nth-child(2)
+    text-align: left
+
+  table th
+    font-size: 0.85em
+    letter-spacing: 0.55em
+    font-weight: 300
+    text-transform: uppercase
+    padding: 25px 5px
+    font-size: 20px
+
+  td
+    font-size: 26px
+    font-weight: 200
+    padding: 10px 5px
+
+    &.item-wrapper
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+
+  .block
+    height: 70px
+    width: 65px
+    background-color: white
+    margin-right: 10px
+
+  .item-text
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    text-align: left
+
+    p
+      margin: 0
+      font-size: 26px
+      color: #117DCC
+
+    small
+      font-size: 10.7913px
+
+  td
+    &[data-label="QTY"], &[data-label="TIME"]
+      margin: 0
+      color: #117DCC
+
+  .item-text
+    font-size: 11px
+
+  i
+    color: #e00164
+
+  span
+    font-size: 20px
+    font-weight: 700
+
+@media screen and (max-width: 1366px)
+  .activity_table
+    padding: 0 20px
+
+    table
+      border: 0
+
+      thead
+        border: none
+        clip: rect(0 0 0 0)
+        height: 1px
+        margin: -1px
+        overflow: hidden
+        padding: 0 15px
+        position: absolute
+        width: 1px
+
+      tr
+        color: black
+        display: block
+        margin-bottom: 50px !important
+
+        td
+          border-bottom: 1px solid rgba(169, 166, 166, 0.338)
+          padding-top: 15px
+          display: block
+          font-size: 20px
+          text-align: right
+
+          img
+            display: inline
+            padding-right: 5px
+
+          &::before
+            color: #000
+            content: attr(data-label)
+            float: left
+            font-weight: bold
+            text-transform: uppercase
+
+          &:last-child
+            border-bottom: 0
+
+  td br
+    display: none
+
+  .item-wrapper
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+
+    .block
+      all: unset
+      display: none
+
+    p, small
+      text-align: right

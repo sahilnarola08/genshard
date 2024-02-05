@@ -1,0 +1,17 @@
+@import '../../../_variables'
+
+.baselayout__content
+    padding-top: 8rem
+    min-height: calc(100vh - #{$header-height})
+    // display: flex
+    // background-color: #000000
+    max-width: 1920px
+    margin: auto
+    overflow: hidden
+
+@media screen and (max-width: 1600px)
+    .baselayout__content
+        padding-top: 6.5rem
+@media screen and (max-width: 1400px)
+    .baselayout__content
+        padding-top: 5.5rem

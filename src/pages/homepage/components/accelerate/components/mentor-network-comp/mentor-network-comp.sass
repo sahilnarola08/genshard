@@ -1,0 +1,40 @@
+.mentor-network-comp-section
+    .mentor-network-outer-div
+        border-radius: 42.8155px
+        background: linear-gradient(310deg, #54C4FC 30.29%, #2479DF 60.02%, #000000 84.65%)
+        padding: 2px
+        --borderWidth: 3px
+        position: relative
+        z-index: 1
+        overflow: hidden
+        &::after
+            content: ""
+            position: absolute
+            left: 0
+            top: 0
+            z-index: -1
+            top: calc(-1 * var(--borderWidth))
+            left: calc(-1 * var(--borderWidth))
+            height: calc(100% + var(--borderWidth) * 2)
+            width: calc(100% + var(--borderWidth) * 2)
+            background: linear-gradient(320.73deg, #54C4FC 30.29%, #2479DF 60.02%, #000000 84.65%)
+            border-radius: calc(2 * var(--borderWidth))
+            z-index: -1
+            animation: animatedgradient 2s ease alternate infinite
+            background-size: 300% 300%
+        .mentor-network-inner-div
+            background: #000000
+            border-radius: 42.8155px
+            padding: 50px 20px
+            img
+                width: 400px
+
+@media screen and (max-width: 767px)
+    .mentor-network-comp-section
+        .mentor-network-outer-div
+            border-radius: 11.603px
+            .mentor-network-inner-div
+                padding: 20px 10px
+                border-radius: 11.603px
+                h2
+                    font-size: 23px

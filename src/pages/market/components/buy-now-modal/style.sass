@@ -1,0 +1,220 @@
+@mixin card-status($color)
+    color: $color
+    text-transform: uppercase
+    font-size: 1.25rem
+    margin: 0
+    font-weight: bold
+@mixin card-status-circle($color)
+    width: 0.55rem
+    height: 0.55rem
+    background: $color
+    border-radius: 50%
+    display: inline-block
+    margin-bottom: 0.3rem
+    margin-right: 0.4rem
+
+.loading-icon
+    width: 70px
+
+.loading-wrapper
+    width: 150px
+    height: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+
+.overlay
+    background: rgba(0, 0, 0, 0.5)
+    width: 100%
+    height: 100%
+
+.modal-bg
+    padding-top: 40px
+    padding-bottom: 40px
+    padding-left: 40px
+    padding-right: 40px
+    background-color: #fff
+    border-radius: 20px
+
+
+.main-card
+    min-width: 600px
+    font-size: 0
+    display: flex
+    grid-column-gap: 50px
+    grid-template-columns: 1fr 1fr
+
+    .asset-card-div
+        height: 400px
+        img
+            height: 100%
+
+    .card-detail
+        background-color: var(--color-on-primary)
+        font-size: 20px
+        display: grid
+        grid-template-columns: 1fr
+        grid-gap: 0.5rem
+
+        .name-status
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+
+            .card-name
+                font-size: 1.75rem
+                font-weight: bold
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+
+
+            .status-open
+                @include card-status($color: #00CF6C)
+
+                & > span
+                    @include card-status-circle($color: #00CF6C)
+
+            .status-closed
+                @include card-status($color: #FF9900)
+
+                & > span
+                    @include card-status-circle($color: #FF9900)
+
+            .sold-out 
+                @include card-status($color: #FF6347)
+
+                & > span
+                    @include card-status-circle($color: #FF6347)
+
+        .balance-total
+            font-size: 1.1rem
+            color: #A7A7A7
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            .value
+                color: var(--color-highlight)
+                font-weight: bold   
+
+            .total-detail
+                font-weight: bold  
+                text-transform: uppercase
+
+        .balance-detail
+            width: 100%
+            flex-direction: row
+            display: flex
+            gap: 0.5rem
+
+        .description
+            font-size: 18px
+            line-height: 27px
+            font-family: 'Oswald'
+            text-align: center
+            margin-top: 15px
+
+
+        .list-price
+            display: flex 
+            justify-content: center
+
+            .title
+                font-size: 18px
+                color: var(--color-on-secondary)
+
+            .percent
+                width: 125px
+                position: relative
+
+                .total
+                    height: 4px
+                    border: 1px solid #000000
+                    position: absolute
+                    top: 2px
+                    left: 0
+                    right: 0
+                    bottom: 0
+
+        .hr-dash
+            & > hr 
+                width: 20%
+                background: #000000
+                height: 4px
+
+        .price-eth
+            display: grid 
+            grid-template-columns: 2fr 2fr
+            grid-gap: 0.5rem
+            font-size: 1.4rem
+            text-align: center
+
+            .title
+                color: #A7A7A7
+        
+.buy-now
+    display: flex
+    justify-content: center
+    width: 100%
+    align-items: flex-end
+
+.final-page-card
+    min-width: 600px
+    font-size: 0
+    display: grid
+    grid-row-gap: 10px
+    grid-template-columns: 1fr
+    justify-items: center
+
+    // & > img 
+    //     height: 200px
+    .asset-card-div
+        height: 200px
+        img
+            height: 200px
+    .card-bar
+        height: 4px
+        width: 150px
+
+    .thank-you-top
+        font-size: 35px
+        font-family: 'Oswald'
+        text-align: center
+
+    .thank-you-bottom
+        font-size: 25px
+        font-family: 'Oswald'
+        text-align: center
+
+    .pink-bar
+        background-color: #FF0071
+        height: 4px
+        width: 170px
+
+@media (max-width:767px)
+    .modal-bg
+    .main-card
+        width : 100%
+        min-width: 100%
+        flex-direction: column
+        grid-column-gap: 0
+        grid-template-columns: 0
+    .base-modal 
+        .base-modal__wrapper
+            margin-bottom: 20px
+
+@media (max-width: 480px)
+    .main-card 
+        .asset-card-div
+            height: auto
+            .card-player
+                height: auto !important
+        .card-detail
+            .price-eth
+                .title
+                    font-size: 1.9rem
+    .base-modal 
+        .base-modal__wrapper
+            padding : 0.3rem

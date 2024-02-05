@@ -1,0 +1,170 @@
+.browse-project
+  padding: 52px 0 52px
+
+  .browse-project-heading
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    color: #000000
+    font-size: 30px
+    font-weight: 600
+    letter-spacing: 1em
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    margin-bottom: 32px
+    line-height: 44px
+    text-align: center
+
+  .styled-underline
+    border-bottom: 5px solid #117DCC
+    max-width: 281px
+    width: 100%
+    margin: auto
+    border-color: #117DCC
+
+  .category-container
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    width: 100%
+    max-width: 1705px
+    margin: 63px auto 0
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    -webkit-box-pack: space-evenly
+    -ms-flex-pack: space-evenly
+    justify-content: space-between
+
+    .category-wrapper
+      max-width: 400px
+      width: 100%
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      justify-content: center
+      margin: 0 0px 38px
+      height: 146px
+      cursor: pointer
+
+      .category-list
+        width: 100%
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        text-align: center
+        background-size: cover
+
+        .category-name
+          text-transform: uppercase
+          font-weight: 400
+          font-size: 35.17px
+          color: #ffffff
+          letter-spacing: 0.145em
+          line-height: 52px
+
+  .button-container
+    width: 100%
+    text-align: center
+    padding: 16px 0 0
+
+    .styled-button
+      font-size: 22px
+      line-height: 33px
+      font-weight: 300
+      text-align: center
+      color: #ffffff
+      letter-spacing: 0.33em
+      background-color: #117DCC
+      border-radius: 100px
+      padding: 11px 25px
+      border: none
+
+@media screen and (max-width: 1200px)
+  .browse-project .browse-project-heading
+    font-size: 28px
+    line-height: 36px
+    letter-spacing: 0.6em
+  .browse-project .category-container .category-wrapper .category-list .category-name
+    font-size: 30px
+  .browse-project .category-container .category-wrapper
+    width: 100%
+    max-width: 290px
+    height: 130px
+  
+@media screen and (max-width: 768px)
+  .browse-project
+    .browse-project-heading
+      font-size: 24px
+      letter-spacing: 0.3em
+
+    .styled-underline
+      display: none
+
+    .category-container .category-wrapper
+      width: 100%
+      max-width: 190px
+      height: 85px
+
+      .category-list .category-name
+        font-size: 20px
+        line-height: 30px
+    .button-container
+      .styled-button
+        font-size: 16px
+        line-height: 26px
+
+@media  ( max-width: 480px)
+  .browse-project
+    .browse-project-heading
+      font-size: 18px
+      line-height: 27px
+      letter-spacing: 0.2em
+
+    .styled-underline
+      display: none
+
+    .category-container
+      margin: 15px auto 0
+      justify-content: space-evenly
+      .category-wrapper
+        width: 100%
+        max-width: 160px
+        height: 70px
+        margin: 0 0 30px
+
+      .category-list .category-name
+        font-size: 20px
+    .button-container
+      .styled-button
+        font-size: 13px
+        line-height: 19px
+
+@media ( max-width: 390px)
+  .browse-project
+    padding: 20px 0 30px
+    .category-container
+      margin: 20px auto
+      .category-wrapper 
+        max-width: 130px
+        height: 55px
+        margin-bottom: 10px
+        .category-list 
+          .category-name
+            font-size: 14px
+            line-height: 20px
+    .button-container
+      padding: 0
+      .styled-button
+        padding: 10px 15px    

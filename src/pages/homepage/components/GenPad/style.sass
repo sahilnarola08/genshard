@@ -1,0 +1,121 @@
+@import "../../../../_variables"
+.genpad-card-bg
+    padding-left: 50px
+    .col-lg-4:nth-child(odd)
+        .genpad-card-container
+            border: none
+            background: #152127
+            &::before
+                content: ""
+                background-color: #fff
+                width: 100%
+                height: 100%
+                position: absolute
+                left: 7px
+                top: 8px
+                background: #152127
+                z-index: -1
+                border-radius: 42.8155px
+                margin: -4px
+            &::after
+                content: ""
+                background-color: #fff
+                width: 101%
+                height: 101%
+                position: absolute
+                left: 1px
+                top: 1px
+                background: linear-gradient(298deg, #54C4FC 30.29%, #2479DF 60.02%, transparent 84.65%)
+                z-index: -2
+                border-radius: 42.8155px
+
+.genpad-container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    margin: 50px auto
+    grid-gap: 50px
+.heading-buttons-container
+    div
+        display: flex
+        justify-content: center
+    h1
+        letter-spacing: 1em
+        text-align: right
+        margin-right: -1em
+        color: #000000
+    hr
+        color: #117DCC
+        border: 1px solid #117DCC
+        width: 10rem
+        margin: 10px auto
+    .buttons-container
+        max-width: 400px
+        display: flex
+        justify-content: space-between
+        grid-gap: 10px
+        margin: auto
+        padding-top: 0px
+        margin: 40px auto
+        .gen-button
+            // background: linear-gradient(180deg, #54C4FC 0%, #2479DF 100%)
+            border-radius: 45px
+            font-family: 'Space Grotesk'
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 20px
+            text-align: center
+            color: #FFFFFF
+        div
+            position: relative !important
+            button
+                min-width: 115px
+
+            .pools-btn
+                color: #000
+    .tab-btn-heading
+        font-family: 'Space Grotesk'
+        font-style: normal
+        font-weight: 300 !important
+        font-size: 16px
+        line-height: 20px
+        text-align: center
+        letter-spacing: 0.2em
+        color: #FFFFFF
+
+@media screen and (max-width: 1600px)
+    .genpad-card-bg
+        padding-left: 20px
+@media screen and (max-width: 1400px)
+    .genpad-card-bg
+        padding-left: 0px
+        .col-lg-4:nth-child(odd)
+            .genpad-card-container
+                &::before
+                    left: 6px
+                    border-radius: 20px
+                &::after
+                    border-radius: 20px
+    .genpad-container
+        grid-gap: 20px
+        .genpad-card-container
+            max-width: 430px
+@media screen and (max-width: 767px)
+    .heading-buttons-container
+        .buttons-container
+            div
+                button
+                    min-width: 100px
+    .heading-buttons-container
+        .tab-btn-heading
+            font-size: 12px
+            line-height: 16px
+@media screen and (max-width: 320px)
+    .heading-buttons-container
+        .buttons-container
+            div
+                button
+                    min-width: 80px
+            .gen-button
+                font-size: 12px

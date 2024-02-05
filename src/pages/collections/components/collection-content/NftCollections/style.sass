@@ -1,0 +1,198 @@
+.content-elements-container
+    width: 100%
+    height: 100%
+    .pagination-container
+        width: 100%
+        display: flex
+        justify-content: space-between
+        box-sizing: border-box
+        padding: 0 1rem
+        margin-top: 1rem
+        .pagination-item
+            width: fit-content
+        .mobile-view-filter
+            visibility: hidden
+            cursor: pointer
+            width: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            border: 1px solid #117DCC
+            border-radius: 12px
+
+    .content-elements-item
+        display: flex
+        -webkit-box-flex-wrap: wrap
+        -webkit-flex-wrap: wrap
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+        -webkit-flex-direction: row
+        -ms-flex-direction: row
+        flex-direction: row
+        box-sizing: border-box
+        .no-nft-available
+            height: 200px
+            display: flex
+            width: 100%
+            p
+                margin: auto
+                color: #000
+                font-size: 1.3rem
+
+.collection-card-container
+    -webkit-flex-basis: 33.333333%
+    -ms-flex-preferred-size: 33.333333%
+    flex-basis: 33.333333%
+    -webkit-box-flex: 0
+    -webkit-flex-grow: 0
+    -ms-flex-positive: 0
+    flex-grow: 0
+    max-width: 33.333333%
+    padding: 2rem
+    box-sizing: border-box
+    margin-bottom: 1rem
+    position: relative
+    .collection-card-item
+        border: 2px solid #33333e
+        padding: 1rem
+        border-radius: 12px
+        position: relative
+        background: #1e1f24
+        z-index: 1
+        .single-card-loader
+            position: absolute
+            height: 100%
+            width: 100%
+            margin: -1rem
+            display: flex
+            z-index: 1
+            background: #10101082
+            border-radius: 16px
+            .loading-icon
+                margin: auto
+        .remaining-card-disable
+            position: absolute
+            height: 100%
+            width: 100%
+            margin: -1rem
+            border-radius: 16px
+            background: transparent
+            z-index: 1
+        .collection-image
+            height: 400px
+            position: relative
+            background: #3a3a3a
+            border-radius: 12px
+            cursor: pointer
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                border-radius: 12px
+            video
+                object-fit: cover
+                border-radius: 12px
+            .like-count
+                position: absolute
+                right: 14px
+                top: 12px
+                background: #FF0071
+                border-radius: 24px
+                display: flex
+                align-items: center
+                justify-content: center
+                padding: 4px 12px
+                span
+                    margin-left: 5px
+                    font-size: 0.9rem
+                    font-weight: 500
+        .collection-name
+            h2
+                text-transform: capitalize
+        .collection-stake-button
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .stake-info
+                display: grid
+                justify-content: space-between
+                span
+                p
+                    font-weight: 500
+                    font-size: 1.5rem
+                    margin: 0
+                    padding: 0
+            button
+                width: 170px
+                height: 45px
+                background: #FF0071
+                color: white
+                border-radius: 4px
+                font-size: 1.3rem
+                border: none
+                outline: none
+                font-weight: 500
+                cursor: pointer
+                &.disable-button
+                    background: grey
+                    cursor: default
+    .total-nft-left
+        position: absolute
+        bottom: -2px
+        left: 50%
+        margin-left: auto
+        margin-right: auto
+        width: 150px
+        transform: translate(-50%, 0)
+        background: #33333e
+        display: flex
+        justify-content: center
+        align-self: center
+        border-radius: 20px
+        height: 35px
+        span
+            align-self: center
+            font-size: 1.1rem
+            span
+                font-weight: 500
+                font-size: 1.2rem
+        &:before
+            content: ""
+            height: 50px
+            background: #33333e
+            position: absolute
+            left: -10px
+            width: 50px
+            transform: rotate(56deg)
+            z-index: -1
+            top: -24px
+            border-radius: 0px 0px 12px 0px
+        &:after
+            content: ""
+            height: 50px
+            background: #33333e
+            position: absolute
+            right: -10px
+            width: 50px
+            transform: rotate(34deg)
+            z-index: -1
+            top: -24px
+            border-radius: 0px 0px 12px 0px
+
+@media screen and (max-width: 1340px)
+    .collection-card-container
+        -webkit-flex-basis: 50%
+        -ms-flex-preferred-size: 50%
+        flex-basis: 50%
+        max-width: 50%
+
+@media screen and (max-width: 900px)
+    .content-elements-container
+        .pagination-container
+            .mobile-view-filter
+                visibility: visible
+    .collection-card-container
+        -webkit-flex-basis: 100%
+        -ms-flex-preferred-size: 100%
+        flex-basis: 100%
+        max-width: 100%

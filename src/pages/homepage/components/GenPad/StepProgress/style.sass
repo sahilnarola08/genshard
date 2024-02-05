@@ -1,0 +1,147 @@
+@import "../../../../../_variables"
+.five-step-progress
+    position: absolute
+    padding-top: 80px
+    z-index: 1
+    left: 4%
+    text-align: left
+    span
+        font-size: 3rem
+        color: #000000
+.step-container
+    margin: 50px 0px 20px
+    position: relative
+    
+    .step-background
+        width: 800px
+        display: flex
+        margin: auto
+        position: relative
+        background-image: url(../../../../../images/homepage/easy-ido-BG.png)
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+        padding: 50px 0px 15px
+        
+        .step-items
+            display: block
+            width: 20%
+            text-align: center
+            &.selected-step
+                &:hover
+                    label
+                        cursor: pointer
+                        color: #117DCC
+            label
+                position: relative
+                color: #000000
+                display: block
+                font-size: 1.4rem
+                margin-bottom: 15px
+                .details-items
+                    position: absolute
+                    right: 18px
+                    top: -10px
+                    width: 20px
+                    height: 20px
+                    border: 1px solid #117DCC
+                    border-radius: 50%
+                    display: flex
+                    font-size: 19px
+                    box-sizing: border-box
+                    cursor: pointer
+                    span
+                        margin-left: 7px
+                        margin-top: -2px
+                        font-size: 0.9rem
+            .item-divider-hoz
+                display: block
+                height: 50px
+                width: 3px
+                border-radius: 4px
+                background: #117DCC
+                margin: auto
+        hr
+            position: absolute
+            border-radius: 4px
+            width: 100%
+            border: none
+            height: 3px
+            background: #117DCC
+            bottom: 25px
+
+
+
+@media screen and (max-width: 1440px)
+    .step-background
+        margin: 0 0 0 auto  !important
+        width: 750px !important;
+    .five-step-progress 
+        span
+            font-size: 2.2rem;
+
+@media screen and (max-width: 1024px)
+    .five-step-progress
+        padding-top: 40px !important
+
+@media screen and (max-width: 992px)
+    
+    .step-container 
+        margin: 30px 0px 20px !important
+        .step-background
+            width: 100% !important
+    .five-step-progress
+        position: relative
+        padding-top: 20px !important
+        left: 0
+        text-align: center
+
+@media screen and (max-width: 768px)
+    .five-step-progress
+        padding-top: 60px
+        
+        span
+            font-size: 2rem !important
+    .step-container
+
+    .step-items
+        label
+            font-size: 1.2rem !important
+
+    hr
+        bottom: 30px !important
+
+
+@media screen and (max-width: 425px)
+    .five-step-progress
+        padding-top: 0px !important
+
+        span
+            font-size: 2rem !important
+    .step-container
+    .step-background
+        margin: auto !important
+        width: 340px !important
+        line-height: 35px
+    
+
+    .step-items
+        
+        label
+            font-size: 0.7rem !important
+            .details-items
+                right: 15px !important
+                top: -5px !important
+                width: 15px !important
+                height: 15px !important
+                font-size: 5px !important
+            .iicon
+                margin-left: 6px !important
+                margin-top: -11px !important
+                font-size: 0.7rem !important
+
+        .item-divider-hoz
+            height: 35px !important
+
+    hr
+        bottom: 24px !important

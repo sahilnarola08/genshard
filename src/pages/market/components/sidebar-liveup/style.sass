@@ -1,0 +1,98 @@
+.sidebar-liveup
+    height: 100%
+    position: relative
+    min-height: 500px
+    .live-up
+        color: var(--color-on-primary)
+        margin-bottom: 2rem
+        font-size: 1.5625rem
+
+        .title-sidebar
+            text-transform: uppercase
+            letter-spacing: 0.5rem
+            margin-bottom: 0.7rem
+            color: #117DCC
+
+        .list-item
+            margin-left: 0.7rem
+            color: black
+            transition: 0.3s
+            margin-bottom: 5px
+            width: fit-content
+            text-decoration: none
+            &:hover
+                color: #117DCC
+
+    .footer
+        margin-top: 4rem
+        .title
+            color: var(--color-on-primary)
+            font-size: 1.5625rem
+        .bottom
+            display: none
+        
+
+    .bottom
+        position: absolute
+        bottom: 0px
+
+        .sentnl-container
+            display: flex
+            flex-direction: row
+            grid-gap: 25px
+            align-items: center
+
+            .sentnl-img
+                width: 100px
+                height: 100px
+        
+            .audit-text
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                text-transform: uppercase
+                color: black
+
+                .audit-top
+                    font-family: Oswald
+                    font-style: normal
+                    font-weight: 200
+
+                .audit-bottom
+                    font-family: Roboto
+                    font-style: normal
+                    font-weight: bold
+                    font-size: 37.1951px
+
+
+    .item
+        cursor: pointer
+
+    .selected
+        color: var(--color-highlight)
+        font-weight: bold
+    
+    .list-container
+        padding-left: 8px
+        display: flex
+        flex-direction: column
+
+@media (max-width:991px)
+    .sidebar-liveup 
+        .list-container
+            padding: 0
+            flex-direction: row
+            justify-content: space-between
+        .bottom
+            display: none
+        .footer
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .bottom
+                display: block
+                position: relative
+        .live-up 
+            .title-sidebar
+                text-align: center
+

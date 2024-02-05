@@ -1,0 +1,158 @@
+@import '../../../../_variables'
+
+@mixin borderBox($color, $radius)
+    border-radius: $radius
+    border: 1px solid $color
+
+.card 
+    @include borderBox($color: var(--color-border-200), $radius: 0.625rem)
+    position: relative
+    &__type
+        @include borderBox($color: #fff, $radius: 50%)
+        border-width: 2px
+        display: inline-block
+        width: 26px
+        height: 26px
+        text-align: center
+        line-height: 23px
+        background-color: var(--color-highlight)
+        color: var(--color-on-primary)
+        position: absolute
+        top: -13px
+        left: -13px
+        font-size: 15px
+
+    &__check
+        color: var( --color-on-primary)
+        background-color: #117DCC
+        display: flex
+        align-items: center
+        border-radius: 0.3rem
+        padding: 0.1rem 0.1rem 0.2rem 0.6rem
+        position: absolute
+        top: 50%
+        right: 0
+        transform: translateY(-50%)
+        //height: 20px 
+        span
+            font-size: 18px
+            font-weight: 100
+
+        .checkbox-title
+            text-transform: uppercase
+            margin: 
+                top: 0.1rem
+                right: 0.2rem
+            font-size: 10px
+            font-weight: 400
+
+        .edit-delete-data
+            margin-left: .5rem
+            display: flex
+            font-size: 10px
+
+            .btn-edit
+                text-transform: uppercase
+                margin: auto 0
+                background: #fff
+                color: black
+                min-width: 2.25rem
+                text-align: center
+                border-radius: 2px
+                cursor: pointer
+                height: 1rem
+
+            .btn-delete
+                margin: auto 5px
+                cursor: pointer
+                height: 1rem
+                & > img
+                    width: 1rem
+                    height: 1rem
+
+        .arrow-image
+            height: 0.75rem
+            margin-top: 3px
+            margin-right: 5px
+
+    &__view
+        color: var( --color-on-primary)
+        background-color: var(--color-highlight)
+        display: flex
+        border-radius: 0.3rem
+        padding: 0.1rem 0.1rem 0.1rem 0.6rem
+        position: absolute
+        top: -0.8rem
+        right: 0.8rem
+        height: 21px
+        cursor: pointer 
+
+        .view-title
+            margin: 
+                top: 0.1rem
+                right: 0.2rem
+            font-size: 10px
+            font-weight: 400
+
+        .arrow-image
+            height: 0.75rem
+            margin-top: 3px
+            margin-right: 5px  
+
+    .view-vesting
+        color: var( --color-on-primary)
+        background-color: var(--color-primary)
+        border: 1px var(--color-highlight) solid
+        border-radius: 0.3rem
+        padding: 0.1rem 0.1rem 0.1rem 0.6rem
+        position: absolute
+        top: -0.8rem
+        right: 0.8rem
+        z-index: 2
+
+        .vesting-header
+            display: flex
+            cursor: pointer 
+
+            .view-title
+                margin: 
+                top: 0.1rem
+                right: 0.2rem
+                font-size: 10px
+                font-weight: 400
+
+            .arrow-image
+                width: 0.75rem
+                margin-top: 3px
+                margin-right: 5px
+
+        .vesting-detail
+            margin: 0.35rem 0
+            font-size: 0.5rem
+            display: grid
+            grid-template-columns: 1fr
+            grid-gap: 0.25rem
+
+            .vesting-title
+                color: var(--color-on-secondary)
+
+    &__form
+        padding: 0.85rem 1rem
+        .card-form-item
+            display: grid
+            grid-template-columns: 56% 40%
+            align-items: center
+            justify-content: space-between
+
+            &__label
+                color: var(--color-on-secondary)
+                font:
+                    weight: 300
+                    size: 15px
+            input
+                color: #000
+
+@media screen and (max-width: 425px)
+  .card__check
+    right: 0
+    font-size : 12px

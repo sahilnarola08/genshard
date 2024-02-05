@@ -1,0 +1,89 @@
+.custom-pagination
+  display: flex
+  justify-content: end
+  margin-top: 20px
+  justify-content: center
+  &.light-theme
+    ul
+      background: white
+      li
+        color: #000
+        a
+          color: #000
+          span
+            color: #000 !important
+            margin-bottom: 5px !important
+      li.selected
+        a
+          background: black
+          height: 26px
+          width: 26px
+          margin: auto
+          color: black
+          border-radius: 40px
+          color: #fff !important
+          &:hover
+            color: #fff
+  ul
+    width: fit-content
+    padding: 0
+    margin: 0
+    list-style-type: none
+    display: flex
+    align-items: center
+    border: none
+    box-sizing: border-box
+    background: transparent
+    box-shadow: 5px 20px 25px rgba(21, 33, 96, 0.03), -5px -20px 25px rgba(21, 33, 96, 0.03)
+    li
+      width: 30px
+      height: 38px
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      color: #fff
+      margin: 0px 12px
+      a
+        font-weight: 500
+        width: 100%
+        text-align: center
+        text-decoration: none
+        color: red
+        height: 26px
+        width: 26px
+        display: flex
+        align-items: center
+        justify-content: center
+    li.disabled
+      a
+        span
+          color: #54c4fcab !important
+    li.break
+      width: 40px
+      letter-spacing: 12px
+      position: relative
+      a
+        position: absolute
+        top: 0
+        font-weight: 600
+        font-size: 18px
+
+    li.selected
+      a
+        background: #54C4FC !important
+        color: #ffff !important
+        margin: auto
+        border-radius: 40px
+
+@media screen and (max-width: 767px)
+  .custom-pagination
+    ul
+      li
+        margin: 0px 5px
+        &.selected
+          // a
+          //   height: auto
+          //   width: auto
+        a
+          font-size: 12px

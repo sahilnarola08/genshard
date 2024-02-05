@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;500&display=swap');
+.header-marketplace
+  background-color: #ffffff
+  width: 100%
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+
+  .resource-container
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: end
+    -ms-flex-pack: end
+    justify-content: end
+    max-width: 800px
+    width: 100%
+
+  .header-stuff
+    width: 100%
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    margin: 55px 4.6rem 55px 4rem
+    color: #fff
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+
+  .title
+    font-family: 'Akshar', sans-serif;
+    weight: 500
+    font-size: 43px
+    text-transform: uppercase
+    letter-spacing: 0.4em
+    font-weight: 600
+    line-height: 45px
+
+  .marketplace-navigation
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    font-weight: 300
+    line-height: 30px
+    margin-right: 10px
+
+  a
+    font-size: 20px !important
+    text-decoration: none
+
+  .link-item
+    color: var(--color-on-primary)
+    font-size: 1.65rem
+
+  .active-link
+    color: var(--color-highlight)
+
+  .header-searchUrl
+    position: relative
+    margin-top: 0rem
+    border-radius: 14px
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    // margin-right: 60px
+    max-width: 694px
+    width: 100%
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+
+  input
+    -webkit-box-flex: 1
+    -ms-flex: 1
+    flex: 1
+    padding: 0.75rem 1rem
+    background-color: transparent
+    border-width: 1px
+    border-radius: 25px
+    border-color: #117DCC //var(--color-on-secondary) !important
+    font-size: 1.1rem
+    max-width: 100%
+    padding-right: 50px
+    border-style: solid
+
+    &:focus
+      outline: none
+
+  img
+    position: absolute
+    top: 50%
+    right: 17px
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+    max-width: 27.69px
+    width: 100%
+
+@media ( max-width: 1440px)
+  .header-marketplace
+    .header-stuff
+      .title
+        letter-spacing: 0.5em
+    .resource-container
+      max-width: 550px
+      .header-searchUrl
+        // margin-right: 25px
+        input
+          padding: 0.6rem 1rem
+        img#search_icon
+          max-width: 25px
+
+@media screen and (max-width: 1024px)
+  .header-marketplace
+    .resource-container
+      max-width: 200px
+      .header-searchUrl
+        input
+          display: none
+
+@media screen and (max-width: 960px)
+  .header-marketplace .header-stuff
+    margin: 35px 0 34px
+    padding: 0 35px
+
+@media screen and (max-width: 768px)
+  .header-marketplace .header-stuff
+    .title
+      letter-spacing: 0.25em
+
+    .resource-container
+      max-width: 100px
+
+      .header-searchUrl
+        // margin-right: 15px
+        max-width: 100%
+
+        input
+          display: none
+        img#search_icon
+          width: auto
+
+@media screen and (max-width: 480px)
+  .header-marketplace
+    .header-stuff
+      margin: 20px 0
+      .title
+        font-size: 22px
+      .resource-container
+        .marketplace-navigation
+          a.link-item
+            font-size: 16px !important
+        .header-searchUrl
+          img#search_icon
+            right: 0
+            max-width: 20px
+@media ( max-width: 390px)
+  .header-marketplace
+    .header-stuff
+      padding: 0 30px
+      margin: 10px 0
+      .title
+        font-size: 18px

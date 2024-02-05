@@ -1,0 +1,78 @@
+@import '../../../../_variables'
+
+.cards-wrapper
+    .title
+        color: var(--color-on-secondary)
+        margin: 0
+        font-size: 1.5625rem
+        padding-bottom: 0.5rem
+        position: relative
+
+        &:before
+            content: ''
+            display: block
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 50%
+            height: 1px
+            background-color: #000
+    .cardsAndCheckBox
+        position: relative
+        .cardsAndCheckBox
+                
+    
+    .cards
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 1.375rem
+        margin-top: 2rem
+
+        .empty-card
+            min-height: 77.5px
+            border-radius: 0.625rem
+            border: 1px dashed #117DCC
+            display: flex
+            align-items: center
+            justify-content: center
+            color: var(--color-on-secondary)
+            
+
+@media screen and ( max-width: $screen-medium)
+    .cards-wrapper
+        .title
+            &:before
+                width: 50%
+                
+        .cards
+            grid-template-columns: auto
+
+            .card
+                width: 100%
+                max-width: 100%
+                margin: 0 auto
+                justify-self: center
+                align-items: center
+
+            .empty-card
+                display: none 
+
+            
+@media ( max-width: $screen-small)      
+    .cards-wrapper
+        .title
+            font-size: 1.3625rem
+            padding-bottom: 0.25rem
+        .cards
+            grid-template-columns: auto
+
+            .card
+                margin: 0 auto
+                justify-self: center
+                align-items: center
+                
+            .empty-card
+                display: none 
+      
+                
+                

@@ -1,0 +1,76 @@
+.Investments
+    display: flex
+    justify-content: space-between
+    gap: 20px
+    .bubbleChart
+        width: 100%
+        max-width: 678px
+        display: flex
+        flex-wrap: wrap
+        gap: 40px
+        margin-left: 32px
+        .bubbleItem
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+
+    .investmentsDetail
+        width: 100%
+        max-width: 435px
+        box-sizing: border-box
+        padding: 36px
+        background-color: #09090A
+        border-radius: 20px
+        .investLabelCount
+            display: flex
+            justify-content: space-between
+            font-weight: 300
+            font-size: 32px
+            line-height: 100%
+            margin-top: 40px
+            &:first-child
+                margin: 0
+            .label
+                padding-left: 16px
+            .count
+
+@media (max-width:1300px)
+    .Investments
+        gap: 6px
+        .bubbleChart
+            max-width: 618px
+            gap: 12px
+            margin-left: 0
+        .investmentsDetail
+            height: fit-content
+            max-width: 275px
+            padding: 20px
+            .investLabelCount
+                font-size: 28px
+
+@media (max-width: 1035px)
+    .Investments 
+        .bubbleChart
+            justify-content: center
+            align-items: end
+            max-width: 430px
+
+@media (max-width: 768px)
+    .Investments 
+        flex-direction: column
+        align-items: center
+        gap: 42px
+        .bubbleChart
+            max-width: 100%
+            align-items: flex-start
+        .investmentsDetail
+            max-width: 435px
+
+@media (max-width: 480px)
+    .Investments 
+        .bubbleChart
+            align-items: end
+        .investmentsDetail 
+            .investLabelCount
+                font-size: 24px

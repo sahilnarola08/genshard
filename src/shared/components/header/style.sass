@@ -1,0 +1,639 @@
+@import '../../../_variables'
+
+.header
+    z-index: 101
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+    // background-color: var(--color-primary)
+    // height: $header-height
+    text-decoration: none
+    .mobile-view-homepage-header
+        display: none
+    .header-staking-live
+        background: var(--color-highlight)
+        height: 30%
+    .header__audit__available
+        background: #202227
+        height: 27px
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+
+    .header__audit__text
+        color: white
+
+    .header__audit__link
+        color: var(--color-highlight)
+        text-decoration: underline
+
+    .header__audit__info
+        height: 18px
+        margin-right: 5px
+
+    a
+        color: var(--color-on-primary)
+        text-decoration: none
+
+    .logo
+        font-size: 27.5px
+        letter-spacing: 0.75rem
+
+    .header__content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 70%
+        // height: $header-height
+        padding: 1rem 3rem
+        // max-width: 100rem
+        // margin: 0 auto
+        .select-chain-item
+            position: relative
+            padding-left: 15px
+            cursor: pointer
+            .select-chain
+                display: flex
+                align-items: center
+                margin: 0 2rem
+                .chain-p
+                    color: #ffffff
+                    margin: 0
+                    margin-right: 10px
+                .selected-chain-div
+                    display: flex
+                    background: #ffffff
+                    color: #000000
+                    border-radius: 40px
+                    width: 112px
+                    display: flex
+                    justify-content: space-evenly
+                    height: 30px
+                    align-items: center
+                    margin-right: 10px
+                    padding: 0 5px 0 4px
+                    p
+                        margin: 0
+                        width: 60%
+                        text-align: center
+                    img
+                        height: 20px
+                        width: 20px
+                        object-fit: contain
+
+                img
+                    height: 15px
+                    width: 15px
+                    cursor: pointer
+            .select-chain-dropdown
+                position: absolute
+                display: grid
+                border-radius: 10px
+                padding: 10px
+                top: 1.85rem
+                left: 60%
+                transform: translateX(-50%)
+                background: #414246
+        &.homepage-header
+            color: $primary-text-color
+            // background: $homepage-background
+            background: black
+            .gen-header-logo
+                text-align: center
+                display: flex
+                align-items: center
+                cursor: pointer
+                gap: 15.13px
+                h1
+                    letter-spacing: 0.1em
+                    color: $primary-text-color
+                    font-size: 40px
+                    white-space: nowrap
+            nav
+                display: flex
+                justify-content: end
+                width: 100%
+                align-items: center
+                height: 100%
+                a
+                    padding: 21px
+                    font-size: 1.2rem
+                    &:hover
+                        color: #54C4FC
+                .main-routes-selection
+                    display: flex
+                    box-sizing: border-box
+                    .route-list-item
+                    .add-to-cart-header-redirect
+                        position: relative
+                        padding: 15px 20px !important
+                        img
+                            width: 35px
+                        .items-badge
+                            position: absolute
+                            right: 16px
+                            top: 10px
+                            background: #41444e
+                            padding: 1px 7px
+                            font-size: 12px
+                            border-radius: 20px
+                            color: white
+
+                .others
+                    position: relative
+                    .other
+                        padding: 20px
+                        font-size: 1.2rem
+                        img
+                            margin-left: 5px
+                            width: 15px
+                    .others-route-dropdown
+                        position: absolute
+                        width: 600px
+                        height: 300px
+                        top: 80px
+                        right: 0
+                        background: #2d2d2ded
+                        border-radius: 12px
+                    ul
+                        display: flex
+                        flex-wrap: wrap
+                        list-style-type: none
+                        padding: 0
+                        margin: 0
+                        width: 300px
+                        height: 100%
+                        flex-direction: column
+                        li
+                            cursor: pointer
+                            width: 50%
+                            padding: 20px
+                            height: 25%
+                            box-sizing: border-box
+                            font-size: 1.2rem
+                            text-align: center
+                            border-radius: 12px
+                            &:hover
+                                background: #3a3a3a
+
+                .other-routes-selection
+                    text-align: end
+                    display: flex
+                    justify-content: end
+                    align-items: center
+                    .account-element
+                        width: 100%
+                        max-width: 208px
+
+                    .show-user-tier
+                        margin-right: 10px
+                        padding: 5px 10px
+                        border-radius: 12px
+                        min-width: 115px
+                        display: flex
+                        background: #efefef
+                        justify-content: center
+                        color: black
+                        align-items: center
+                        height: 30px
+                        position: relative
+                        &:hover
+                            .show-progress-bar
+                                visibility: visible !important
+                        .tier-color
+                            width: 20px
+                            height: 20px
+                            border-radius: 50%
+                            margin-right: 6px
+                        span
+                            font-weight: 500
+                            display: block
+                            font-size: 1.1rem
+                            margin-top: -4px
+                            width: 75px
+                        .show-progress-bar
+                            visibility: hidden
+                            position: absolute
+                            width: 250px
+                            top: 39px
+                            background: #2d2d2d
+                            padding: 16px 44px
+                            border-radius: 21px
+                            .progress-name
+                                display: flex
+                                justify-content: space-between
+                                color: white
+                            &:hover
+                                visibility: visible
+                            span
+                                color: #fff
+                    .others-route
+                        position: relative
+                        p
+                            margin: 0
+                            font-size: 1.2rem
+                            padding: 0px 40px
+                            display: flex
+                            align-items: center
+                            cursor: pointer
+                            span
+                                padding: 0px
+                                display: block
+                                transform: rotate(90deg)
+                                padding-bottom: 43px
+                                font-size: 1.6rem
+                                margin-top: 6px
+                            &:hover
+                                color: $primary-theme-color
+                        .others-route-dropdown
+                            position: absolute
+                            width: 600px
+                            height: 300px
+                            top: 80px
+                            right: 0
+                            background: #2d2d2ded
+                            border-radius: 12px
+                            ul
+                                display: flex
+                                flex-wrap: wrap
+                                list-style-type: none
+                                padding: 0
+                                margin: 0
+                                width: 100%
+                                height: 100%
+                                flex-direction: column
+                                li
+                                    cursor: pointer
+                                    width: 50%
+                                    padding: 20px
+                                    height: 25%
+                                    box-sizing: border-box
+                                    font-size: 1.2rem
+                                    text-align: center
+                                    border-radius: 12px
+                                    &:hover
+                                        background: #3a3a3a
+
+    .links
+        display: flex
+        align-items: center
+        .active-link
+            color: var(--color-highlight)
+
+        .link-item
+            font-size: 1.125rem
+            padding: 1rem
+            transition: color 0.3s ease-in-out
+
+            &:hover
+                color: var(--color-highlight)
+
+            &:not(:last-child)
+                margin-right: 2rem
+
+.rewards-dropdown
+    color: #ffffff
+    display: flex !important
+    align-items: center
+    margin-right: 3rem
+    position: relative
+    .reward-click-listener
+        display: flex !important
+        align-items: center
+        .link-item
+            cursor: pointer
+            margin-right: 0 !important
+            padding-right: 5px !important
+        img
+            cursor: pointer
+            width: 15px
+            margin-top: 5px
+    .rewards-dropdown-menu
+        position: absolute
+        display: grid
+        top: 60px
+        right: 0
+        width: 130px
+        background: #30333c
+        border-radius: 4px
+
+@media screen and ( max-width: $screen-large)
+    .header
+        .links
+            .link-item
+                &:not(:last-child)
+                    margin-right: 0
+            .account-element
+                box-sizing: border-box
+                padding: 1rem
+                margin-left: 0
+@media screen and ( max-width: 1610px)
+    .header
+        .header__content
+            .link-container
+                .links
+                    .link-item
+                        padding: 1rem 0.6rem
+                    .link-item, .rewards-dropdown
+                        margin-right: 0.9rem
+                    .select-chain-item
+                        .select-chain
+                            margin: 0 1rem
+                            .chain-p,.selected-chain-div
+                                margin-right: 5px
+                    .sc-jvfriV.bxzSQW
+                        margin-right: 8px !important
+        .logo
+            font-size: 20.5px
+            letter-spacing: 0.55rem
+@media screen and ( max-width: 1440px)
+    .header
+        .header__content
+            padding: 0 2rem
+            &.homepage-header
+                nav
+                    a
+                        padding: 13px
+@media screen and ( max-width: 1366px)
+    .header
+        .header__content
+            padding: 0 1.4rem
+            .logo
+                font-size: 1rem
+                letter-spacing: 0.5rem
+        .links
+            .link-item
+                padding: 0.5rem
+                font-size: 15rem
+
+@media screen and ( max-width: 1275px)
+    .header
+        .mobile-view-homepage-header
+            padding: 20px
+            box-sizing: border-box
+            display: flex
+            justify-content: space-between
+            width: 100%
+            align-items: center
+            height: 70%
+            position: relative
+            background: $homepage-background
+            .menu-item-header
+                position: absolute
+                top: 5.5rem
+                z-index: 999
+                color: #fff
+                background-color: #09090a
+                // min-width: 320px
+                right: 0
+                width: auto
+                border-radius: 0 0 0 12px
+                overflow: scroll
+                .menu-items
+                    height: 520px
+                    margin: 10px 10px 0px 10px
+                .other-routes-selection
+                    display: grid
+                    grid-template-columns: auto auto
+                    align-items: center
+                    gap: 16px
+                .select-chain-item
+                    position: relative
+                .select-chain
+                    display: flex
+                    align-items: center
+                    justify-content: end
+
+                    .chain-p
+                        color: #ffffff
+                        margin: 0
+                        margin-right: 10px
+                    .selected-chain-div
+                        display: flex
+                        background: #ffffff
+                        color: #000000
+                        border-radius: 40px
+                        width: 112px
+                        display: flex
+                        justify-content: space-evenly
+                        height: 30px
+                        align-items: center
+                        margin-right: 10px
+                        padding: 0 5px 0 4px
+
+                        p
+                            margin: 0
+                            width: 60%
+                            text-align: center
+                        img
+                            height: 20px
+                            width: 20px
+                            object-fit: contain
+
+                    img
+                        height: 15px
+                        width: 15px
+                        cursor: pointer
+                .select-chain-dropdown
+                    position: absolute
+                    display: grid
+                    border-radius: 10px
+                    padding: 10px
+                    top: 2.4rem
+                    left: 55%
+                    transform: translateX(-50%)
+                    background: #414246
+                    z-index: 1
+                .show-user-tier
+                    padding: 5px 10px
+                    border-radius: 12px
+                    min-width: 100px
+                    max-width: 150px
+                    display: flex
+                    background: #efefef
+                    justify-content: center
+                    color: black
+                    align-items: center
+                    height: 30px
+                    position: relative
+                    &:hover
+                        .show-progress-bar
+                            visibility: visible !important
+                            z-index: 2
+                    .tier-color
+                        width: 20px
+                        height: 20px
+                        border-radius: 50%
+                        margin-right: 6px
+                    span
+                        font-weight: 500
+                        display: block
+                        font-size: 1.1rem
+                        margin-top: -4px
+
+                    .show-progress-bar
+                        visibility: hidden
+                        position: absolute
+                        width: 250px
+                        top: 39px
+                        background: #2d2d2d
+                        padding: 16px 44px
+                        border-radius: 21px
+                        .progress-name
+                            display: flex
+                            justify-content: space-between
+                            color: white
+                            &:hover
+                                visibility: visible
+
+                ul
+                    display: grid
+                    grid-template-columns: auto auto
+                    list-style-type: none
+                    padding: 0
+                    margin: 0
+                    flex-wrap: wrap
+                    li,.route-list-item
+                        cursor: pointer
+                        padding: 18px
+                        box-sizing: border-box
+                        font-size: 1.2rem
+                        text-align: center
+                        border-radius: 12px
+                        position: relative
+                        .account-balance-menu, .select-chain
+                            padding: 1rem 2rem
+                        a
+                            padding: 1rem 2rem
+                            width: 100%
+                            cursor: pointer
+                        .sub-menu
+                            position: absolute
+                            left: 50%
+                            top: 100%
+                            background: #3a3a3a
+                            border-radius: 5px
+                            transform: translateX(-50%)
+                            grid-template-columns: auto
+                            z-index: 2
+                            width: 150px
+                            text-align: center
+                            align-items: center
+                            justify-content: center
+                            li
+                                padding: 10px
+                                font-size: 1rem
+
+            .gen-logo
+                a
+                    display: none
+            .menu-icon
+                img
+                    width: 35px
+                    height: 35px
+        .homepage-menu-dropdown
+            position: absolute
+            left: 0
+            top: 90px
+            width: 100%
+            height: 300px
+            background: #000000d6
+            color: white
+            ul
+                padding: 0
+                width: 100%
+                height: 100%
+                display: grid
+                justify-content: center
+                list-style-type: none
+                margin: 0
+                li
+                    display: flex
+                    align-items: center
+                    font-size: 1.2rem
+                    cursor: pointer
+                    border-bottom: 2px solid $primary-theme-color
+                    box-sizing: border-box
+                    width: 100px
+                    justify-content: center
+                    position: relative
+                    span
+                        position: absolute
+                        right: 5px
+                        display: block
+                        transform: rotate(90deg)
+                        font-size: 1.6rem
+                        margin-top: 5px
+                    &:last-child
+                        border: none
+                    &:hover
+                        color: $primary-theme-color
+
+        .header__content
+            display: none
+            .logo
+                font-size: 1rem
+                letter-spacing: 0.5rem
+        .links
+            .link-item
+                padding: 0.5rem
+                font-size: 1rem
+
+@media screen and ( max-width: 1024px)
+    .header
+        .header__content
+            padding: 0 2rem
+            .select-chain-item
+                .select-chain
+                nav
+                    a
+                        padding: 13px
+        .mobile-view-homepage-header
+            .menu-item-header
+                .menu-items
+                    height: 528px
+@media screen and ( max-width: 1024px)
+    .header
+        .header__content
+            padding: 0 2rem
+            .select-chain-item
+                .select-chain
+                nav
+                    a
+                        padding: 13px
+        .mobile-view-homepage-header
+            .menu-item-header
+                .menu-items
+                    height: 528px
+
+@media screen and ( max-width: 768px)
+    .header
+        .mobile-view-homepage-header
+            .menu-item-header
+                .menu-items
+                    height: 520px
+
+@media screen and ( max-width: 425px)
+    .header
+        .mobile-view-homepage-header
+            .menu-item-header
+                width: 100%
+                border-radius: 0 0 12px 12px
+                ul
+                    width: 100%
+                    li
+
+    .header .mobile-view-homepage-header .menu-item-header .show-user-tier .show-progress-bar
+        left: 0px
+@media screen and ( max-width: 375px)
+    .header
+        .mobile-view-homepage-header
+            .menu-item-header
+                .menu-items
+                .other-routes-selection
+                    gap: 5px 0px
+                    .feHwXo
+                        width: auto !important
+                        justify-content: center !important

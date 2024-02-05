@@ -1,0 +1,97 @@
+.access-pool-redirect
+    width: 100%
+    .access-pool-item
+        width: 100%
+        background: #117DCC
+        color: #ffffff
+        display: flex
+        align-items: center
+        justify-content: space-evenly
+        border-radius: 40px
+        height: 80px
+        padding: 0 10px
+        box-sizing: border-box
+        .image-div
+            width: 60px
+            height: 60px
+            display: flex
+            padding: 0 10px
+            img
+                max-width: 100%
+                max-height: 100%
+        .heading
+            h2
+                letter-spacing: 8px
+                font-weight: 600
+                font-size: 1.3rem
+        .access-text
+            span
+                font-size: 1.3rem
+        .stake-button
+            button
+                width: 120px
+                background: #fff
+                color: #000
+                border: none
+                outline: none
+                border-radius: 20px
+                height: 40px
+                font-size: 1.2rem
+                font-weight: 500
+                cursor: pointer
+@media ( max-width: 1256px )
+    .access-pool-redirect
+        margin-top: 20px
+        .access-pool-item
+            padding: 0
+            .stake-button
+                .gen-button
+                    margin-right: 10px
+
+@media ( max-width: 991px )
+    .access-pool-redirect 
+        .access-pool-item 
+            .image-div
+                padding: 0
+            .access-text 
+                span
+                    font-size: 1rem
+            .heading 
+                h2
+                    letter-spacing: 6px
+
+@media ( max-width: 768px )
+    .access-pool-redirect 
+        .access-pool-item 
+            .image-div
+                padding: 0 10px
+                
+@media ( max-width: 570px )
+    .access-pool-redirect
+        .access-pool-item
+            .heading
+                h2
+                    font-size: 1rem
+                    letter-spacing: 4px
+            .access-text span
+                font-size: 1rem
+            .stake-button
+                button
+                    width: 80px
+                    font-size: 1rem
+                    margin-right: 10px
+
+@media ( max-width: 480px )
+    .access-pool-redirect 
+        .access-pool-item 
+            .image-div
+                padding: 0 5px 0 0
+            .heading h2
+                font-size: 0.8em
+            .stake-button
+                .gen-button 
+                    font-size: 0.8em
+                    width: 60px
+                    margin-right: 8px
+            .access-text span
+                font-size: 0.8rem

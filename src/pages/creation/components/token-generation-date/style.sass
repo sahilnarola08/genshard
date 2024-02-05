@@ -1,0 +1,179 @@
+@import '../../../../_variables'
+
+.token-date-deposit
+    max-width: 595px
+    margin: 0.6rem auto 0 
+
+    .token-date 
+        display: grid
+        grid-template-columns: 10fr 2fr
+        
+        .token-date__picker
+            height: 2.9375rem
+            box-sizing: border-box
+            display: grid
+            grid-template-columns: 3.2fr 5fr
+            justify-content: space-between
+            margin: auto 0
+            border: 1px solid var(--color-border-200)
+            margin-right: 1rem
+            padding: 0.2rem 2rem
+            border-radius: 0.625rem 
+
+        .token-date--title
+            font:
+                size: 1.25rem
+                weight: 300
+            margin: auto 0
+            color: var(--color-on-secondary)
+
+        .token-date__btn
+            font-size: 15px 
+            text-transform: uppercase
+
+    .token-note
+        display: grid
+        grid-template-columns: 10fr 2fr
+        margin-top: 5px
+
+        .token-note__text
+            font:
+                size: 0.75rem
+                weight: 500
+            color: var(--color-on-secondary)
+            text-align: center
+        
+.token-date-deposit-display
+    opacity: 1
+.token-date-deposit-none
+    opacity: 0.3
+    pointer-events: none
+        
+
+.react-datetime-picker
+    margin: 2px 0 auto auto 
+    display: block
+    align-items: center
+
+.react-datetime-picker__wrapper
+    border: none !important
+  
+.react-datetime-picker__button
+    display:none !important
+
+.react-datetime-picker__inputGroup
+    .react-datetime-picker__inputGroup__input 
+        border: none
+        border-bottom: 1px solid var(--color-border-100)
+        background-color: Transparent
+        text-align: center
+        color: var(--color-on-primary)
+        font-size: 1.25rem
+        padding: 0
+        min-width: 2rem
+        margin-right: 5px
+
+        &:focus
+            outline: none
+            background-color: Transparent
+
+        &:last-child
+            margin-right: 0
+
+    .react-datetime-picker__inputGroup__leadingZero
+        margin-right: -6px
+        margin-left: 6px
+    
+    .react-datetime-picker__inputGroup__input--hasLeadingZero
+        // margin-left: -1rem
+        padding-left: calc(1px + 10px)
+        box-sizing: border-box
+
+    .react-datetime-picker__inputGroup__divider
+        font-size: 2rem
+        line-height: 0
+        color: var(--color-border-100)
+        vertical-align: middle
+        margin-right: 2px
+
+    .react-datetime-picker__inputGroup__leadingZero
+        color: var(--color-on-primary)
+        font-size: 1.25rem
+
+.react-datetime-picker__calendar
+    height: unset !important
+    z-index: 101 !important
+
+.react-datetime-picker__clock
+    display: none
+
+.react-calendar__tile--active
+    background: var(--color-highlight) !important
+
+.react-calendar__tile--now
+    background: var(--color-current-day) !important
+
+.deposit-gen-ticket-btn
+    display: block
+    width: 100%
+    height: 2.9375rem
+    margin-top: 1.5rem
+
+@media screen and ( max-width: $screen-medium) 
+    .token-date-deposit
+        max-width: 380px
+
+        .token-date 
+            display: grid 
+            grid-template-columns: 1fr
+            .token-date__picker
+                grid-template-columns: 1fr
+                height: 5.9375rem
+                margin-right: 0
+            .token-date__btn
+                margin: 0.75rem 0 0.25rem 0
+        & > button
+            font-size: 0.75rem
+
+    .react-datetime-picker
+        margin: 0 auto
+
+@media screen and  ( max-width: $screen-small) 
+    .token-date-deposit
+        max-width: 300px
+
+        .token-date 
+            .token-date--title
+                font:
+                    size: 0.75rem
+                    weight: 300
+
+            .token-date__btn
+                font-size: 0.75rem 
+                text-transform: uppercase
+                padding: 0.3125rem 0.7125rem
+
+            .token-date__picker
+                grid-template-columns: 1fr
+                height: 5rem
+        .token-note
+            grid-template-columns: 1fr
+            &__text
+                font-size: 0.65rem !important
+        
+    .react-datetime-picker
+        margin: 0 auto
+
+    .react-datetime-picker__inputGroup
+        .react-datetime-picker__inputGroup__input 
+            font-size: 1rem
+            
+        .react-datetime-picker__inputGroup__leadingZero
+            color: var(--color-on-primary)
+            font-size: 1rem
+
+        .react-datetime-picker__inputGroup__leadingZero
+            margin-right: -9px
+            
+    .deposit-gen-ticket-btn
+        font-size: 0.7rem !important

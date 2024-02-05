@@ -1,0 +1,118 @@
+.cards-container
+    display: grid
+    grid-gap: 50px
+    width: 100%
+
+.live-upcoming
+    display: grid
+    grid-template-columns: 2fr 4fr
+    margin: 0 4rem 3rem
+    grid-gap: 6rem
+    max-width: calc(1628px - 8rem)
+    width: 100%
+
+.loading-icon
+    width: 70px
+
+.loading-wrapper
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+.non-available
+    width: 100%
+    color: black
+    font-size: 1.4rem
+
+@media (max-width:1200px)
+    .live-upcoming
+        grid-gap: 0
+        .landing-card-container
+            .landing-card-red-border
+                padding-left: 40px
+                .card-data-container
+                    .bg-image-mobile ~ .mini-header
+                        text-align: left
+                    .title
+                        font-size: 2.1rem
+
+@media (max-width:991px)
+    .live-upcoming
+        grid-template-columns: 1fr
+        .cards-container
+            .access-pool-redirect
+                .access-pool-item
+                    box-sizing: border-box
+            .landing-card-container
+                .landing-card-red-border
+                    .card-data-container
+                        .title ~ .bg-image-mobile
+                            display: none
+        .sidebar-liveup
+            .live-up
+                .list-container
+                    flex-wrap: wrap
+                    justify-content: center
+                .list-item
+                    margin: 0 0.7rem 0 0 
+                    &::after
+                        color: #FFF !important
+                        content: "|"
+                        margin-left: 0.7rem
+                    &:last-child::after
+                        display: none
+
+@media (max-width:768px)
+    .live-upcoming
+        .cards-container
+            .landing-card-container
+                box-sizing: border-box
+                padding: 6px
+                .landing-card-red-border
+                    .card-data-container
+                        .title
+                            font-size: 1.9rem
+@media (max-width:570px)
+    .live-upcoming
+        margin: 0 1rem 3rem
+        .cards-container
+            margin-top: 20px
+            .landing-card-container
+                max-height: 100% !important
+                .landing-card-badge
+                    width: 36px
+                    height: 36px
+                    margin: -8px 0 0 -8px 
+                    font-size: 16px
+                .landing-card-red-border
+                    display: block
+                    padding: 26.33px
+                    .bg-image
+                        display: none
+                    .bg-image ~ div
+                        flex-direction: column
+                        .individual-split
+                            width: 100%
+                            .mini-header
+                                text-align: center
+                                margin-top: 8px !important
+                    .card-data-container
+                        .title ~ .mini-header
+                            text-align: center
+                        .mini-header
+                            font-size: 1em
+                        .title
+                            text-align: center
+                        .title ~ .bg-image-mobile
+                            display: block
+        .sidebar-liveup
+            padding: 0 1rem
+            .live-up
+                .list-container
+                    .list-item
+                        margin: 0 5px
+                        font-size: 15px
+            .footer
+                flex-direction: column

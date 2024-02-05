@@ -1,0 +1,433 @@
+.main_content
+  margin: 0 auto
+  width: 100%
+
+  input
+    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+      -webkit-appearance: none
+      margin: 0
+
+    &[type=number]
+      -moz-appearance: textfield
+
+  .hero_wrapper
+    margin: 20px 65px 0
+
+    .nav
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-between
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      -ms-flex-wrap: wrap
+      flex-wrap: wrap
+      padding: 0 30px
+
+      .title
+        font-size: 18.9867px
+        line-height: 28px
+        color: black
+
+      .filter_icon
+        display: none
+
+      .sort
+        max-width: 201px
+        width: 100%
+
+        .select_selling
+          position: relative
+
+          // &::before
+          //   content: 'Sort by'
+          //   position: absolute
+          //   left: 13px
+          //   top: 50%
+          //   color: #616161
+          //   font-size: 18px
+          //   font-family: Oswald
+          //   -webkit-transform: translate(0, -50%)
+          //   -ms-transform: translate(0, -50%)
+          //   transform: translate(0, -50%)
+
+    .garen_wraper
+      width: 100%
+      margin: 0 auto 25px
+      font-size: 24px
+      line-height: 30px
+      vertical-align: middle
+      .infinite-scroll-component
+        flex-wrap: wrap
+      .no-data-found
+        font-size: 24px
+        line-height: 30px
+        margin-top: 150px
+      .garen
+        width: 100%
+        max-width: 208px
+        margin: 0 auto
+        border: 1px solid white
+        position: relative
+        display: block
+        overflow: hidden
+        text-decoration: none
+        &:hover
+          -webkit-box-shadow: 0 0 25px #ff0071
+          box-shadow: 0 0 25px #117DCC
+          cursor: pointer
+          transition: all 0.4s ease-in-out
+          .garen_img
+            overflow: hidden
+            img,video
+              transform: scale(1.12)
+              transition: all 0.4s ease-in-out
+          .nft-item-add-to-cart
+            height: 44px
+            transition-property: height
+            transition-duration: .3s
+        .nft-item-add-to-cart
+          position: absolute
+          display: flex
+          bottom: 0px
+          min-width: 100%
+          height: 0px
+          font-size: 18px
+          justify-content: center
+          background: #53b5c7
+          color: white
+          z-index: 2
+          cursor: pointer
+          transition-property: height
+          transition-duration: .5s
+          button
+            width: 100%
+            height: 100%
+            border: none
+            background: inherit
+            color: inherit
+            font-size: inherit
+        
+        .garen_img
+          display: flex
+          height: 210px
+          max-width: 214px
+          margin: 0 auto
+          position: relative
+
+          img
+            width: 100%
+            max-width: inherit
+            display: flex
+            box-sizing: border-box
+            // object-fit: contain;
+
+        .heart
+          display: -webkit-box
+          display: -ms-flexbox
+          display: flex
+          position: absolute
+          max-width: 45px
+          height: 25px
+          width: 100%
+          top: 8px
+          right: 8px
+          background: #FBFCFE
+          border-radius: 30px
+          -webkit-box-align: center
+          -ms-flex-align: center
+          align-items: center
+          -webkit-box-pack: space-evenly
+          -ms-flex-pack: space-evenly
+          justify-content: space-evenly
+          font-style: normal
+          font-weight: 300
+          font-size: 11.75px
+          line-height: 17.41px
+          color: #000000
+          padding-top: 2px
+
+          .heart_img
+            height: 14.49px
+            width: 100%
+            max-width: 16px
+            position: relative
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+
+            img
+              width: 100%
+
+          .heart_text
+            font-weight: 300
+            font-size: 11.75px
+            line-height: 17.41px
+
+        .silver_section
+          background: #EDF7FF
+          padding: 0px
+
+          .silver_lake
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+            -webkit-box-pack: justify
+            -ms-flex-pack: justify
+            justify-content: space-between
+            padding: 0 10px
+            max-height: 55px
+            height: 55px
+
+            .lake
+              font-family: 'Oswald'
+              font-style: normal
+              font-weight: 300
+              font-size: 10.7913px
+              // line-height: 0
+              color: #16161C
+              // margin-bottom: 0
+              margin-top: 17px
+
+            .price
+              font-family: 'Oswald'
+              font-style: normal
+              font-weight: 300
+              font-size: 9.71219px
+              line-height: 14px
+              text-align: left
+              color: #16161C
+              display: -webkit-box
+              display: -ms-flexbox
+              display: flex
+              -webkit-box-orient: vertical
+              -webkit-box-direction: normal
+              -ms-flex-flow: column
+              flex-flow: column
+              margin: 9px 5px 0 0
+
+              span
+                font-weight: 700
+
+          .eden
+            // display: -webkit-box
+            // display: -ms-flexbox
+            // display: flex
+            -webkit-box-pack: justify
+            -ms-flex-pack: justify
+            // justify-content: space-between
+            // padding: 0 0 16px 0
+            align-items: center
+
+            .eden_text
+              font-family: 'Oswald'
+              font-style: normal
+              font-weight: 200
+              font-size: 25.4545px
+              margin: 0px 10px 0px 10px
+              line-height: 50px
+              color: #181818
+              text-overflow: ellipsis
+              -webkit-line-clamp: 1
+              overflow: hidden
+              display: -webkit-box
+              -webkit-box-orient: vertical
+
+            button
+              font-family: 'Oswald'
+              width: 47px
+              font-size: 7.36px
+              height: 16px
+              line-height: 11px
+              margin: 0 16px 0 0
+              padding: -2px
+              background: #010101
+              border: 0.414555px solid #117DCC
+              -webkit-box-sizing: border-box
+              box-sizing: border-box
+              border-radius: 8.35298px
+              color: #FFFFFF
+
+          
+
+  #best_selling
+    max-width: 100%
+    text-align: center
+    color: Black
+    // padding-right: 38px
+    padding: 0px
+
+  .currency
+    outline: none
+    max-width: 201px
+    height: 36px
+    width: 100%
+    border: 1px solid #117DCC
+    border-radius: 10px
+    background: transparent
+    font-weight: 300
+    font-size: 18px
+    line-height: 27px
+    text-align: center
+    color: #FFFFFF
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    margin: 7px auto
+    font-family: 'Oswald'
+    padding: 0px 65px
+
+  select option
+    color: #fff
+    background-color: #000
+
+    &:first-child
+      font-size: 0
+
+  .dropdown_arrow
+    position: absolute
+    width: 15px
+    right: 13px
+    top: 50%
+    -webkit-transform: translate(0, -50%)
+    -ms-transform: translate(0, -50%)
+    transform: translate(0, -50%)
+
+@media (max-width: 1705px)
+  .main_content
+    .hero_wrapper
+      .nav
+        padding: 0 30px
+
+@media (max-width: 1440px)
+  .main_content
+    .hero_wrapper
+      .nav
+        padding: 0 16px
+
+@media (max-width: 1024px)
+  .main_content
+    max-width: 60%
+
+    .hero_wrapper
+      margin: 0
+
+      .nav
+        padding: 15px 16px 0
+        .sort
+          max-width: 188px
+
+      .garen_wraper
+        .garen
+          max-width: 207px
+          width: 100%
+          position: relative
+          background: #fff
+          margin: 0 auto
+          padding: 0
+
+@media (max-width: 768px)
+  .main_content
+    max-width: 100%
+    margin: 0
+
+    .hero_wrapper
+      .nav
+        padding: 15px 30px 0
+
+      .title
+        display: none
+
+      .filter_icon
+        display: -webkit-box !important
+        display: -ms-flexbox !important
+        display: flex !important
+        color: #fff
+        font-size: 16px
+        font-weight: 300
+        line-height: 22px
+        letter-spacing: 1em
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+
+        img
+          width: 18px
+          height: 13px
+
+      .garen_wraper
+        .garen
+          max-width: 185px
+          margin: 0 auto
+          .silver_section
+            padding: 0 15px
+            .eden
+              padding: 0
+              align-items: center
+              .eden_text
+                padding-top: 5px
+                font-size: 20px
+                line-height: 30px
+                margin: 0
+              button
+                margin: 0
+            .silver_lake
+              padding: 0px 0px 10px 0px
+              max-height: 48px
+              height: 48px
+              align-items: flex-end
+              .lake
+                font-size: 10px
+                line-height: 15px
+                margin: 0
+              .price
+                span
+                  font-size: 15px
+          .garen_img
+            height: 150px
+
+@media (max-width: 480px)
+  .main_content
+    .hero_wrapper
+      .filter_icon
+        letter-spacing: 0.5em
+      .garen_wraper
+        .garen
+          max-width: 160px
+          .silver_section
+            padding: 0 8px 4px
+            .eden
+              .eden_text
+                font-size: 18px
+                line-height: 24px
+            .silver_lake
+              .lake
+                font-size: 8px
+                line-height: 12px
+              .price
+                span
+                  font-size: 10px
+
+@media (max-width: 390px)
+  .main_content
+    .hero_wrapper
+      .nav
+        padding: 15px
+        .sort
+          max-width: 170px
+      .filter_icon
+        letter-spacing: 0.4em
+      .sort
+        .select_selling
+          .currency
+            font-size: 14px
+            line-height: 24px
+      .garen_wraper
+        .garen
+          max-width: 128px
+          .heart
+            .heart_text
+              font-size: 9px

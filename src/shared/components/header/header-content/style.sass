@@ -1,0 +1,89 @@
+.mobile-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 70%
+        // height: $header-height
+    padding: 0 2rem
+    max-width: 90rem
+    margin: 0 auto
+    position: relative
+    .menu-item-header
+        position: absolute
+        top: 5.5rem
+        z-index: 999
+        background: #000000
+        min-width: 320px
+        right: 0
+        overflow: auto
+        width: auto
+        min-height: calc(100vh - 8rem)
+        ul
+            list-style-type: none
+            padding: 0
+            margin: 0
+            li
+                text-align: end
+                display: flex
+                justify-content: end
+                align-items: center
+                padding: 0
+                .account-balance-menu, .select-chain
+                    padding: 1rem 2rem
+                a
+                    padding: 1rem 2rem
+                    width: 100%
+                    cursor: pointer
+            .select-chain-item
+                position: relative
+                cursor: pointer
+                .select-chain
+                    display: flex
+                    align-items: center
+                    .chain-p
+                        color: #ffffff
+                        margin: 0
+                        margin-right: 10px
+                    .selected-chain-div
+                        display: flex
+                        background: #ffffff
+                        color: #000000
+                        border-radius: 40px
+                        width: 100px
+                        display: flex
+                        justify-content: space-evenly
+                        height: 30px
+                        align-items: center
+                        margin-right: 10px
+                        padding: 0 4px
+                        p
+                            margin: 0
+                        img
+                            height: 20px
+                            width: 20px
+                    img
+                        height: 15px
+                        width: 15px
+                        cursor: pointer
+                .select-chain-dropdown
+                    position: absolute
+                    display: grid
+                    border-radius: 10px
+                    padding: 10px
+                    top: 1rem
+                    right: 1rem
+                    background: #414246
+
+@media screen and ( min-width:  1025px)
+    .mobile-header
+        display: none !important
+
+@media screen and ( max-width:  360px)
+    .mobile-header
+        .menu-item-header
+            min-width: 280px
+        .logo
+            a.logo__link
+                font-size: 24px
+                letter-spacing: 0.4rem
+                line-height: normal

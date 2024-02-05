@@ -1,0 +1,680 @@
+.profileSide
+  width: 100%
+
+  .mainProfile
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    margin: 61px 42px 42px
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+    .profileImageAndSidebar
+      .profilePic
+        max-width: 277px
+        width: 100%
+
+        img
+          width: 100%
+
+      .myItemsSide
+        display: none
+
+    .profileDetail
+      max-width: 70%
+      padding: 0 0 0 38px
+
+      h3
+        font-size: 30px
+        font-weight: 300
+        line-height: 44px
+        letter-spacing: 1em
+        margin: 0 0 0 3px
+        color: #000000
+
+      #orofileSubText
+        margin: 23px 0 0 0
+        max-width: 351px
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-between
+        position: relative
+
+        span
+          padding-right: 10px
+          font-size: 26px
+          font-weight: 200
+          line-height: 41px
+          color: #717171
+
+        img
+          cursor: pointer
+
+      #profileWebsite
+        font-size: 28px
+        font-weight: 200
+        line-height: 41px
+        color: #aeaeae
+        margin: 23px 0 0 0
+
+    .accounts
+      display: none
+
+  .card-container
+    padding: 0 40px
+
+    .collectionSearchAndSelling
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-between
+      -ms-flex-wrap: wrap
+      flex-wrap: wrap
+
+      .searchInput
+        position: relative
+        max-width: 443px
+        width: 100%
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        height: 36px
+        margin: 0 5px 5px 0
+
+        input
+          width: 100%
+          font-size: 14px
+          font-weight: 200
+          line-height: 21px
+          border: 1px solid #117DCC
+          border-radius: 10px
+          background-color: transparent
+          outline: none
+          padding: 0 40px 0 10px
+
+        img
+          max-width: 15.87px
+          width: 100%
+          position: absolute
+          top: 50%
+          right: 10px
+          -webkit-transform: translateY(-50%)
+          -ms-transform: translateY(-50%)
+          transform: translateY(-50%)
+
+      .sortAndFilter
+        display: block
+        width: 100%
+        max-width: 201px
+
+        .filter_icon
+          display: none
+
+        .sort
+          width: 100%
+          max-width: 201px
+          margin: 0 5px 5px 0
+
+        .select_selling
+          position: relative
+
+          &::after
+            background-image: url("../../../../../images/marketplace/downArrow.svg")
+            background-size: contain
+            background-repeat: no-repeat
+            position: absolute
+            content: ""
+            width: 12px
+            height: 7px
+            right: 14px
+            top: 50%
+            -webkit-transform: translateY(-50%)
+            -ms-transform: translateY(-50%)
+            transform: translateY(-50%)
+
+          // &::before
+          //   content: "Sort by"
+          //   position: absolute
+          //   left: 13px
+          //   top: 50%
+          //   -webkit-transform: translateY(-50%)
+          //   -ms-transform: translateY(-50%)
+          //   transform: translateY(-50%)
+          //   color: #616161
+          //   font-size: 17.2px
+          //   font-family: Oswald
+        
+
+        .currency
+          width: 100%
+          height: 36px
+          text-align: center
+          // padding-left: 30px
+          border: 1px solid #117DCC
+          border-radius: 10px
+          background: transparent
+          font-weight: 300
+          font-size: 18px
+          line-height: 27px
+          outline: none
+          color: black
+          -webkit-appearance: none
+          -moz-appearance: none
+          appearance: none
+
+          option
+            color: black
+
+            &:first-child
+              font-size: 0
+
+    .garenCards
+      margin-top: 69px
+      width: 100%
+      margin: 0 auto
+      .no-data-found
+        font-size: 24px
+        line-height: 30px
+        margin-top: 150px
+
+      .garen
+        width: 100%
+        max-width: 208px
+        margin: 0 auto
+        border: 1px solid white
+        overflow: hidden
+        &:hover
+          -webkit-box-shadow: 0 0 25px #ff0071
+          box-shadow: 0 0 25px #117DCC
+          cursor: pointer
+          transition: all 0.4s ease-in-out
+          .garen_img
+            overflow: hidden
+            img,video
+              transform: scale(1.12)
+              transition: all 0.4s ease-in-out
+        .garen_img
+          max-width: 208px
+          height: auto
+          position: relative
+          display: flex
+          height: 215px
+
+          img
+            // object-fit: contain
+            background-color: #ffffff
+            width: 100%
+            max-width: inherit
+
+        &:hover
+          -webkit-box-shadow: 0 0 25px #117DCC
+          box-shadow: 0 0 25px #117DCC
+          cursor: pointer
+
+      .heart
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        position: absolute
+        max-width: 54px
+        height: 25px
+        width: 100%
+        top: 14px
+        right: 13px
+        background: #fbfcfe
+        border-radius: 15px
+        -webkit-box-pack: space-evenly
+        -ms-flex-pack: space-evenly
+        justify-content: space-evenly
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        border-style: solid
+        border-width: thin
+
+        .heartNum
+          font-family: "Oswald"
+          font-style: normal
+          font-weight: 300
+          font-size: 12px
+          line-height: 17px
+          text-align: right
+          color: #000000
+
+        .heart_img
+          max-width: 16px
+          width: 100%
+          height: 14.64px
+          display: -webkit-box
+          display: -ms-flexbox
+          display: flex
+
+          img
+            height: 14.49px
+            width: 100%
+
+      .silver_section
+        background: #ffffff
+        padding: 10px
+
+        .silver_lake
+          display: -webkit-box
+          display: -ms-flexbox
+          display: flex
+          -webkit-box-pack: justify
+          -ms-flex-pack: justify
+          justify-content: space-between
+
+          .lake
+            font-family: "Oswald"
+            font-style: normal
+            font-weight: 300
+            font-size: 10.7913px
+            line-height: 16px
+            color: #16161c
+
+          .price
+            margin: 0
+            width: 100%
+            max-width: 28px
+            font-size: 9.71px
+            line-height: 14px
+            text-align: right
+            font-weight: 300
+            span
+              font-weight: 700
+
+      .eden
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-between
+        -webkit-box-align: baseline
+        -ms-flex-align: baseline
+        align-items: center
+
+        .eden_text
+          font-family: "Oswald"
+          font-style: normal
+          font-weight: 200
+          font-size: 25.4545px
+          line-height: 38px
+          color: #181818
+          margin: 0
+          text-overflow: ellipsis
+          -webkit-line-clamp: 1
+          overflow: hidden
+          display: -webkit-box
+          -webkit-box-orient: vertical
+
+        .edenHide
+          font-size: 10px
+          margin: 0
+          display: -webkit-box
+          display: -ms-flexbox
+          display: flex
+          -webkit-box-align: center
+          -ms-flex-align: center
+          align-items: center
+
+          img
+            padding: 1px 3px 0 0
+    .cardPagination
+      width: 100%
+      text-align: center
+      .pageButtons
+        color: #FFF
+        margin: 80px 0
+        .changeButton
+          border: 1px solid #FF0071
+          border-radius: 25px
+          padding: 4px 13px
+          margin: 5px 5px
+          background-color: transparent
+          color: #FFFFFF
+        .pageNum
+          line-height: 42px
+          span
+            margin: 10px
+          span:first-child
+            border: 1px solid #FF0071
+            padding: 4px 13px
+            border-radius: 10px
+
+@media screen and (max-width: 1439px)
+  .profileSide
+    .mainProfile
+      .profileDetail
+        #orofileSubText
+          span
+            font-size: 18px
+
+@media screen and (max-width: 1250px)
+  .profileSide
+    .mainProfile
+      .profileDetail
+        #orofileSubText
+          span
+            font-size: 17px
+
+@media screen and (max-width: 1124px)
+  .profileSide
+    max-width: 60%
+
+    .mainProfile
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+
+      .profilePic
+        max-width: 35%
+
+      .profileDetail
+        max-width: 65%
+        padding: 0 15px 0 15px
+
+        h3
+          letter-spacing: 0.5em
+
+        p#orofileSubText
+          margin-top: 15px
+
+          span
+            font-size: 17px
+
+          img
+            max-width: 20px
+
+        #profileWebsite
+          margin-top: 10px
+
+    .card-container
+      padding: 0
+
+      .collectionSearchAndSelling
+        padding: 20px
+
+        .searchInput
+          margin: 0 0 5px 0
+
+      .garenCards
+        padding-bottom: 0
+        padding-top: 10px
+
+@media ( max-width: 768px)
+  .profileSide
+    max-width: 100%
+
+    .mainProfile
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
+      flex-direction: column
+      margin: 30px 20px 0
+
+      .profileImageAndSidebar
+        width: 100%
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: space-evenly
+        -ms-flex-pack: space-evenly
+        justify-content: space-evenly
+        align-items: center
+
+        .profilePic
+          padding: 0 15px
+
+        .myItemsSide
+          display: none
+          color: #fff
+
+          .myItems
+            h3
+              font-size: 19px
+              font-weight: 300
+              line-height: 28px
+              letter-spacing: 0.8em
+              cursor: pointer
+              margin: 0
+
+            hr
+              border-bottom: 1px solid #ff0071
+              max-width: 302px
+              margin: 15px 0 0 0
+              border-color: #ff0071
+
+            .nameAndCount
+              font-size: 18px
+              font-weight: 300
+              line-height: 27px
+              letter-spacing: 0.33em
+              margin: 15px 0 0 0
+              cursor: pointer
+              display: -webkit-box
+              display: -ms-flexbox
+              display: flex
+              -webkit-box-pack: justify
+              -ms-flex-pack: justify
+              justify-content: space-between
+
+              .itemsName
+                padding: 0 15px
+                position: relative
+                border-left: 2px solid #ff0071
+
+                .itemsName::before
+                  content: ""
+                  position: absolute
+                  left: 0
+                  top: 50%
+                  width: 3px
+                  height: 18px
+                  background: #ff0071
+                  -webkit-transform: translateY(-50%)
+                  -ms-transform: translateY(-50%)
+                  transform: translateY(-50%)
+
+      .profileDetail
+        margin-top: 30px
+        width: 100%
+        max-width: 100%
+        padding: 0
+
+        h3
+          margin: 0
+          text-align: center
+          letter-spacing: 1em
+
+        p#orofileSubText
+          margin: 15px auto 0
+          -webkit-box-pack: center
+          -ms-flex-pack: center
+          justify-content: center
+
+          span
+            font-size: 28px
+
+          img
+            max-width: 26px
+
+        #profileWebsite
+          display: none
+
+      .accounts
+        margin: 30px 0 0 0
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        width: 100%
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-evenly
+
+        li
+          margin: 0 20px 0 0
+          list-style-type: none
+
+          .accountName
+            text-decoration: none
+            margin: 28px 0 0 0
+            font-weight: 200
+            font-size: 14px
+            letter-spacing: 0.3em
+            color: #fff
+            cursor: pointer
+
+          a.active-link
+            color: #ff0071
+
+    .card-container
+      .collectionSearchAndSelling
+        display: block
+        padding: 20px 30px
+
+        .sortAndFilter
+          display: -webkit-box
+          display: -ms-flexbox
+          display: flex
+          -webkit-box-pack: justify
+          -ms-flex-pack: justify
+          justify-content: space-between
+          max-width: 100%
+
+          .sort
+            margin: 0
+            width: 100%
+
+          .filter_icon
+            display: -webkit-box !important
+            display: -ms-flexbox !important
+            display: flex !important
+            color: #000
+            font-size: 16px
+            font-weight: 300
+            line-height: 22px
+            letter-spacing: 1em
+            -webkit-box-align: center
+            -ms-flex-align: center
+            align-items: center
+
+            img
+              width: 18px
+              height: 13px
+
+        .searchInput
+          max-width: 100%
+          margin-bottom: 15px
+
+      .garenCards
+        .garen
+          max-width: 210px
+      .cardPagination
+        display: none
+
+@media ( max-width: 570px)
+  .profileSide
+    .mainProfile
+      .profileDetail
+        p#orofileSubText
+          span
+            font-size: 18px
+
+@media ( max-width: 480px)
+  .profileSide
+    .mainProfile
+      .profileImageAndSidebar
+        .myItemsSide
+          .myItems
+            h3
+              font-size: 15px
+              line-height: 22px
+            .nameAndCount
+              font-size: 15px
+              line-height: 22px
+              .itemsName
+                padding: 0 20px
+      .accounts
+        justify-content: space-between
+        li
+          margin: 0 12px 0 0
+          .accountName
+            font-size: 11px
+            line-height: 16px
+            letter-spacing: 0.4em
+    .card-container
+      .collectionSearchAndSelling
+        .sortAndFilter
+          .sort
+          .filter_icon
+            letter-spacing: 0.4em
+      .garenCards
+        .garen
+          max-width: 160px
+          .garen_img
+            height: auto
+        .silver_section
+          .silver_lake
+            .lake
+              font-size: 9px
+              line-height: 12px
+              margin: 0
+        .eden
+          margin: 0
+          .eden_text
+            font-size: 17px
+            line-height: 26px
+
+@media ( max-width: 390px)
+  .profileSide
+    .mainProfile
+      .profileImageAndSidebar
+        .myItemsSide
+          .myItems
+            h3
+              font-size: 13px
+              line-height: 18px
+            .nameAndCount
+              font-size: 12px
+              line-height: 18px
+              .itemsName
+                padding: 0 10px
+      .profileDetail
+        h3
+          letter-spacing: 0.7em
+        p#orofileSubText
+          img
+            font-size: 22px !important
+          span
+            font-size: 14px
+      .accounts
+        li
+          .accountName
+            font-size: 10px
+            letter-spacing: 0.29em
+
+    .card-container
+      .collectionSearchAndSelling
+        padding: 20px
+        .sortAndFilter
+          .sort
+            max-width: 160px
+          .currency
+            font-size: 14px
+      .garenCards
+        .garen
+          // margin: 0 0 20px
+          max-width: 140px
+          .silver_section
+            padding: 10px

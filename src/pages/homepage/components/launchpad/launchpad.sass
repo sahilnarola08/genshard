@@ -1,0 +1,204 @@
+.new-hero-section
+    position: relative
+    z-index: 1
+    .filter-content
+        display: flex
+        align-items: center
+        width: 100%
+        .dropdown
+            // .dropdown-menu
+            //     left: 0
+            //     width: 100%
+            //     text-align: center
+            //     a
+            //         display: flex
+            //         justify-content: center
+            //         background: transparent
+            //         color: black !important
+            //         font-weight: 500 !important
+            //         &:hover
+            //             text-decoration: none
+            //             color: #FFFFFF !important
+            //             background-color: #54C4FC !important
+        .form-control
+            background: linear-gradient(180deg, #54C4FC 0%, #2479DF 100%)
+            border-radius: 11.093px
+            padding: 8px 20px !important
+            font-family: 'Space Grotesk'
+            font-style: normal
+            font-weight: 300 !important
+            font-size: 14px !important
+            line-height: 100% !important
+            color: #FFFFFF !important
+            align-items: center
+            text-decoration: none
+            width: auto
+            option
+                background: black
+                color: white
+                font-family: 'Space Grotesk'
+                font-style: normal
+                font-weight: 300 !important
+                font-size: 14px !important
+                margin: 10px
+        .filter-input
+            width: 100%
+            .filter-value
+                width: 100%
+                background: transparent !important
+                color: white
+                padding: 7px 20px !important
+                font-family: 'Space Grotesk'
+                font-style: normal
+                font-weight: 300 !important
+                font-size: 14px !important
+                line-height: 100% !important
+                color: #FFFFFF !important
+                border: 1px solid #FFFFFF
+                border-radius: 11.093px
+    .form-switch
+        .form-check-input
+            border: 1px solid #ffffff
+            background-color: #252525
+            width: 2.5em
+            height: 1.2em
+        .form-check-input:checked
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgb(21, 123, 190)'/%3e%3c/svg%3e")
+        .form-check-input
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgb(255, 255, 255)'/%3e%3c/svg%3e")
+
+    .check-input
+        p
+            color: white
+    &.launchpad
+        .many-more-logo-img
+            img
+                height: 114px
+                object-fit: cover
+        .Performance-sec
+            position: relative
+            z-index: 1
+.launchpad-btn-group
+    button
+        background: rgba(68, 68, 68, 0.25)
+        border: 1px solid #2F2F2F
+        border-radius: 10px
+        font-family: 'Space Grotesk'
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        line-height: 104.5%
+        text-align: center
+        color: #FFFFFF
+        // padding: 10px
+        width: 168px
+        height: 42px
+        &.active
+            background: linear-gradient(90.13deg, #54C4FC 2.19%, #2479DF 98.11%)
+            border-radius: 10px
+.platform-btn
+    padding: 5px 10px
+    background: rgba(68, 68, 68, 0.25)
+    border-radius: 18.3434px
+    color: #FFFFFF
+    width: fit-content
+    p
+        font-family: 'Space Grotesk'
+        font-style: normal
+        font-weight: 400
+        font-size: 10.1205px
+        line-height: 104.5%
+@media screen and (max-width: 1600px)
+    .new-hero-section.launchpad
+        .Performance-sec
+            h2
+                div
+
+                    font-size: 100px
+                    line-height: 104.5%
+                    margin-bottom: 10px
+                    margin-left: 20px
+
+@media screen and (max-width: 1200px)
+    .platform-btn
+        img
+            height: 20px
+    .launchpad-btn-group
+        button
+            font-size: 14px
+            width: 150px
+            height: 38px
+@media screen and (max-width: 992px)
+    .new-hero-section
+        &:first-child
+            &::after
+                content: ""
+                position: absolute
+                left: 0px
+                top: 50%
+                transform: translateY(-50%)
+                width: 100%
+                height: 150%
+                background-image: url(../../../../images/staking/staking-bg-img.svg)
+                background-size: contain
+                background-repeat: no-repeat
+                z-index: -1
+        .filter-content
+            .filter-input
+                width: 25%
+        .Performance-sec
+            .rocket-icon
+                height: 20px
+            .project-score-img
+                max-width: 300px
+        .section-heading
+            .inner-seciton
+                padding: 0 100px
+    .launchpad-btn-group
+        button
+            font-size: 12px
+            width: 140px
+            height: 35px
+@media screen and (max-width: 767px)
+    .new-hero-section
+        &::after
+            content: ""
+            position: absolute
+            left: 0px
+            top: 50%
+            transform: translateY(-50%)
+            width: 100%
+            height: 150%
+            background-image: url(../../../../images/staking/staking-bg-img.svg)
+            background-size: contain
+            background-repeat: no-repeat
+            z-index: -1
+        .form-switch
+            .form-check-input
+                width: 2em 
+                height: 1em 
+        .filter-content
+            .form-control
+                font-size: 10px !important
+            .filter-input
+                width: 100%
+                .filter-value
+                    font-size: 10px !important
+
+        .Performance-sec
+            .Over-new-2
+                font-size: 15px
+                line-height: 20px
+            .project-score-img
+                max-height: 70px
+            button
+                display: none
+        .section-heading
+            .inner-seciton
+                padding: 0px
+    .launchpad-btn-group
+        button
+            font-size: 10px
+            width: 120px
+            height: 32px
+

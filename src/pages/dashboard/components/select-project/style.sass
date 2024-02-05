@@ -1,0 +1,35 @@
+.type-selection-item
+    // width: 100px
+    display: flex
+    align-items: center
+    position: relative
+    margin-top: 10px
+    width: 155px
+    min-height: 42px
+    z-index: 2
+    .type-dropdown
+        position: absolute
+        color: #000
+        top: 0px
+        width: 110px
+        // height: 150px
+        border-bottom: 2px solid #000
+        z-index: 1
+        span
+            cursor: pointer
+            min-height: 42px
+            text-align: center
+            display: flex
+            align-items: center
+            justify-content: center
+            &:hover
+                color: #117DCC
+    .genesis-btn
+        border-bottom: 1px solid #000000;
+        padding: 0.3125rem 1.3125rem;
+        background-color: transparent;
+        color: #000000;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        box-sizing: border-box;
+        width: 100%;

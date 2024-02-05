@@ -1,0 +1,58 @@
+.filterForProjects
+    padding: 48px
+    width: 100%
+    max-width: 318px
+    box-sizing: border-box
+    border: 2px solid #292932
+    box-sizing: border-box
+    border-radius: 12px
+    height: fit-content
+    .projectTitle
+        font-weight: 500
+        font-size: 28px
+        line-height: 41px
+        letter-spacing: 0.02em
+    hr
+        margin-top: 16px
+        border-color: #117DCC
+        background-color: #117DCC
+    .allFiters
+        margin-top: 14px
+        .filterCheckCount
+            margin-top: 15px
+            display: flex
+            justify-content: space-between
+            font-weight: 500
+            .filterCheck
+                input
+                label
+                    font-size: 18px
+                    line-height: 27px
+            .count
+                color: #ff0071
+                font-size: 20px
+                line-height: 30px
+@media (max-width:992px)
+    .filterForProjects
+        padding: 24px
+        max-width: 200px
+
+@media (max-width:768px)
+    .filterForProjects
+        padding: 48px
+        max-width: 400px
+
+@media (max-width:480px)
+    .filterForProjects
+        padding: 24px
+        .projectTitle
+            font-size: 26px
+        .allFiters 
+            .filterCheckCount 
+                .filterCheck 
+                    label
+                        font-size: 16px
+                        line-height: 24px
+                .count
+                    font-size: 18px
+                    line-height: 26px

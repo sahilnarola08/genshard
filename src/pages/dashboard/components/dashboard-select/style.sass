@@ -1,0 +1,67 @@
+@import '../../../../_variables.sass'
+
+.dashboard-select__btn--container
+    margin-left: 35px
+
+.dashboard-select
+    display: flex
+    justify-content: space-between
+
+    .btn--select
+        margin-right: 1rem
+        min-width: 10.5rem
+        font-size: 1.125rem
+
+    .dashboard-select__title
+        font-size: 1.875rem
+        color: #000
+        text-transform: uppercase
+        letter-spacing: 0.3rem
+
+    .dashboard-select__line 
+        width: 100%
+        position: relative
+        margin-right: 1rem
+        // display: none
+
+    .dashboard-select__line > hr
+        position: absolute
+        width: 100%
+        border: 1px solid transparent
+        top: 30%
+@media ( max-width: 1023px )
+    .dashboard-select
+        -webkit-box-orient: vertical
+        -webkit-box-direction: normal
+        -ms-flex-direction: column
+        flex-direction: column
+        .gen-button.outline--highlight.btn--select
+            margin-top: 12px
+        .dashboard-select__btn--container
+            margin: 12px 0 35px 0
+            .sc-bBrOnJ
+                button
+                    width: 100%
+                    min-height: 32px !important
+        .btn--select
+            margin: 0
+
+@media screen and (max-width: $screen-large)
+    .dashboard-select
+        .btn--select
+            font-size: 1rem
+            min-width: 9rem
+
+        .dashboard-select__title
+            font-size: 1.5rem
+            letter-spacing: 0.2rem
+
+@media screen and (max-width: $screen-small)
+    .dashboard-select
+        .btn--select
+            font-size: 0.75rem
+            min-width: 7rem
+
+        .dashboard-select__title
+            font-size: 1.15rem
+            letter-spacing: 0.12rem

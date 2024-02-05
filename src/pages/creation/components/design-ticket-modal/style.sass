@@ -1,0 +1,41 @@
+@import '../../../../_variables.sass'
+.design-ticket
+    display: flex
+    justify-content: center
+
+    .base-modal__wrapper
+        display: flex
+        justify-content: center
+        color: var(--color-on-primary)
+
+    .modal-content
+        min-height: unset !important
+    
+    .modal-form,
+    .modal-form-item
+        margin-top: 1rem !important
+
+    input
+        border: 1px solid var(--color-on-secondary) !important
+        display: block
+        width: 100% !important
+        border-radius: 14px
+        height: 3rem
+        text-align: left !important
+        padding: 0 1rem
+        box-sizing: border-box
+
+
+@media ( max-width: $screen-small)      
+    .design-ticket
+        .modal-content
+        input 
+            height: 2.5rem
+            font-size: 0.8rem
+        .modal-form
+            .modal-form-btn
+                margin-top: 1rem
+                & > .btn-done
+                    font-size: 0.8rem
+
+                

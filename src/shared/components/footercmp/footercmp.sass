@@ -1,0 +1,85 @@
+.footer-sec
+    background: rgba(68, 68, 68, 0.25)
+    border: 2px solid #2F2F2F
+    border-radius: 50px 50px 0px 0px
+    padding: 50px
+    justify-content: space-between
+    position: relative
+    z-index: 1
+    .Symbiote
+        // width: 40%
+        text-align: start
+        // h4
+        //     font-weight: 500
+        //     font-size: 48.0337px
+        //     line-height: 61px
+        //     font-family: 'Space Grotesk'
+        //     color: #fff
+        p
+            font-family: 'Space Grotesk'
+            color: #fff
+    .footer-links
+        display: flex
+        justify-content: space-between
+    .Product
+        // width: 18%
+        p
+            font-weight: 700
+            font-size: 16px
+            line-height: 20px
+            text-align: start
+            font-family: 'Space Grotesk'
+            margin-bottom: 30px
+            color: #54C4FC
+        ul
+            padding-left: 0
+            margin-bottom: 0
+            text-align: left
+            li
+                margin-top: 20px
+                list-style: none
+                a
+                    font-weight: 300
+                    font-size: 16px
+                    line-height: 20px
+                    font-family: 'Space Grotesk'
+                    margin-bottom: 20px
+                    text-align: start
+                    color: #fff
+                    text-decoration: none
+                    &:hover
+                        color: #54C4FC
+
+@media screen and (max-width: 1200px)
+    .footer-sec
+        padding: 30px
+        .Product
+            p
+                margin-bottom: 20px
+            ul
+                li
+                    margin-top: 10px
+                    a
+                        font-size: 14px
+                        line-height: 18px
+
+@media screen and (max-width: 767px)
+    .footer-sec
+        padding: 20px
+        border-radius: 33.1094px 33.1094px 0px 0px
+        .Symbiote
+            h4
+        .footer-links
+            gap: 30px
+            flex-wrap: wrap
+        .Product
+            p
+                margin-bottom: 5px
+                font-size: 10px
+                line-height: 14px
+            ul
+                li
+                    margin-top: 0px
+                    a
+                        font-size: 10px
+                        line-height: 14px

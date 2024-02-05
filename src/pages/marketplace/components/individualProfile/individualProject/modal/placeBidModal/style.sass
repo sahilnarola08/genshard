@@ -1,0 +1,969 @@
+
+.modal.show .modal-dialog.modal_wrapper
+  max-width: 630px
+  width: 100%
+  
+
+  .modal-content
+    border-radius: 31px
+    -webkit-box-shadow: 0px 0px 10px 5px #585858
+    box-shadow: 0px 0px 10px 5px #424242
+    background-color: #fff !important
+
+    .modal-body
+      
+
+    .modal_header_wrapper
+      margin: 10px
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-between
+
+      .modal-header
+        text-transform: uppercase
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        -webkit-box-pack: center
+        -ms-flex-pack: center
+        justify-content: center
+        border-bottom: none !important
+        padding: 0px
+
+        h5.modal-title
+          font-size: 30.4715px
+          color: #616161
+          font-weight: 300
+          line-height: 45px
+          letter-spacing: 0.4em
+          margin: 6px 0px 0px 30px
+      .close_btn
+            cursor: pointer
+
+    .modal_footer
+      button
+        width: 245px
+        height: 55px
+        font-size: 27px
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        margin: 30px 0 0 0
+        border-radius: 27.5px
+        font-weight: 300
+        display: flex
+        align-items: center
+        justify-content: center
+
+      .bottomBtn2_btn
+        background: #117DCC
+        border: none
+        color: #fff
+
+      .bottomBtn1_btn
+        background: transparent
+        border: 1px solid #117DCC
+        color: #616161
+      .btn-secondary
+        &:focus
+          box-shadow: none
+
+    .modal_body_img
+      max-width: 106px
+      height: 122.95px
+      width: 100%
+      margin: 20px auto
+
+    img
+      width: 100%
+      height: 100%
+
+    .modal_body_img_caption
+      font-family: "Oswald"
+      font-style: normal
+      font-weight: 500
+      font-size: 32.8619px
+      line-height: 49px
+      text-align: center
+      color: #616161
+      max-width: 350px
+      margin: 20px auto
+      padding: 38px 0
+
+    .number-input-wrapper
+      position: relative
+    .modal-body
+      .footer-text
+        font-size: 22px
+        font-weight: 300
+        line-height: 40px
+        color: #AEAEAE
+        text-align: center
+        width: 100%
+      .fees-wrapper
+        width: 100%
+        max-width: 500px
+        margin: 10px auto
+        .fees-desc-wrapper
+          display: flex
+          align-items: center
+          justify-content: space-between
+          .fees-label,.fees-value
+            font-weight: 500
+            font-size: 17px
+            color: rgb(112, 122, 131)
+            &.fees-main-label
+              font-weight: 600
+              font-size: 20px
+              color: rgb(4, 17, 29)
+
+    .modal_body_msg
+      max-width: 542px
+      width: 100%
+      height: 84px
+      font-family: "Oswald"
+      font-style: normal
+      font-weight: 300
+      font-size: 27px
+      line-height: 40px
+      text-align: center
+      color: #616161
+      margin: 20px auto
+
+    .modal_footer
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      justify-content: center
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      width: 100%
+      margin: 0 auto
+      text-align: center
+      font-family: 'Oswald'
+
+    .btnspace
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-around
+
+    .offer_expiration
+      position: relative
+      label
+        font-size: 26px
+        line-height: 60px
+        color: #616161
+        text-align: start
+
+      // .react-minimal-datetime-range__range
+      //   width: 100% !important
+      //   .react-minimal-datetime-range__range-input-wrapper
+      //     display: flex
+      //     border: 1px solid #117DCC
+      //     background: transparent
+      //     border-radius: 27.5px
+      //     .react-minimal-datetime-range__range-input
+      //       padding-left: 0
+        // .react-minimal-datetime-range.visible
+        //   position: absolute
+        //   top: 0
+        //   left: 50%
+        //   color: black
+        //   transform: translate(-50%,0) perspective(600px) rotateX(0)
+          // .react-minimal-datetime-date-piker
+          //   display: flex
+
+    .quantity label, .price label
+      font-size: 26px
+      line-height: 60px
+      color: #616161
+      text-align: start
+
+    input
+      &[type="number"], &[type="time"],&[type="date"]
+        width: 245px
+        // height: 55px
+        border: 1px solid #117DCC
+        background: transparent
+        -webkit-box-sizing: border-box
+        box-sizing: border-box
+        border-radius: 27.5px
+        margin: 10px 0px
+      &[type="date"]
+        padding-right: 20px
+
+    .price input[type="number"]
+      margin: 0px
+
+    .modal_body_wrapper
+      max-width: 968px
+      width: 100%
+      margin: 5px auto
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      text-align: center
+      box-sizing: border-box
+      padding: 0 20px
+      .sell-options
+        display: flex
+        justify-content: space-evenly
+        margin-bottom: 25px
+        .sell-optn
+          width: 100%
+          max-width: 33%
+          text-align: center
+          padding-bottom: 21px
+          cursor: pointer
+          &.selected-optn
+            border-bottom: 2px solid #117DCC
+          img
+            width: 35px
+            height: 35px
+          .optn-title
+            margin-top: 10px
+            font-weight: 400
+            font-size: 30.4715px
+            line-height: 35px
+            text-align: center
+            color: #616161
+      .time-auction
+        box-sizing: border-box
+        .time-wrapper
+          display: flex
+          align-items: flex-start
+          margin-bottom: 15px
+          box-sizing: border-box
+          position: relative
+          .label
+            white-space: nowrap
+            font-weight: 200
+            font-size: 26px
+            line-height: 56px
+            text-align: left
+            color: #616161
+          .inputs
+            align-self: center
+            box-sizing: border-box
+            max-width: 600px
+            display: flex
+            align-items: flex-start
+            .usd-input
+              width: 100%
+              display: flex
+              align-items: center
+              .usd
+                input
+                  width: 100%
+                  padding: 3.5px 0
+            .quantity-wrapper,.time-chain,.duration
+              border: 1px solid #117DCC
+              border-radius: 27.5px
+              overflow: hidden
+              width: 100%
+              padding: 8px 0
+              box-sizing: border-box
+              position: relative
+
+              .downarrow
+                position: absolute
+                width: 16px
+                height: 22px
+                right: 15px
+                top: 50%
+                transform: translate(0, -50%)
+              .uparrow
+                max-width: 30px
+                height: 25px
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                left: 15px
+                
+              select,input[type="number"]
+                width: 100%
+                font-weight: 400
+                font-size: 22px
+                background: transparent
+                line-height: 27px
+                text-align: center
+                color: #616161
+                margin: 0
+                outline: none
+                border: none
+                -moz-appearance: none
+                -webkit-appearance: none
+              select::-ms-expand
+                display: none
+            .time-chain
+            .duration
+              max-width: 245px
+            .usd
+              margin-left: 14px
+              input
+                font-weight: 400
+                font-size: 26px
+                line-height: 39px
+                text-align: center
+                color: #616161
+                margin: 0
+                text-align: center
+            .usd-covert
+              float: right
+              font-size: 18px
+              line-height: 22px
+              font-weight: 400
+              color: #616161
+              width: 100%
+            .input_wrapper
+              width: 100%
+              gap: 12px
+              justify-content: space-between
+              flex-direction: row
+              flex-wrap: wrap
+              input
+                font-weight: 400
+                font-size: 17px
+                line-height: 39px
+                text-align: center
+                color: #616161
+                margin: 0
+                
+              input[type="time"]
+                padding-left: 45px
+              .react-minimal-datetime-range__range
+                width: 100% !important
+                .react-minimal-datetime-range__range-input-wrapper
+                  display: flex
+                  border: 1px solid #117DCC !important
+                  background: transparent !important
+                  border-radius: 27.5px
+                  .react-minimal-datetime-range__range-input
+                    padding-left: 0
+                .react-minimal-datetime-range.visible
+                  position: absolute
+                  top: 0
+                  left: 50%
+                  color: black
+                  transform: translate(-50%,0) perspective(600px) rotateX(0)
+                  .react-minimal-datetime-date-piker
+                    display: flex
+
+            .toggle-switch
+              position: relative
+              padding: 9px 0
+              input
+                position: absolute
+
+          .toggle-switch
+            input[type=checkbox]
+              height: 0
+              width: 0
+              visibility: hidden
+            label
+              cursor: pointer
+              text-indent: -9999px
+              width: 62px
+              height: 34px
+              background: transparent
+              border: 2px solid #117DCC
+              display: block
+              border-radius: 100px
+              position: relative
+            label:after
+              content: ''
+              position: absolute
+              top: 5px
+              left: 5px
+              width: 24px
+              height: 24px
+              background: #117DCC
+              border-radius: 90px
+              transition: 0.3s
+            input:checked + label
+              background: #117DCC
+            input:checked + label:after
+              left: calc(100% - 5px)
+              transform: translateX(-100%)
+              background: #fff
+            label:active:after
+              width: 34px
+
+    .quantity, .price
+      width: 100%
+      display: flex
+      align-items: center
+    .price
+      max-width: 100%
+      text-align: initial
+      align-items: baseline
+
+    .quantity input, .price input
+      text-align: center
+      background: transparent
+      color: #616161
+      font-size: 26px
+      display: flex
+    .price
+      .number-usd-wrapper
+        .usd
+          color: #717171
+          font-size: 25px
+          line-height: 44px
+          font-weight: 100
+          span
+            font-weight: 500
+            padding-right: 3px
+
+    .quantity input:focus, .price input:focus
+      outline: none
+
+    .offer_expiration
+      width: 100%
+      display: flex
+      align-items: center
+
+      input
+        text-align: center
+        color: #616161
+        font-size: 17px
+        padding-left: 0px
+        font-weight: 400
+        &[type="date"]
+          padding-left: 0
+
+        &:focus
+          outline: none
+
+    .btn-close
+      display: none
+
+    .close_btn
+      position: absolute
+      top: 36px
+      right: 33px
+
+    img.uparrow
+      max-width: 34px
+      height: 34px
+      position: absolute
+      top: 50%
+      -webkit-transform: translateY(-50%)
+      -ms-transform: translateY(-50%)
+      transform: translateY(-50%)
+      left: 15px
+
+    .quantity img.downarrow, .offer_expiration img.downarrow
+      max-width: 30px
+      height: 13px
+      position: absolute
+      top: 50%
+      -webkit-transform: translateY(-50%)
+      -ms-transform: translateY(-50%)
+      transform: translateY(-50%)
+      left: 210px
+    .alert
+      position: absolute
+      width: 70%
+      padding: 10px
+
+    input[type="time"]::-webkit-calendar-picker-indicator
+      opacity: 0
+      display: block
+      -webkit-transform: scale(12)
+      transform: scale(12)
+      text-align: center
+
+    .input_wrapper
+      -webkit-box-orient: horizontal
+      -webkit-box-direction: normal
+      -ms-flex-direction: row
+      flex-direction: row
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+  .react-minimal-datetime-range-calendar__table-cel.react-minimal-datetime-range-calendar__date-item:not(.disabled),.react-minimal-datetime-range-calendar__table-cel.no-border,.react-minimal-datetime-range-calendar__clicker,.react-minimal-datetime-range-dropdown-calendar__month-item>div, .react-minimal-datetime-range-dropdown-calendar__year-item
+    color: #000
+
+  .modal.show
+    // display: flex !important
+    justify-content: center !important
+    align-items: center
+  .react-minimal-datetime-range__range-input-wrapper .react-minimal-datetime-range__range-input-separator
+    display: flex
+    justify-content: center
+@media screen and (max-width: 1024px)
+  .modal.show .modal-dialog.modal_wrapper
+    max-width: 720px
+    height: auto
+    width: auto
+    margin: 15px auto
+    padding: 0 10px
+
+    .modal-content
+      input
+        &[type="number"], &[type="time"],&[type="date"]
+          // height: 40px
+      .price
+        justify-content: start
+        .number-usd-wrapper
+          .usd
+            width: 100%
+            
+        input[type="number"]
+          margin: 15px auto 5px
+      img.uparrow
+        height: 30px
+        left: 10px
+      .quantity img.downarrow, .offer_expiration img.downarrow
+        height: 11px
+        left: 145px
+      .offer_expiration
+        justify-content: flex-start
+      .offer_expiration label
+        margin: 0 42px
+      .input_wrapper
+        flex-direction: column
+      .modal_footer button
+        margin: 31px 0 20px
+
+      .offer_expiration
+        margin: 0
+      .quantity
+        justify-content: space-between
+        margin-bottom: 15px
+      .price
+        justify-content: space-between
+        margin-bottom: 15px
+        .number-usd-wrapper
+          .usd
+            font-size: 24px
+            line-height: 32px
+      .modal_header_wrapper
+        margin: 0
+
+        .modal-header
+          margin: 0
+          padding: 10px
+
+          h5.modal-title
+            margin: auto
+            letter-spacing: 0.5em
+
+        .close_btn
+          margin: 0
+          top: 15px
+          right: 15px
+      .modal-body
+        .modal_body_wrapper
+          margin: 0 auto
+          padding: 0
+          label
+            max-width: 100%
+            font-size: 30px
+            line-height: 40px
+            margin: 0
+            text-align: left
+          .offer_expiration
+            justify-content: space-between
+          .price
+            input
+              margin: 0
+              max-width: 187px
+          .quantity
+            .number-input-wrapper
+              input
+                margin: 0
+                max-width: 187px
+          .offer_expiration
+            input
+              font-size: 13px
+            .input_wrapper
+              .number-input-wrapper
+                margin-bottom: 15px
+              input
+                margin: 0
+        .modal_footer
+          width: 100%
+          max-width: 100%
+          margin: 10px auto
+          justify-content: space-around
+          button
+            margin: 0 10px
+            width: 210px
+  .rs-picker-daterange.rs-picker-cleanable.rs-picker-has-value .rs-picker-toggle
+    padding-right: 45px
+@media  (max-width: 768px)
+  .modal.show .modal-dialog.modal_wrapper
+    max-width: 600px
+    margin: 1.75rem auto
+    padding: 0 10px
+
+    .modal-content
+      .modal_body_wrapper
+        .sell-options
+          .sell-optn
+            .optn-title
+              font-size: 26px
+              line-height: 34px
+        .time-auction
+          .time-wrapper
+            .label
+              font-size: 24px
+              line-height: 28px
+            .inputs
+              flex-direction: column
+              gap: 15px
+              .quantity-wrapper,.time-chain
+                select
+                  font-size: 20px
+                  line-height: 24px
+              .usd-input
+                box-sizing: border-box
+                text-align: left
+                .usd
+                  margin: 0
+                  input
+                    font-size: 20px
+                    line-height: 24px
+                    height: 41px
+                    width: 100%
+                .usd-covert
+                  float: left
+              .input_wrapper
+                gap: 15px
+                input
+                  margin: 0
+                  width: 100%
+
+      .offer_expiration
+        margin: 0
+      .quantity
+        justify-content: space-between
+        margin-bottom: 15px
+      .price
+        justify-content: space-between
+        margin-bottom: 15px
+        .number-usd-wrapper
+          .usd
+            font-size: 24px
+            line-height: 32px
+      .modal_header_wrapper
+        margin: 0
+
+        .modal-header
+          margin: 0
+          padding: 10px
+
+          h5.modal-title
+            margin: auto
+            letter-spacing: 0.5em
+        .close_btn
+          margin: 0
+          top: 15px
+          right: 15px
+      .modal-body
+        .modal_body_wrapper
+          margin: 0 auto
+          label
+            max-width: 100%
+            font-size: 27px
+            line-height: 40px
+            margin: 0
+            text-align: left
+          .offer_expiration
+            justify-content: space-between
+          .price
+            input
+              margin: 0
+              max-width: 187px
+          .quantity
+            .number-input-wrapper
+              input
+                margin: 0
+                max-width: 187px
+          .offer_expiration
+            .input_wrapper
+              .number-input-wrapper
+                margin-bottom: 15px
+              input
+                margin: 0
+        .modal_footer
+          width: 100%
+          max-width: 100%
+          margin: 10px auto
+          justify-content: space-around
+          button
+            margin: 0 10px
+            width: 210px
+
+@media  ( max-width: 570px)
+  .modal-dialog
+    &.mobile-table-model
+      top: 35% !important
+  .modal.show .modal-dialog.modal_wrapper
+    .modal-content
+      .modal-body
+        .modal_body_wrapper
+          padding: 0
+          .sell-options
+            .sell-optn
+              img
+                width: 25px
+                height: 25px
+              .optn-title
+                font-size: 20px
+                line-height: 24px
+          .time-auction
+            .time-wrapper
+              .label
+                font-size: 20px
+                line-height: 24px
+                max-width: 120px
+                text-align: left
+              .inputs
+                .toggle-switch
+                  padding: 0
+                .quantity-wrapper
+                  select
+                    font-size: 16px
+                    line-height: 20px
+                    padding: 0 40px 0 10px
+                .input_wrapper
+                  input
+                    font-size: 20px
+                    line-height: 24px
+                    width: auto
+
+@media  ( max-width: 480px)
+  .modal.show .modal-dialog.modal_wrapper
+    .modal-content
+      .modal_header_wrapper
+        .close_btn
+          top: 10px
+          right: 10px
+        .modal-header
+          h5.modal-title
+            letter-spacing: 0.1em
+            font-size: 26px
+            line-height: 32px
+      .modal-body
+        .modal_body_wrapper
+          .sell-options
+            .sell-optn
+              img
+                width: 20px
+                height: 20px
+              .optn-title
+                margin-top: 12px
+                font-size: 14px
+                line-height: 18px
+          .time-auction
+            .time-wrapper
+              .label
+              .inputs
+                .time-chain
+                  select
+                    font-size: 16px
+                    line-height: 20px
+
+                .quantity-wrapper
+                  select
+                    font-size: 13px
+                    line-height: 17px
+                .input_wrapper
+                  input
+                    font-size: 13px
+                    line-height: 20px
+                    text-align: center
+          label
+            font-size: 17px
+            line-height: 20px
+          .price
+            margin-bottom: 10px
+            .number-usd-wrapper
+              .usd
+                font-size: 15px
+                line-height: 28px
+            input
+              max-width: 125px
+              height: 36px
+          .quantity
+            margin-bottom: 10px
+            .number-input-wrapper
+              input
+                max-width: 149px
+                height: 36px
+
+          .offer_expiration
+            display: block
+            text-align: left
+            label
+              width: 100%
+            .input_wrapper
+              margin-top: 5px
+              width: 100%
+              input
+                height: auto
+                font-size: 14px
+                line-height: 30px
+                font-weight: 400
+                padding: 0px
+              .react-minimal-datetime-range__range-input-separator
+                  min-width: 4px
+              .react-minimal-datetime-range__clear
+                margin-right: 5px
+        .modal_footer
+          button
+            width: 130px
+            height: 36px
+            font-size: 18px
+            margin: 0 5px
+      img.uparrow
+        max-width: 20px
+        height: 20px
+        left: 8px
+      .quantity img.downarrow, .offer_expiration img.downarrow
+        max-width: 20px !important
+        height: 8px !important
+        left: 120px
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal-body .fees-wrapper .fees-desc-wrapper .fees-label.fees-main-label
+    font-weight: 400
+    font-size: 18px
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal-body .fees-wrapper .fees-desc-wrapper .fees-label
+    font-weight: 400
+    font-size: 15px
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal-body .fees-wrapper .fees-desc-wrapper .fees-value
+    font-weight: 400
+    font-size: 15px
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal-body .footer-text
+    font-size: 17px
+    line-height: 40px
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal_body_wrapper .time-auction .time-wrapper .inputs .time-chain
+    padding: 6px 0
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal_body_wrapper .time-auction .time-wrapper
+    align-items: baseline
+  .rs-picker-toggle-wrapper
+    width: 100%
+@media  ( max-width: 375px)
+  .modal.show .modal-dialog.modal_wrapper
+    .modal-content
+      .modal_header_wrapper
+        .close_btn
+          top: 10px
+          right: 10px
+        .modal-header
+          h5.modal-title
+            letter-spacing: 0.1em
+            font-size: 26px
+            line-height: 32px
+      .modal-body
+        .modal_body_wrapper
+          .sell-options
+            .sell-optn
+              img
+                width: 20px
+                height: 20px
+              .optn-title
+                margin-top: 12px
+                font-size: 14px
+                line-height: 18px
+          .time-auction
+            .time-wrapper
+              .label
+              .inputs
+                .time-chain
+                  select
+                    font-size: 16px
+                    line-height: 20px
+
+                .quantity-wrapper
+                  select
+                    font-size: 13px
+                    line-height: 17px
+                .input_wrapper
+                  input
+                    font-size: 11px
+                    line-height: 20px
+          label
+            font-size: 15px
+            line-height: 28px
+            font-weight: 400
+          .price
+            margin-bottom: 10px
+            .number-usd-wrapper
+              .usd
+                font-size: 16px
+                line-height: 28px
+                display: flex
+                margin-left: 0px
+            input
+              max-width: 149px
+              height: 36px
+              font-size: 22px
+          .quantity
+            margin-bottom: 10px
+            .number-input-wrapper
+              input
+                max-width: 149px
+                height: 36px
+                font-size: 22px
+          .offer_expiration
+            .input_wrapper
+              input
+                max-width: 149px
+                height: 30px
+                font-size: 11px
+                line-height: 24px
+          .modal_footer
+          button
+            width: 130px
+            height: 36px
+            font-size: 18px
+      img.uparrow
+        max-width: 20px
+        height: 20px
+      img.downarrow
+        max-width: 20px !important
+        height: 8px !important
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal_body_wrapper .time-auction .time-wrapper .inputs .quantity-wrapper .uparrow
+    height: 21px
+    left: 5px
+@media  ( max-width: 320px)
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal-body .modal_footer button
+    width: 110px
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal_body_wrapper .time-auction .time-wrapper
+    margin-bottom: 12px
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal_body_wrapper .time-auction .time-wrapper-small
+    display: block
+    margin-bottom: 12px
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal_body_wrapper .time-auction .time-wrapper .inputs-price-small
+    display: flex
+    width: 100%
+    flex-direction: row
+    grid-gap: 15px
+    margin-top: 5px
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal_body_wrapper .time-auction .time-wrapper .inputs .usd-covert
+    font-size: 15px
+    margin-left: 5px
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal_body_wrapper .time-auction .time-wrapper .inputs-small
+    width: 100%
+    margin-top: 10px
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal-body .modal_body_wrapper .time-auction .time-wrapper .label
+    font-size: 17px
+    font-weight: 400
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal-body .modal_body_wrapper .time-auction .time-wrapper .inputs .input_wrapper input
+    font-size: 14px
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal-body .modal_body_wrapper label
+    display: flex
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal-body .modal_body_wrapper .price .number-usd-wrapper
+    width: 100%
+  .modal.show .modal-dialog.modal_wrapper .modal-content .modal-body .modal_body_wrapper .time-auction .time-wrapper .inputs .quantity-wrapper select
+    font-size: 15px
+    line-height: 19px

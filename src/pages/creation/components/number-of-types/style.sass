@@ -1,0 +1,130 @@
+@import '../../../../_variables'
+
+@mixin borderElement($color)
+    border: 1px solid $color
+    border-radius: 0.625rem
+
+@mixin grid()
+    display: grid
+    grid-template-columns: 4fr 5fr
+    align-items: center
+
+.number-types
+    display: grid
+    grid-template-columns: 1fr
+    grid-row-gap: 0.75rem
+    @include borderElement(var(--color-border-200))
+    padding: 1rem
+    margin-bottom: 1rem
+
+    .types-select
+        @include grid()
+        &__btns
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            column-gap: 0.75rem
+            .outline
+                padding: 0 !important
+                width: 2.875rem
+                height: 2.875rem
+                font-size: 1.5rem
+                font-weight: 300
+
+    .design-uri
+        &__wrapper
+            @include grid()
+    .design-checkbox
+        @include grid()
+        &__content
+            display: flex
+            align-items: center
+            font-size: 1.25rem
+            color: var(--color-on-secondary)
+
+.design__label,
+.types-select__label
+    color: var(--color-on-secondary)
+    margin: 0
+    font-size: 1.5625rem
+
+@media screen and ( max-width: $screen-large)
+    .number-types
+        .types-select
+            grid-template-columns: 1fr
+            grid-gap: 1rem
+
+            &__btns
+                padding: 0 1rem
+                grid-gap: 0.25rem
+
+                & > .gen-button
+                    justify-self: center
+
+        .design-checkbox
+            grid-template-columns: 1fr
+
+@media screen and ( max-width: $screen-medium)
+    .number-types
+        .types-select
+            &__label
+                font-size: 1.4rem
+        .design-checkbox
+            .design-checkbox__content
+                .types-custom__text
+                    font-size: 1rem
+
+@media ( max-width: 600px )
+    .DesignUriTextBox
+        -webkit-box-orient: vertical
+        -webkit-box-direction: normal
+        -ms-flex-direction: column
+        flex-direction: column
+        input
+            margin-top: 12px
+    .number-types
+        padding: .5rem
+
+@media screen and ( max-width: $screen-small)
+    .number-types
+        .types-select
+            &__label 
+                font-size: 1.25rem
+            &__btns
+                .outline 
+                    font-size: 1.2625rem
+                    width: 2.375rem
+                    height: 2.375rem
+                & > .gen-button
+                    justify-self: center
+
+        .design-checkbox
+            &__content
+                .types-custom__text
+                    font-size: 0.8rem
+
+.DesignUriTextBox
+    margin-top: 1rem
+    border-radius: 14px
+    display: flex
+
+    div
+        padding: 0.75rem 1rem
+        background-color: #117DCC
+        color: white
+        border-radius: 14px 0 0 14px
+
+    input
+        flex: 1
+        padding: 0.75rem 1rem
+        background-color: transparent
+        color: black
+        border-width: 1px 1px 1px 0
+        border-radius: 0 14px 14px 0
+        border-color: var(--color-on-secondary)
+        font-size: 1rem
+
+        &:focus 
+            outline: none
+
+.DesignUriError 
+    margin: 0 6px

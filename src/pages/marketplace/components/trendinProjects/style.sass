@@ -1,0 +1,233 @@
+.trending-project-container
+  background: #FFFFFF
+  padding: 81px 0 0
+  
+  .trending-project-heading
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    color: #000000
+    font-size: 30px
+    font-weight: 600
+    letter-spacing: 1em
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    margin-bottom: 36px
+    line-height: 44px
+    text-align: center
+
+  .styled-underline
+    border-bottom: 5px solid #117DCC
+    max-width: 281px
+    width: 100%
+    margin: auto
+
+  .card-wrapper
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: space-evenly
+    -ms-flex-pack: space-evenly
+    justify-content: space-evenly
+    margin-top: 77px
+    padding: 0 15px 125px
+
+    .card
+      min-width: 425px
+      border: none
+      margin: 0 5px
+
+      .card-body
+        background: #EDF7FF
+        width: 425px
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+
+        .card-body-container
+          margin: 25px 0 19px 32px
+          color: #16161C
+
+          .profile-header
+            text-transform: uppercase
+            font-weight: 300
+            font-size: 22px
+            letter-spacing: 0.33em
+            line-height: 33px
+
+          .body-content
+            width: 100%
+            max-width: 330px
+            height: 70px
+            margin: 18px 0
+            font-size: 20px
+            line-height: 30px
+            font-weight: 200
+            display: flex
+            align-items: center
+            // text-overflow: ellipsis
+            // white-space: nowrap
+            // overflow: hidden
+
+        .explore-button
+          margin-top: 1rem
+          background: #010101
+          border-radius: 17px
+          border: 1px solid #117DCC
+          color: #ffffff
+          text-transform: uppercase
+          font-size: 1rem
+          font-weight: 300
+          padding: 0.2rem 0.8rem
+          letter-spacing: 0.145em
+
+      .upper
+        max-width: 425px
+        width: 100%
+
+        img
+          width: 100%
+          height: 300px
+          object-fit: cover
+
+      .user
+        position: relative
+
+        .profile
+          position: absolute
+          top: -61px
+          right: 23px
+          max-width: 122px
+          width: 100%
+
+          img
+            width: 100%
+            top: -5%
+            border-radius: 50%
+
+@media screen and (max-width: 1300px)
+  .trending-project-container .card-wrapper
+    -webkit-box-pack: normal
+    -ms-flex-pack: normal
+    justify-content: normal
+    overflow-x: auto
+    -ms-flex-wrap: nowrap
+    flex-wrap: nowrap
+
+    .card
+      margin: 0 15px
+
+      .upper
+        max-width: 425px
+        width: 100%
+
+        img
+          width: 100%
+
+@media ( max-width: 1200px)
+  .trending-project-container
+    .custome-container
+      padding-right: 0px
+      padding-left: 0px
+  .trending-project-container .card-wrapper
+    padding: 0 15px 70px
+  .trending-project-container .trending-project-heading
+    font-size: 28px
+    line-height: 36px
+    letter-spacing: 0.6em
+@media ( max-width: 768px)
+  .trending-project-container
+    padding-top: 40px
+    .trending-project-heading
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.5em
+    .styled-underline
+      display: none
+    .card-wrapper
+      margin-top: 0
+      padding: 0
+      .card
+        min-width: 360px
+        .card-body
+          width: 360px
+          .card-body-container
+            margin-left: 18px
+            .profile-header
+              font-size: 20px
+              line-height: 30px
+            .body-content
+              font-size: 18px
+              line-height: 28px
+              max-width: 275px
+          .explore-button
+            font-size: 0.9em
+            line-height: 19px
+
+        .user
+          .profile
+            top: -55px
+            max-width: 110px
+
+@media ( max-width: 480px)
+  .trending-project-container
+    .custome-container
+      max-width: 410px
+    .trending-project-heading
+      font-size: 18px
+      line-height: 27px
+      letter-spacing: 0.25em
+    .card-wrapper
+      padding: 0 15px 20px
+      .card
+        min-width: 300px
+        margin: 0 10px
+        .card-body
+          width: 300px
+          .card-body-container
+            margin-left: 18px
+            .profile-header
+              font-size: 18px
+              line-height: 26px
+            .body-content
+              font-size: 16px
+              line-height: 24px
+              max-width: 265px
+          .explore-button
+            font-size: 0.7em
+            line-height: 14px
+
+        .user
+          .profile
+            top: -50px
+            max-width: 100px
+
+@media ( max-width: 390px)
+  .trending-project-container
+    .card-wrapper
+      padding: 0 15px 50px
+      .card
+        min-width: 277px
+        .card-body
+          width: 277px
+          .card-body-container
+            .profile-header
+              font-size: 15px
+              line-height: 24px
+            .body-content
+              font-size: 14px
+              line-height: 22px
+              max-width: 235px
+              margin: 10px 0
+          .explore-button
+            padding: 0.2rem 0.4rem
+            font-size: 9px
+            margin-top: 0
+        .user
+          .profile
+            max-width: 80px
+            top: -40px

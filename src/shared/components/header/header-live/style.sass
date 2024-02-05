@@ -1,0 +1,96 @@
+.staking-live
+    height: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 4rem
+    max-width: 90rem
+    margin: 0 auto
+    color: #ffffff
+    .first-div
+        display: flex
+        justify-content: space-evenly
+        a
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                width: 1.2rem
+                margin-right: 2rem
+                cursor: pointer
+              
+    .middle-div
+        p
+            color: black
+            font-size: 1.2rem
+            display: flex
+            margin-bottom: 0px
+            span
+                color: #000000 !important
+                display: block
+                font-weight: 600 !important
+                cursor: pointer
+            a
+                color: #000000 !important
+                display: block
+                font-weight: 600 !important
+                cursor: pointer
+    .last-div
+        color: #000000 !important
+        display: flex
+        align-items: center
+        p
+            color: #000000 !important
+            font-size: 1.2rem
+            margin: 0 1rem 0 0
+            span
+                font-weight: 600
+        .btn-div
+            // width: 5rem
+            display: flex
+            width: 4rem
+            justify-content: space-between
+            a
+                background: white
+                border-radius: 50px
+                width: 1.7rem
+                height: 1.7rem
+                display: flex
+                img
+                    margin: auto
+                    max-width: 90%
+                    max-height: 90%
+
+@media screen and ( max-width: 960px )
+    .staking-live
+        padding: 0 2rem
+        .first-div
+            img
+                margin-right: 1rem
+        .middle-div
+            display: none
+        .last-div
+            p
+                font-size: 1rem
+            .btn-div
+                width: 4rem
+                button
+                    padding: 0.1rem
+
+@media screen and ( max-width: 440px )
+    .staking-live
+        padding: 0 0.5rem
+        .last-div
+            p
+                font-size: 13px
+                margin-right: 5px
+                span
+                    letter-spacing: 0.1em
+                    font-size: 13px
+@media screen and (max-width: 320px)
+    .header-staking-live
+        .staking-live 
+            .first-div 
+                a 
+                    img
+                        margin-right: 10px

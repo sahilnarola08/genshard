@@ -1,0 +1,253 @@
+
+
+.user-profile-page {
+  width: 100%;
+  background: rgb(255, 255, 255);
+
+  .required-field {
+    color: red
+  }
+
+  .user-profile-page-wrapper {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 92px 15px;
+    box-sizing: border-box;
+
+    .user-profile-text {
+      font-weight: 300;
+      font-size: 60px;
+      line-height: 89px;
+      color: #117DCC;
+    }
+
+    .form-controldata {
+      display: flex;
+      gap: 30px;
+    }
+  }
+}
+
+
+
+.form-control-wrapper textarea {
+  width: 100%;
+  margin-top: 28px;
+  padding: 17px;
+  border: 1.55002px solid #117DCC;
+  border-radius: 31.2317px;
+  color: #000;
+  background: transparent;
+  box-sizing: border-box;
+  resize: none;
+  height: 200px;
+}
+.form-control-wrapper textarea:focus-visible{
+  border: 1px solid #117DCC;
+}
+
+
+.mint-nft-page form .form-control-wrapper .label-wrapper .main-label {
+  font-size: 25px;
+  line-height: 20px;
+  
+}
+
+.form-control-wrapper .upload-area .upload__image-wrapper .upload-btn {
+  width: 60%;
+}
+
+.mint-nft-page form .form-control-wrapper .label-wrapper {
+  padding-top: 35px;
+}
+
+.form-control-wrapper input {
+  margin-top: 28px;
+}
+
+.copy-input {
+  max-width: 275px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #eaeaeb;
+  border: none;
+  color: #6c6c6c;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 15px 45px 15px 15px;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 3px 15px #b8c6db;
+  -moz-box-shadow: 0 3px 15px #b8c6db;
+  -webkit-box-shadow: 0 3px 15px #b8c6db;
+}
+
+.copy-input:focus {
+  outline: none;
+}
+
+.copy-btn {
+  width: 40px;
+  background-color: #eaeaeb;
+  font-size: 18px;
+  padding: 6px 9px;
+  border-radius: 5px;
+  border: none;
+  color: #6c6c6c;
+  margin-left: -50px;
+  transition: all .4s;
+}
+
+.copy-btn:hover {
+  transform: scale(1.3);
+  color: #1a1a1a;
+  cursor: pointer;
+}
+
+.copy-btn:focus {
+  outline: none;
+}
+
+.form-control-wrapper input {
+  border-color: transparent;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.socialbtn {
+  margin-top: 50px;
+}
+
+.socialconect {
+  color: #000;
+  font-size: 25px;
+}
+
+.socialtwit {
+  margin-top: 10px;
+  margin-right: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.socialig {
+  height: 30px;
+}
+
+.socialtwitter {
+  height: 25px;
+}
+
+.socialtwit button {
+  margin-left: 10px;
+  background: transparent;
+  border: 1px solid #117DCC;
+  background: #117DCC;
+  color: white;
+  font-size: 15px;
+  width: 110px;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+
+.socialico {
+  display: flex;
+  padding-top: 17px;
+}
+
+.create-btn-wrapper {
+  margin-top: 15px;
+}
+
+.create-btn-wrapper button {
+  margin-left: 10px;
+  background: transparent;
+  border: 1px solid #117DCC;
+  background: #117DCC;
+  color: #fff;
+  font-size: 15px;
+  width: 135px;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+
+.profileimage-upload-btn img {
+  width: 100%;
+  height: 100%;
+  max-height: 205px;
+  object-fit: cover;
+}
+
+.profileimage-upload-btn {
+  background: none;
+  border: none;
+}
+
+.bannerimage-upload-btn img {
+  width: 100%;
+  height: 100%;
+  max-height: 330px;
+  object-fit: cover;
+}
+
+.bannerimage-upload-btn {
+  background: none;
+  border: none;
+}
+
+.mint-nft-page form .form-control-wrapper {
+  margin: 0px;
+  width: 100%;
+}
+
+.create-btn-wrapper .create-btn {
+  font-size: 25px;
+  line-height: 45px;
+}
+
+.mint-nft-page form .form-control-wrapper input {
+  margin-top: 28px;
+}
+
+.mint-nft-page form .form-control-wrapper text {
+  margin-top: 28px;
+}
+
+@media (max-width: 768px) {
+  .user-profile-page {
+    .user-profile-page-wrapper {
+      .form-controldata {
+        flex-direction: column;
+      }
+
+      .wrapper {
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 425px) {
+  .user-profile-page {
+    .user-profile-page-wrapper {
+      .form-controldata {
+        flex-direction: column;
+      }
+
+      .socialbtn {
+        .socialconect{
+          text-align: center;
+        }
+        .socialico {
+          flex-direction: column;
+          gap: 20px;
+
+          .socialtwit {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

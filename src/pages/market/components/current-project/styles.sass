@@ -1,0 +1,350 @@
+.project-center
+    width: 100%
+    justify-content: center
+
+    .current-project-container
+        padding: 30px 15%
+        padding-bottom: 0px
+        display: flex
+        flex-direction: column
+        grid-gap: 80px
+        max-width: 1425px
+        margin: 0 auto
+        @media screen and (max-width: 991px)
+            padding: 30px 10%
+
+        .back-icon-container
+            border-radius: 50%
+            border: 1px solid #117DCC
+            background: transparent
+            transition: 0.3s
+            display: flex
+            width: 52px
+            height: 52px
+            justify-content: center
+            align-items: center
+            cursor: pointer
+            position: absolute
+            margin-left: -8%
+            margin-top: 30px
+
+            &:hover
+                background: #117DCC
+
+        .main-data-container
+            width: 100%
+            display: grid
+            grid-template-columns: minmax(0, 3fr) minmax(0, 5fr)
+            grid-gap: 2em
+
+            @media screen and (max-width: 1200px)
+                grid-template-columns: 1fr
+
+        .individual-split
+            @media screen and (max-width: 1200px)
+                align-self: auto !important
+                align-items: center
+                .base-button, .gen-button.outline--highlight, .gen-button.outline
+                    width: 100%
+
+        .title
+            font-size: 5rem
+            line-height: 5.2rem
+            color: #000
+            @media screen and (max-width: 1200px)
+                text-align: center
+
+        .mini-header
+            font-size: 1.3rem
+            margin-top: 10.26px
+
+        .header-text
+            font-size: 2.2rem
+            color: #000
+
+        .bg-image
+            min-width: 100%
+            max-height: 100%
+        .btn-coming-soon
+            font-size: 1.2rem
+
+        .timeline-container
+            display: flex
+            flex-direction: column
+            grid-gap: 40px
+
+            .timeline-main-container
+                width: 100%
+                display: flex
+                flex-wrap: wrap
+                grid-gap: 40px
+                flex-direction: row
+                justify-content: space-evenly
+                padding: 0
+                align-items: baseline
+
+                .timeline-item-container
+                    display: flex
+                    flex-direction: column
+                    grid-gap: 18px
+                    width: 125px
+                    align-items: center
+                    margin: 0
+
+                    .ball-outer, .ball-middle, .ball-inner
+                        width: 70px
+                        height: 70px
+                        border-radius: 50%
+                        background: rgba(18, 125, 204, 0.35)
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        z-index: 2
+
+                    .ball-middle
+                        width: 65% !important
+                        height: 65% !important
+
+                    .ball-inner
+                        width: 45% !important
+                        height: 45% !important
+                        background-color: #117DCC
+
+                    .timeline-date
+                        text-align: center
+                        font-size: 1.0rem
+                        color: #AFAFAF
+
+                    .timeline-title
+                        text-align: center
+                        font-size: 1.5rem
+                        color: white
+
+        .timeline-background-container
+            position: absolute
+            margin-top: 35px
+            left: 0
+            right: 0
+            padding-left: calc(5% + 60px)
+            padding-right: calc(5% + 60px)
+            display: flex
+            justify-content: center
+            width: auto
+            background: transparent
+            height: auto
+            top: auto
+
+            @media screen and (max-width: 967px)
+                padding-left: 20%
+                padding-right: 20%
+
+            .timeline-background
+                width: 100%
+                background: var(--color-on-secondary)
+                height: 1px
+                max-width: 980px
+                opacity: 0.75
+        .timeline-bottom-background-container
+            display: none
+
+        .whitelist-container
+            display: flex
+            flex-direction: column
+            align-items: center
+            grid-gap: 70px
+            margin-bottom: 100px
+
+            .whitelist-selection-container
+                width: 100%
+                display: flex
+                justify-content: space-between
+
+                .whitelist-item-container
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    grid-gap: 25px
+                    margin: 0 2px 20px
+
+                    .whitelist-item-img
+                        height: 150px
+                        width: 117px
+
+                .msg-container
+                    background-color: white
+                    padding: 10px
+                    box-sizing: border-box
+                    margin-bottom: 5px
+
+                .msg
+                    text-align: center
+                    font-size: 0.9rem
+
+                .whitelist-index-button
+                    text-transform: uppercase
+                    box-sizing: border-box
+
+            .final-button
+                text-transform: uppercase
+                font-size: 1.2rem
+                padding-left: 50px
+                padding-right: 50px
+                border-radius: 22px
+
+            .kyc-disable
+                background-color: white
+
+            .kyc-complete-text
+                font-size: 0.75rem
+                color: var(--color-on-secondary)
+                text-align: center
+                margin-top: 4px
+
+            .whitelist-congrats-container
+                display: flex
+                flex-direction: column
+                align-items: center
+                text-align: center
+
+                .congrats-text
+                    font-size: 1.4rem
+                    color: white
+
+        .mini-section-title
+            font-size: 1.9rem
+            color: black
+            letter-spacing: 0.83em
+            text-transform: uppercase
+            width: 100%
+            text-align: center
+
+.project-center
+    .current-project-container
+        .whitelist-container
+            .whitelist-selection-container
+                justify-content: space-evenly
+                flex-wrap: wrap
+
+@media (max-width:1200px)
+    .card-data-container
+        .bg-image-mobile ~ .mini-header
+            text-align: center
+    .project-center
+        .current-project-container
+            .split-container
+                .individual-split
+                    align-self: auto
+                    .mini-header,.header-text
+                        width: 100%
+                        max-width: 150px
+            .bg-image ~ div
+                flex-direction: column
+
+@media (max-width:1125px)
+    .project-center
+        .current-project-container
+            .timeline-container
+                .timeline-main-container
+                    max-width: 455px
+                    margin: 0 auto
+            .timeline-background-container
+                position: absolute
+                margin-top: 35px
+                left: 0
+                right: 0
+                display: flex
+                justify-content: center
+
+                .timeline-background
+                    width: 100%
+                    background: var(--color-on-secondary)
+                    height: 1px
+                    max-width: 350px
+                    opacity: 0.75
+
+            .timeline-bottom-background-container
+                position: absolute
+                margin-top: 275px
+                left: 0
+                right: 0
+                display: flex
+                justify-content: center
+
+                .timeline-bottom-background
+                    width: 100%
+                    background: var(--color-on-secondary)
+                    height: 1px
+                    max-width: 205px
+                    opacity: 0.75
+@media (max-width:768px)
+    .project-center
+        .current-project-container
+            .back-icon-container
+                margin: -70px 0 0 0
+            .header-text
+                font-size: 40px
+                line-height: 59px
+                text-align: left
+            .individual-split
+                .mini-header
+                    margin: 8px 0
+            .whitelist-container
+                .whitelist-selection-container
+                    max-width: 480px
+
+@media (max-width:570px)
+    .project-center
+        .current-project-container
+            .timeline-container
+                .timeline-main-container
+                    max-width: 300px
+                    .timeline-item-container
+                        width: 50px
+                        .timeline-date
+                            font-size: 12px
+                            line-height: 18px
+                        .timeline-title
+                            font-size: 20px
+                            line-height: 30px
+            .timeline-background-container
+                .timeline-background
+                    max-width: 210px
+            .timeline-bottom-background-container
+                margin-top: 276px
+                .timeline-bottom-background
+                    max-width: 120px
+            .back-icon-container
+                width: 30px
+                height: 30px
+                img
+                    width: 7px
+            .split-container
+                grid-gap: 0
+                .individual-split
+                    .mini-header
+                        font-size: 1.1rem
+                    .mini-header,.header-text
+                        max-width: 100px
+                    .header-text
+                        font-size: 32px
+
+@media (max-width:480px)
+    .project-center
+        .current-project-container
+            .title
+                font-size: 30.5897px
+                font-weight: 300
+                line-height: 45px
+            .title~.mini-header
+                text-align: center
+            .mini-header
+                font-size: 18px
+                line-height: 27px
+                font-weight: 300
+            .header-text
+                font-size: 32px
+                line-height: 46px
+            .mini-section-title
+                font-size: 15px
+                line-height: 22px
+                letter-spacing: 0.88em

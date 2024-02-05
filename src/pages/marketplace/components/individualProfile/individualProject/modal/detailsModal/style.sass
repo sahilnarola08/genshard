@@ -1,0 +1,43 @@
+.details
+    width: 100%
+    .wrapper
+        display: flex
+        justify-content: space-between
+        margin-top: 20px
+        gap: 20px
+        &:first-child
+            margin: 0
+    .wrapper-label,.value
+        font-weight: 300
+        font-size: 22px
+        color: #616161
+    .value
+        text-align: left
+        color: #117DCC
+    .contract-address.value
+        cursor: pointer
+        color: rgb(32, 129, 226)
+        display: block
+        text-overflow: ellipsis
+        overflow: hidden
+        max-height: 4.8em
+        line-height: 1.8em
+        text-align: right
+        width: 40%
+
+@media (max-width: 768px)
+    .details
+        margin-bottom: 20px
+        .wrapper
+            margin-top: 21px
+            .wrapper-label, .value
+                font-size: 30px
+                line-height: 42px
+@media (max-width: 570px)
+    .details
+        .wrapper
+            margin-top: 12px
+            .wrapper-label, .value
+                font-size: 20px
+                line-height: 24px
+

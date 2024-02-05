@@ -1,0 +1,101 @@
+.listOfProjects
+    margin-top: 50px
+    .no-project-found
+        width: 100%
+        min-height: 50vh
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 26px
+    table
+        width: 100%
+        font-weight: 300
+        font-size: 28px
+        line-height: 41px
+        border: none
+        thead
+            background: #09090A
+            border-radius: 13.2054px
+            tr
+                text-align: center
+            th
+                padding: 15px
+                color: #fff
+                font-family: 'Space Grotesk'
+                font-style: normal
+                font-weight: 300
+                font-size: 16px
+                line-height: 20px
+            th:first-child
+                border-radius: 20px 0 0 20px
+            th:last-child
+                border-radius: 0 20px 20px 0
+        tbody
+            padding-top: 36px
+            tr
+                td
+                    text-align: center
+                    padding: 18px 0
+                    color: #fff
+                    font-family: 'Space Grotesk'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 16px
+                    line-height: 20px
+                    button, .claimBtn
+                        padding: 7px 22px
+                        color: #FFF
+                        font-family: 'Space Grotesk'
+                        font-style: normal
+                        font-weight: 300
+                        font-size: 16px
+                        line-height: 100%
+                        outline: none
+                        background: linear-gradient(180deg, #54C4FC 0%, #2479DF 100%)
+                        -webkit-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        background-clip: text
+                        text-fill-color: transparent
+                        background-color: rgba(68, 68, 68, 0.25)
+                        border: 1px solid #2F2F2F
+                        border-radius: 9.24378px
+                    .claimBtn:disabled,
+                    .claimBtn[disabled]
+                        border: 1px solid #999999
+                        background-color: #d3d3d3
+                        color: #575757
+@media (max-width:1200px)
+    .listOfProjects
+        table
+            thead
+                th
+                    font-size: 13px
+@media (max-width:992px)
+    .listOfProjects
+        table
+            font-size: 24px
+            line-height: 36px
+
+@media (max-width:768px)
+    .listOfProjects
+        table
+            font-size: 16px
+            line-height: 28px
+            thead
+                th:first-child
+                    border-radius: 10px 0 0 10px
+                th:last-child
+                    border-radius: 0 10px 10px 0
+            tbody
+                tr
+                    td
+                        padding: 12px 0
+                        button
+                            font-size: 14px
+                            padding: 1.2px 10.2px
+
+@media (max-width:480px)
+    .listOfProjects
+        overflow: scroll
+        table
+            width: 480px

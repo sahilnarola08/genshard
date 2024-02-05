@@ -1,0 +1,321 @@
+
+.stake-calculator-container
+    background: rgba(68, 68, 68, 0.25)
+    border: 1px solid #2F2F2F
+    border-radius: 25.93px
+    font-family: 'Space Grotesk'
+    font-style: normal
+    // .calculator-heading
+    //     font-weight: 300
+    //     font-size: 16px
+    //     line-height: 20px
+    //     text-align: center
+    //     letter-spacing: 0.2em
+    .calculator-card
+        width: 60%
+        margin: auto
+    .enter-gs-stake
+        width: 100%
+        display: flex
+        justify-content: space-between
+        box-sizing: border-box
+        background: #383838
+        border-radius: 12.965px
+        padding: 10px 40px
+        background: rgba(68, 68, 68, 0.25)
+        border: 1.1761px solid #2F2F2F
+        border-radius: 15.2482px
+        div
+            display: flex
+            align-items: center
+            width: 120px
+            button
+                text-align: center
+                padding: 5px 10px
+                border-radius: 6.67314px
+                border: 1.22px solid #2479DF
+                background: transparent
+        input
+            background: transparent
+            outline: none
+            border: none
+            color: #fff
+            font-family: 'Space Grotesk'
+            font-style: normal
+            font-weight: 300
+            font-size: 18.8176px
+            line-height: 24px
+            text-align: right
+            color: #FFFFFF
+    .balance-total
+        display: flex
+        justify-content: space-between
+        padding: 15px 50px 30px
+        span
+            font-family: 'Space Grotesk'
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 20px
+            color: #fff
+    .layer-slider
+        padding: 15px
+        border: 0.43368px solid #FFFFFF
+        border-radius: 13.8778px
+        width: 100%
+        .rc-slider-mark-text
+            color: transparent !important
+    .staking-month-duration
+        ul
+            display: flex
+            padding-left: 0
+            justify-content: center
+            li
+                list-style: none
+                margin-left: 5px
+                margin-right: 5px
+                .top-small-text
+                    font-family: 'Space Grotesk'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 9.40882px
+                    line-height: 85.6%
+                    text-align: center
+                    color: #FFFFFF
+                .bg-line
+                    height: 10px
+                    background: #EDFFEE
+                    width: 40px
+                &:first-child
+                    .bg-line
+                        width: 70px
+                &:nth-child(2)
+                    .bg-line
+                        width: 70px
+                .days
+                    padding-right: 5px
+                    border-right: 1.1761px solid #FFFFFF
+                    text-align: end
+    // .duration-listing
+    //     display: flex
+    //     justify-content: space-evenly
+    //     font-family: 'Space Grotesk'
+    //     .duration-return-item
+    //         width: 60px
+    //         .duration-div
+    //             border: 1px solid #117DCC
+    //             border-radius: 7px
+    //             font-family: 'Space Grotesk'
+    //             padding: 4px
+    //             &.selected-tier
+    //                 background: #117DCC
+    //                 color: #fff !important
+    //                 font-family: 'Space Grotesk'
+    //             span
+    //                 font-family: 'Space Grotesk'
+    //                 font-weight: 300
+    //                 font-size: 16px
+    //                 line-height: 20px
+    //             // cursor: pointer
+    //         .return-div
+    //             margin-top: 12px
+    //             font-family: 'Space Grotesk'
+    //         &.disable-return
+    //             opacity: 0.4
+    //         &.selection-return
+    //             .duration-div
+    //                 cursor: pointer
+    //                 &:hover
+    //                     background: #117DCC
+    //             span
+    //                 color: #fff
+    //                 font-family: 'Space Grotesk'
+    //                 font-weight: 300
+    //                 font-size: 16px
+    //                 line-height: 20px
+    .calculator-yield-container
+        background: rgba(68, 68, 68, 0.25)
+        border: 1.1761px solid #2F2F2F
+        border-radius: 15.2482px
+        padding: 17px 60px
+        box-sizing: border-box
+        margin-top: 20px
+        // width: 80%
+        // margin: 17px auto
+        .heading-p
+            letter-spacing: 0.2em
+        .calculator-details
+            display: flex
+            justify-content: space-between
+            padding: 5px 0px
+            span
+                width: 100%
+                text-align: start
+                display: block
+                color: #fff
+                padding: 6px 0px
+                font-family: 'Space Grotesk'
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 20px
+                color: #848484
+                &:last-child
+                    color: #fff
+                    text-align: end
+                    font-family: 'Space Grotesk'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 20px
+        .gs-to-gsk-converted
+            display: flex
+            justify-content: space-between
+            padding: 15px 47px
+            span
+
+    .staking-locked-info
+        p
+            color: #fff
+            font-family: 'Space Grotesk'
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 20px
+    .actions-buttons
+        display: flex
+        justify-content: center
+        padding: 10px 80px
+        box-sizing: border-box
+        gap: 20px
+        button
+            width: 150px
+            padding: 8px 20px
+            color: #fff
+            border: 1px solid #54C4FC
+            background: transparent
+            border-radius: 8.00531px
+            font-family: 'Space Grotesk'
+            font-style: normal
+            font-weight: 300
+            font-size: 18.8176px
+            line-height: 24px
+            &:hover
+                background: linear-gradient(180deg, #54C4FC 0%, #2479DF 100%)
+                transition-duration: 0.4s
+            &.active
+                background: linear-gradient(180deg, #54C4FC 0%, #2479DF 100%)
+                // &:hover
+                //     background: transparent
+                //     transition-duration: 0.4s
+
+@media screen and (max-width: 1200px)
+    .stake-calculator-container
+        .staking-month-duration
+            ul
+                display: flex
+                padding-left: 0
+                justify-content: center
+                li
+                    list-style: none
+                    margin-left: 5px
+                    margin-right: 5px
+                    .top-small-text
+                        font-family: 'Space Grotesk'
+                        font-style: normal
+                        font-weight: 300
+                        font-size: 7.40882px
+                        line-height: 85.6%
+                        text-align: center
+                        color: #FFFFFF
+                    .bg-line
+                        height: 10px
+                        background: #EDFFEE
+                        width: 30px
+                    &:first-child
+                        .bg-line
+                            width: 40px
+                    &:nth-child(2)
+                        .bg-line
+                            width: 40px
+                    .days
+                        padding-right: 5px
+                        border-right: 1.1761px solid #FFFFFF
+                        text-align: end
+        .calculator-card
+            width: 80%
+    .stake-calculator-container
+        .actions-buttons
+            button
+                font-size: 14px
+                line-height: 20px
+@media screen and (max-width: 992px)
+    .stake-calculator-container
+        .calculator-card
+            width: 90%
+        .actions-buttons
+            button
+                font-size: 12px
+                line-height: 16px
+@media screen and (max-width: 767px)
+    .stake-calculator-container
+        .enter-gs-stake
+            padding: 10px 15px
+            input
+                font-size: 15px
+                width: 50%
+        .actions-buttons
+            padding: 10px 0px
+        .staking-month-duration
+            ul
+                li
+                    margin-left: 1px
+                    margin-right: 1px
+                    .top-small-text
+                        font-size: 5.40882px
+                    .bg-line
+                        width: 20px
+                    &:first-child
+                        .bg-line
+                            width: 30px
+                    &:nth-child(2)
+                        .bg-line
+                            width: 25px
+                    .days
+                        font-size: 8px
+        .calculator-yield-container
+            padding: 17px 30px
+        .staking-locked-info
+            p
+                font-size: 9px
+        .actions-buttons
+            button
+                width: 100px
+                padding: 5px 10px
+                font-size: 10px
+@media screen and (max-width: 320px)
+    .stake-calculator-container
+        .staking-month-duration
+            ul
+                li
+                    margin-left: 1px
+                    margin-right: 1px
+                    .top-small-text
+                        font-size: 3.40882px
+                    .bg-line
+                        width: 15px
+                    &:first-child
+                        .bg-line
+                            width: 26px
+                    &:nth-child(2)
+                        .bg-line
+                            width: 23px
+                    .days
+                        font-size: 8px
+        .calculator-card
+            width: 98%
+        .actions-buttons
+            button
+                width: 95px
+                padding: 2px 10px
+                font-size: 14.8176px

@@ -1,0 +1,556 @@
+.exchanges-comp-section
+    .exchanges-comp-outer-div
+        border-radius: 42.8155px
+        background: linear-gradient(310deg, #54C4FC 30.29%, #2479DF 60.02%, #000000 84.65%)
+        padding: 2px
+        --borderWidth: 3px
+        position: relative
+        z-index: 1
+        overflow: hidden
+        &::after
+            content: ""
+            position: absolute
+            left: 0
+            top: 0
+            z-index: -1
+            top: calc(-1 * var(--borderWidth))
+            left: calc(-1 * var(--borderWidth))
+            height: calc(100% + var(--borderWidth) * 2)
+            width: calc(100% + var(--borderWidth) * 2)
+            background: linear-gradient(320.73deg, #54C4FC 30.29%, #2479DF 60.02%, #000000 84.65%)
+            border-radius: calc(2 * var(--borderWidth))
+            z-index: -1
+            animation: animatedgradient 2s ease alternate infinite
+            background-size: 300% 300%
+        .exchanges-comp-inner-div
+            background: #000000
+            border-radius: 42.8155px
+            padding: 50px 20px
+            padding-bottom: 0
+            img
+                width: 70%
+                position: relative
+            .ractangels-img
+                position: absolute
+                left: 0
+                bottom: 0
+                max-width: 500px
+            .ractangels-img2
+                position: absolute
+                right: 0
+                bottom: 0
+                max-width: 500px
+            .exchanges-comp-box
+                height: 500px
+                padding-top: 80px
+                width: 75%
+                margin: auto
+                display: flex
+                align-items: end
+                justify-content: center
+                position: relative
+                .column-poal-1
+                    position: absolute
+                    z-index: 1
+                    left: 0
+                    transition: all 1s
+                    .top-img-box
+                        width: 109px
+                        height: 107px
+                        -webkit-backface-visibility: visible
+                        backface-visibility: visible
+                        position: absolute
+                        margin: 0 auto
+                        transform: rotate3d(22, -7, -23, -60deg)
+                        background: #2E2E2E
+                        transform: matrix(0.87, -0.5, 0.87, 0.51, 1, 1)
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        left: 38px
+                        top: -54px
+                        z-index: 2
+                        img
+                            filter: grayscale(1)
+                    .poal
+                        width: 188px
+                        height: 323px
+                        background: #111111
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
+                        position: relative
+                        -webkit-transform: translateZ(0)
+                        transform: translateZ(0)
+                        -webkit-transition: color 2000ms
+                        transition: color 2000ms
+                        transition: all 0.5s
+                        &:before
+                            content: ""
+                            position: absolute
+                            z-index: -1
+                            top: 0
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            background: #2098d1
+                            -webkit-transform: scaleY(0)
+                            transform: scaleY(0)
+                            -webkit-transform-origin: 50% 100%
+                            transform-origin: 50% 100%
+                            -webkit-transition-property: transform
+                            transition-property: transform
+                            -webkit-transition: all 0.5s
+                            transition: all 0.5s
+                            transition: all 0.5s
+                    &:hover
+                        z-index: 5
+                        .top-img-box
+                            img
+                                filter: grayscale(0)
+                        .poal
+                            height: 437px
+                            &:before
+                                -webkit-transform: scaleY(1)
+                                transform: scaleY(1)
+                .column-poal-2
+                    position: absolute
+                    left: 100px
+                    z-index: 1
+                    transition: all 1s
+                    .top-img-box
+                        width: 109px
+                        height: 107px
+                        -webkit-backface-visibility: visible
+                        backface-visibility: visible
+                        position: absolute
+                        margin: 0 auto
+                        transform: rotate3d(22, -7, -23, -60deg)
+                        background: #2E2E2E
+                        transform: matrix(0.87, -0.5, 0.87, 0.51, 1, 1)
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        left: 38px
+                        top: -54px
+                        z-index: 2
+                        img
+                            filter: grayscale(1)
+                    .poal
+                        width: 188px
+                        height: 230px
+                        background: #111111
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
+                        position: relative
+                        -webkit-transform: translateZ(0)
+                        transform: translateZ(0)
+                        -webkit-transition: color 2000ms
+                        transition: color 2000ms
+                        transition: all 0.5s
+                        &:before
+                            content: ""
+                            position: absolute
+                            z-index: -1
+                            top: 0
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            background: #2098d1
+                            -webkit-transform: scaleY(0)
+                            transform: scaleY(0)
+                            -webkit-transform-origin: 50% 100%
+                            transform-origin: 50% 100%
+                            -webkit-transition-property: transform
+                            transition-property: transform
+                            -webkit-transition: all 0.5s
+                            transition: all 0.5s
+                            transition: all 0.5s
+                    &:hover
+                        z-index: 5
+                        .top-img-box
+                            img
+                                filter: grayscale(0)
+                        .poal
+                            height: 437px
+                            &:before
+                                -webkit-transform: scaleY(1)
+                                transform: scaleY(1)
+                .column-poal-3
+                    position: absolute
+                    left: 150px
+                    opacity: 0.5
+                    transition: all 1s
+                    .top-img-box
+                        width: 109px
+                        height: 107px
+                        -webkit-backface-visibility: visible
+                        backface-visibility: visible
+                        position: absolute
+                        margin: 0 auto
+                        transform: rotate3d(22, -7, -23, -60deg)
+                        background: #2E2E2E
+                        transform: matrix(0.87, -0.5, 0.87, 0.51, 1, 1)
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        left: 38px
+                        top: -54px
+                        z-index: 2
+                        img
+                            filter: grayscale(1)
+                    .poal
+                        width: 188px
+                        height: 380px
+                        background: #111111
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
+                        position: relative
+                        -webkit-transform: translateZ(0)
+                        transform: translateZ(0)
+                        -webkit-transition: color 2000ms
+                        transition: color 2000ms
+                        transition: all 0.5s
+                        &:before
+                            content: ""
+                            position: absolute
+                            z-index: -1
+                            top: 0
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            background: #2098d1
+                            -webkit-transform: scaleY(0)
+                            transform: scaleY(0)
+                            -webkit-transform-origin: 50% 100%
+                            transform-origin: 50% 100%
+                            -webkit-transition-property: transform
+                            transition-property: transform
+                            -webkit-transition: all 0.5s
+                            transition: all 0.5s
+                            transition: all 0.5s
+                    &:hover
+                        z-index: 5
+                        opacity: 1
+                        .top-img-box
+                            img
+                                filter: grayscale(0)
+                        .poal
+                            height: 437px
+                            &:before
+                                -webkit-transform: scaleY(1)
+                                transform: scaleY(1)
+                .column-poal-4
+                    position: absolute
+                    left: 33%
+                    transition: all 1s
+                    .top-img-box
+                        width: 109px
+                        height: 107px
+                        -webkit-backface-visibility: visible
+                        backface-visibility: visible
+                        position: absolute
+                        margin: 0 auto
+                        transform: rotate3d(22, -7, -23, -60deg)
+                        background: #2E2E2E
+                        transform: matrix(0.87, -0.5, 0.87, 0.51, 1, 1)
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        left: 38px
+                        top: -54px
+                        z-index: 2
+                        img
+                            filter: grayscale(1)
+                    .poal
+                        width: 188px
+                        height: 325px
+                        background: #111111
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
+                        position: relative
+                        -webkit-transform: translateZ(0)
+                        transform: translateZ(0)
+                        -webkit-transition: color 2000ms
+                        transition: color 2000ms
+                        transition: all 0.5s
+                        &:before
+                            content: ""
+                            position: absolute
+                            z-index: -1
+                            top: 0
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            background: #2098d1
+                            -webkit-transform: scaleY(0)
+                            transform: scaleY(0)
+                            -webkit-transform-origin: 50% 100%
+                            transform-origin: 50% 100%
+                            -webkit-transition-property: transform
+                            transition-property: transform
+                            -webkit-transition: all 0.5s
+                            transition: all 0.5s
+                            transition: all 0.5s
+                    &:hover
+                        z-index: 5
+                        .top-img-box
+                            img
+                                filter: grayscale(0)
+                        .poal
+                            height: 437px
+                            &:before
+                                -webkit-transform: scaleY(1)
+                                transform: scaleY(1)
+                .column-poal-5
+                    position: absolute
+                    right: 29%
+                    z-index: 1
+                    transition: all 1s
+                    .top-img-box
+                        width: 109px
+                        height: 107px
+                        -webkit-backface-visibility: visible
+                        backface-visibility: visible
+                        position: absolute
+                        margin: 0 auto
+                        transform: rotate3d(22, -7, -23, -60deg)
+                        background: #2E2E2E
+                        transform: matrix(0.87, -0.5, 0.87, 0.51, 1, 1)
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        left: 38px
+                        top: -54px
+                        z-index: 2
+                        img
+                            filter: grayscale(1)
+                    .poal
+                        width: 188px
+                        height: 400px
+                        background: #111111
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
+                        position: relative
+                        -webkit-transform: translateZ(0)
+                        transform: translateZ(0)
+                        -webkit-transition: color 2000ms
+                        transition: color 2000ms
+                        transition: all 0.5s
+                        &:before
+                            content: ""
+                            position: absolute
+                            z-index: -1
+                            top: 0
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            background: #2098d1
+                            -webkit-transform: scaleY(0)
+                            transform: scaleY(0)
+                            -webkit-transform-origin: 50% 100%
+                            transform-origin: 50% 100%
+                            -webkit-transition-property: transform
+                            transition-property: transform
+                            -webkit-transition: all 0.5s
+                            transition: all 0.5s
+                            transition: all 0.5s
+                    &:hover
+                        z-index: 5
+                        .top-img-box
+                            img
+                                filter: grayscale(0)
+                        .poal
+                            height: 437px
+                            &:before
+                                -webkit-transform: scaleY(1)
+                                transform: scaleY(1)
+                .column-poal-6
+                    position: absolute
+                    z-index: 1
+                    right: 22%
+                    transition: all 1s
+                    .top-img-box
+                        width: 109px
+                        height: 107px
+                        -webkit-backface-visibility: visible
+                        backface-visibility: visible
+                        position: absolute
+                        margin: 0 auto
+                        transform: rotate3d(22, -7, -23, -60deg)
+                        background: #2E2E2E
+                        transform: matrix(0.87, -0.5, 0.87, 0.51, 1, 1)
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        left: 38px
+                        top: -54px
+                        z-index: 2
+                        img
+                            filter: grayscale(1)
+                    .poal
+                        width: 188px
+                        height: 200px
+                        background: #111111
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
+                        position: relative
+                        -webkit-transform: translateZ(0)
+                        transform: translateZ(0)
+                        -webkit-transition: color 2000ms
+                        transition: color 2000ms
+                        transition: all 0.5s
+                        &:before
+                            content: ""
+                            position: absolute
+                            z-index: -1
+                            top: 0
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            background: #2098d1
+                            -webkit-transform: scaleY(0)
+                            transform: scaleY(0)
+                            -webkit-transform-origin: 50% 100%
+                            transform-origin: 50% 100%
+                            -webkit-transition-property: transform
+                            transition-property: transform
+                            -webkit-transition: all 0.5s
+                            transition: all 0.5s
+                            transition: all 0.5s
+                    &:hover
+                        z-index: 5
+                        .top-img-box
+                            img
+                                filter: grayscale(0)
+                        .poal
+                            height: 437px
+                            &:before
+                                -webkit-transform: scaleY(1)
+                                transform: scaleY(1)
+                .column-poal-7
+                    position: absolute
+                    right: 11%
+                    transition: all 1s
+                    .top-img-box
+                        width: 109px
+                        height: 107px
+                        -webkit-backface-visibility: visible
+                        backface-visibility: visible
+                        position: absolute
+                        margin: 0 auto
+                        transform: rotate3d(22, -7, -23, -60deg)
+                        background: #2E2E2E
+                        transform: matrix(0.87, -0.5, 0.87, 0.51, 1, 1)
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        left: 38px
+                        top: -54px
+                        z-index: 2
+                        img
+                            filter: grayscale(1)
+                    .poal
+                        width: 188px
+                        height: 350px
+                        background: #111111
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
+                        position: relative
+                        -webkit-transform: translateZ(0)
+                        transform: translateZ(0)
+                        -webkit-transition: color 2000ms
+                        transition: color 2000ms
+                        transition: all 0.5s
+                        &:before
+                            content: ""
+                            position: absolute
+                            z-index: -1
+                            top: 0
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            background: #2098d1
+                            -webkit-transform: scaleY(0)
+                            transform: scaleY(0)
+                            -webkit-transform-origin: 50% 100%
+                            transform-origin: 50% 100%
+                            -webkit-transition-property: transform
+                            transition-property: transform
+                            -webkit-transition: all 0.5s
+                            transition: all 0.5s
+                            transition: all 0.5s
+                    &:hover
+                        z-index: 5
+                        .top-img-box
+                            img
+                                filter: grayscale(0)
+                        .poal
+                            height: 437px
+                            &:before
+                                -webkit-transform: scaleY(1)
+                                transform: scaleY(1)
+                .column-poal-8
+                    position: absolute
+                    z-index: 1
+                    right: 0%
+                    transition: all 1s
+                    .top-img-box
+                        width: 109px
+                        height: 107px
+                        -webkit-backface-visibility: visible
+                        backface-visibility: visible
+                        position: absolute
+                        margin: 0 auto
+                        transform: rotate3d(22, -7, -23, -60deg)
+                        background: #2E2E2E
+                        transform: matrix(0.87, -0.5, 0.87, 0.51, 1, 1)
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        left: 38px
+                        top: -54px
+                        z-index: 2
+                        img
+                            filter: grayscale(1)
+                    .poal
+                        width: 188px
+                        height: 200px
+                        background: #111111
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
+                        position: relative
+                        -webkit-transform: translateZ(0)
+                        transform: translateZ(0)
+                        -webkit-transition: color 2000ms
+                        transition: color 2000ms
+                        transition: all 0.5s
+                        &:before
+                            content: ""
+                            position: absolute
+                            z-index: -1
+                            top: 0
+                            left: 0
+                            right: 0
+                            bottom: 0
+                            background: #2098d1
+                            -webkit-transform: scaleY(0)
+                            transform: scaleY(0)
+                            -webkit-transform-origin: 50% 100%
+                            transform-origin: 50% 100%
+                            -webkit-transition-property: transform
+                            transition-property: transform
+                            -webkit-transition: all 0.5s
+                            transition: all 0.5s
+                    &:hover
+                        z-index: 5
+                        .top-img-box
+                            img
+                                filter: grayscale(0)
+                        .poal
+                            height: 437px
+                            &:before
+                                -webkit-transform: scaleY(1)
+                                transform: scaleY(1)
+
+@media screen and (max-width: 767px)
+    .exchanges-comp-section
+        .exchanges-comp-outer-div
+            border-radius: 11.603px
+            .exchanges-comp-inner-div
+                padding: 20px 10px
+                padding-bottom: 0
+                border-radius: 11.603px
+                h2
+                    font-size: 23px

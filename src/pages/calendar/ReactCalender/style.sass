@@ -1,0 +1,273 @@
+.reactCalender
+  width: 100%
+  max-width: 1058px
+  margin: 121px auto
+  background: #16161c
+  box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.45)
+  padding: 23px
+  box-sizing: border-box
+
+  .base-modal .base-modal__wrapper
+    top: 50%
+    transform: translateY(-50%)
+
+.loader-modal-bg
+  max-width: 225px
+  //width: 100%
+
+.rbc-calendar
+  height: auto !important
+  min-height: 1024px !important
+
+.reactCalender .rbc-toolbar
+  flex-direction: row-reverse
+  justify-content: flex-start
+  padding: 10px
+  position: relative
+
+.customeToolbar .rbc-toolbar-label
+  font-weight: 600
+  font-size: 22px
+  line-height: 100%
+  color: #ffffff
+
+.reactCalender .rbc-calendar
+  background-color: #16161c
+  box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.45)
+
+.rbc-day-bg
+  &.rbc-off-range-bg, &.rbc-today
+    background-color: #16161c
+    box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.45)
+
+.rbc-row-content .rbc-row .rbc-date-cell
+
+  color: #f4f4f4
+  font-weight: 300
+  font-size: 12px
+  line-height: 100%
+
+  &.rbc-off-range
+    color: #767679
+
+.rbc-event-content, .rbc-event
+  border-radius: 25px
+  font-weight: normal
+  font-size: 12px
+  line-height: 24px !important
+  display: flex
+  align-items: center
+
+.rbc-event-content
+  margin-left: 25px
+
+.rbc-event
+  position: relative
+
+.rbc-event-content::before
+  content: ""
+  width: 24px
+  height: 24px
+  border-radius: 25px
+  background-image: url("../assert/images/eventSign.svg")
+  background-color: #fff
+  position: absolute
+  left: 3px
+  top: 50%
+  transform: translateY(-50%)
+
+.rbc-toolbar-label
+  color: #fff
+
+.rbc-toolbar button
+  color: #fff
+
+  &:active, &.rbc-active, &:hover
+    background-color: #117DCC
+
+.rbc-label
+  color: #fff
+  font-weight: 500
+  font-size: 16px
+
+.rbc-header
+  color: #fff
+  font-weight: 500
+  font-size: 16px
+
+  &.rbc-today
+    color: #000
+
+.rbc-time-column .rbc-timeslot-group
+  background-color: #16161c
+
+.rbc-btn-group
+  margin-left: 10px
+  border: 1px solid rgba(255, 255, 255, 0.25)
+  box-sizing: border-box
+  border-radius: 4px
+  display: flex
+
+  button
+    border: none
+    outline: none
+    color: #fff
+    border-right: 2px solid rgba(255, 255, 255, 0.3)
+    line-height: 36px
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0 10px
+
+.rbc-row-segment
+  margin-top: 2px
+
+.rbc-row .rbc-row-segment .rbc-show-more
+  background-color: rgba(255, 255, 255, 0.3)
+  text-align: center
+  border-radius: 16px
+  color: #117DCC
+  line-height: 28px
+  text-decoration: none
+
+.rbc-day-slot .rbc-time-slot
+  border-top: none
+
+.rbc-event .rbc-event-label
+  display: none
+
+.rbc-day-slot .rbc-events-container
+  margin-right: 0
+
+.rbc-time-header-content .rbc-row.rbc-time-header-cell .rbc-header, .rbc-row.rbc-month-header .rbc-header
+  padding: 8px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.customeToolbar
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 20px
+
+.dropDownToday
+  display: flex
+  align-items: center
+
+.customeToolbar button
+  background-color: #16161c
+
+  &:hover
+    background-color: #16161c
+
+.dropdown-toggle.btn.btn-secondary
+  color: #117DCC
+  background-color: #16161c
+  border-color: #117DCC
+  box-shadow: none
+
+.btn-check
+  &:active + .btn-secondary, &:checked + .btn-secondary
+    color: #117DCC
+    background-color: #16161c
+    border-color: #117DCC
+    box-shadow: none
+
+.btn-secondary
+  &.active, &:active
+    color: #117DCC
+    background-color: #16161c
+    border-color: #117DCC
+    box-shadow: none
+
+.show > .btn-secondary.dropdown-toggle
+  color: #117DCC
+  background-color: #16161c
+  border-color: #117DCC
+  box-shadow: none
+
+.dropdown.show
+  box-shadow: none
+
+.dropdown-menu.show
+  background-color: transparent
+
+  .dropdown-item
+    width: 100px
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0.44rem
+    text-transform: capitalize
+
+.dropdown-toggle.btn.btn-secondary
+  width: 100px
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 0.44rem
+  text-transform: capitalize
+
+.dropdown-menu.show .dropdown-item
+  background-color: #fff
+
+.dropdown-toggle::after
+  content: ''
+  width: 20px
+  height: 20px
+  background-image: url("../assert/images/dropDownIcon.svg")
+  background-size: cover
+  vertical-align: 0
+  border: 0
+
+.dropdown-item
+  &.active, &:active
+    color: #000
+
+.side-drawer
+  height: 100%
+  background: white
+  position: fixed
+  top: 0
+  right: 0
+  width: 40%
+  z-index: 200
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5)
+  transform: translateX(100%)
+  transition: transform 0.3s ease-out
+
+  &.open
+    transform: translateX(0)
+
+.backdrop
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.5)
+  z-index: 100
+  top: 0
+  right: 0
+
+.loader
+  position: absolute
+  top: calc(50% - 4em)
+  left: calc(50% - 4em)
+  width: 6em
+  height: 6em
+  border: 1.1em solid rgba(0, 0, 0, 0.2)
+  border-left: 1.1em solid #000000
+  border-radius: 50%
+  animation: load8 1.1s infinite linear
+  transition: opacity 0.3s
+
+.loader--hide
+  opacity: 0
+
+@keyframes load8
+  0%
+    transform: rotate(0deg)
+
+  100%
+    transform: rotate(360deg)

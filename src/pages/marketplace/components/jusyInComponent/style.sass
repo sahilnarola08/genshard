@@ -1,0 +1,245 @@
+.justInOthersWorlds
+  width: 100%
+  background-color: #16161c
+  color: #fff
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  .custome-container
+    display: flex
+  .inOthersWorldsDetails
+    max-width: 25%
+    width: 100%
+    padding: 67px 0 97px 0px
+    stroke: 1px
+    stroke-width: "4"
+    stroke-dasharray: "6%2c 14"
+    stroke-dashoffset: "0"
+
+    .justIn-Container
+      #justIn
+        font-size: 30px
+        font-weight: 300
+        line-height: 44px
+        letter-spacing: 1em
+
+        ~ hr
+          width: 100%
+          max-width: 281px
+          margin: 32px 0 40px
+          border-bottom: 1px solid #ffffff
+          border-color: #ffffff
+
+      #otherWorlds
+        font-size: 28px
+        font-weight: bold
+        line-height: 41px
+
+      #byVeraStudios
+        margin: 19px 0 39px
+        font-size: 28px
+        font-weight: 200
+        line-height: 41px
+
+      #othersWorldsDescription
+        font-size: 20px
+        font-weight: 200
+        line-height: 30px
+        max-width: 311px
+        width: 100%
+
+      #ethAndBuy
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        max-width: 239px
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-between
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        margin: 33px 0 0
+
+        .buy-price
+          font-size: 28px
+          font-weight: 500
+          line-height: 41px
+
+      #othersWorldsDescription ~ #ethAndBuy button
+        color: #fff
+        width: 100%
+        max-width: 95px
+        height: 32px
+        background: #117DCC
+        border: 0.845143px solid #117DCC
+        border-radius: 17.029px
+        font-size: 15.2126px
+        letter-spacing: 0.145em
+        line-height: 23px
+
+  .inOthersWorldsImageContainer
+    width: 100%
+    max-width: 70%
+    text-align: center
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+
+    .inOthersWorldsImage
+      margin: 50px auto 50px auto
+      max-width: 80%
+      width: 100%
+
+      img
+        border-radius: 44px
+        width: 100%
+        max-height: 400px
+        max-width: 800px
+        object-fit: contain
+
+@media (max-width: 1366px)
+  .justInOthersWorlds .inOthersWorldsDetails
+    // padding-left: 40px
+
+@media (max-width: 1124px)
+  .justInOthersWorlds
+    -ms-flex-wrap: wrap-reverse
+    flex-wrap: wrap-reverse
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: start
+
+    .inOthersWorldsDetails
+      padding: 0px
+      border: none
+      max-width: 100%
+
+      .justIn-Container
+        #justIn
+          font-size: 27px
+          letter-spacing: 0.5em
+          padding-top: 5px
+          ~ hr
+            margin: 20px 0px
+            max-width: 145px
+
+        #ethAndBuy
+          margin: 33px 0px
+          justify-content: start
+        
+        #byVeraStudios
+          margin: 17px 0 30px
+
+    .inOthersWorldsImageContainer
+      max-width: 100%
+      margin: 0px 60px
+
+@media (max-width: 768px)
+  .justInOthersWorlds 
+    .inOthersWorldsDetails
+      padding: 0
+      align-items: center
+      display: flex
+      .justIn-Container
+        #justIn
+          font-size: 22px
+          line-height: 24px
+          ~ hr
+            border-color: transparent
+            margin-bottom: 0
+
+        #byVeraStudios
+          margin-bottom: 30px
+          font-size: 22px
+          line-height: 34px
+        #otherWorlds
+          font-size: 22px
+          line-height: 34px
+        #othersWorldsDescription
+          font-size: 18px
+          line-height: 30px
+        #ethAndBuy 
+          .buy-price
+            font-size: 22px
+            line-height: 32px
+    .inOthersWorldsImageContainer
+      max-width: 100%
+      // margin: 40px
+      .inOthersWorldsImage
+        width: 100%
+        max-width: 100%
+        img
+          border-radius: 20px
+
+@media ( max-width: 480px)
+  .justInOthersWorlds
+    padding: 10px
+    .inOthersWorldsImageContainer
+      max-width: 100%
+      margin: 0px 10px
+      .inOthersWorldsImage
+        width: 100%
+        max-width: 100%
+        img
+          border-radius: 20px
+    .inOthersWorldsDetails
+      .justIn-Container
+        #justIn
+          font-size: 15px
+          line-height: 24px
+          letter-spacing: 0.5em
+          padding-top: 5px
+        #justIn ~ hr
+          margin: 15px auto 15px
+        #otherWorlds
+          font-size: 22px
+          line-height: 30px
+          font-weight: 400
+        #byVeraStudios
+          font-size: 20px
+          line-height: 30px
+        #othersWorldsDescription
+          font-size: 19px
+          line-height: 22px
+        #ethAndBuy
+          margin: 33px auto
+          .buy-price
+            font-size: 20px
+            line-height: 30px
+          button
+            font-size: 12px
+            line-height: 18px 
+
+@media ( max-width: 390px)
+  .justInOthersWorlds
+    .inOthersWorldsImageContainer
+      margin: 0px 5px
+      
+    .inOthersWorldsDetails 
+      .justIn-Container 
+        #justIn
+          font-size: 18px
+        #otherWorlds
+          font-size: 20px
+        #byVeraStudios
+          margin: 10px 0 15px
+        #othersWorldsDescription
+          font-size: 15px
+          max-width: 220px
+        #ethAndBuy 
+          max-width: 170px
+          margin-top: 20px
+          .buy-price
+            font-size: 19px
+        #othersWorldsDescription ~ #ethAndBuy 
+          button
+            font-size: 12px
+            line-height: 18px 
+            max-width: 70px

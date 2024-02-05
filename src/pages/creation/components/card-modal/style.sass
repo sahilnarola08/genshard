@@ -1,0 +1,70 @@
+@import '../../../../_variables';
+@mixin fontItem($size)
+    font: 
+        size: $size
+        weight: 300
+        
+.modal-content
+    display: inline-flex
+    color: var(--color-on-primary)
+    .modal-title
+        display: flex
+        justify-content: center
+        &__type
+            @include fontItem(25px)
+            text-transform: uppercase
+            line-height: 50px
+            white-space: nowrap
+            color: var(--color-on-secondary)
+        &__number
+            @include fontItem(25px)
+            background-color: var(--color-highlight)
+            border: 1px solid var(--color-highlight)
+            margin-left: 0.5rem
+            width: 46px
+            height: 46px
+            border-radius: 0.625rem
+            line-height: 46px
+    .modal-form
+        text-align: left
+        color: var(--color-on-secondary)
+        margin-top: 2rem
+        .modal-form-item
+            margin-top: 2rem
+            &__label
+                @include fontItem(22px)
+            &__input
+                border-bottom: 2px solid var(--color-border-100)
+                width: 90%
+        .modal-form-btn
+            text-align: center
+            margin-top: 1.5rem
+            .btn-done
+                @include fontItem(20px)
+                text-transform: uppercase
+                background-color: var(--color-highlight)
+                padding: 0px 1.8rem
+
+@media ( max-width: $screen-small)      
+    .modal-content
+        .modal-title
+            &__type 
+                @include fontItem(1.2625rem)
+            &__number
+                @include fontItem(1.2625rem)
+                width: 2.5rem
+                height: 2.5rem
+                line-height: 2.5rem
+        .modal-form
+            margin-top: 1rem
+            .modal-form-item
+                margin-top: 1rem
+                &__label
+                     @include fontItem(1.0625rem)
+                &__input
+            .modal-form-btn
+                margin-top: 1rem
+                .btn-done
+                    @include fontItem(1.01rem)
+
+

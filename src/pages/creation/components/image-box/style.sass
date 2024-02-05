@@ -1,0 +1,65 @@
+@import '../../../../_variables'
+
+.image-box
+    text-align: center
+
+    .title
+        position: relative
+        display: inline-block
+        margin-bottom: 1.5rem
+
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            bottom: -0.5rem
+            left: 50%
+            transform: translateX(-50%)
+
+            height: 0.25rem
+            width: 70%
+            background: var(--color-highlight)
+
+        h5
+            font-size: 2.1875rem
+            line-height: 3.25rem
+            text-align: center
+            color: #000
+            margin: 0
+
+        .info-button
+            position: absolute
+            top: -5px
+            right: -1.25rem
+            font-size: 0
+            cursor: pointer
+
+    .image-box__content
+        position: relative
+        display: inline-block
+
+    .modal-content
+        display: inline-flex
+        align-items: center
+        color: var(--color-on-primary)
+@media ( max-width: 991px )
+    .image-box
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-orient: horizontal
+        -webkit-box-direction: reverse
+        -ms-flex-direction: row-reverse
+        flex-direction: row-reverse
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+@media ( max-width: 480px )
+    .image-box
+        .base-modal~img
+            width: 100%
+            max-width: 150px
+        .title
+            h5
+                font-size: 2rem
+                text-align: left

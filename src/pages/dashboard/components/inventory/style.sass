@@ -1,0 +1,77 @@
+
+@import '../../../../_variables.sass';
+.inventory_non_available
+    width: 100%
+    text-align: center
+    color: #fff
+    font-size: 15px
+    font-weight: bold
+    margin-top: 15px
+
+.show-no-owned
+    color: #000
+    text-align: center
+    font-size: 1.5rem
+
+.inventory
+    position: relative
+    min-height: 350px
+
+    .dont-own-display
+        display: flex !important
+        justify-content: center
+
+    .inventory__list
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 3rem
+        padding: 0 2rem
+        margin-top: 1rem
+        // margin-left: 3rem
+
+    .ticket-item
+        width: 275px
+    
+    .loading-icon
+        width: 40px
+        position: absolute
+        top: 40%
+        left: 50%
+        transform: translate(-50%, -50%)
+        
+@media screen and ( max-width: 1256px)
+    .inventory
+        padding: 0 3rem
+        .inventory__list
+            padding: 0 5rem
+            max-width: fit-content
+            margin: 0 auto
+    
+@media screen and ( max-width: $screen-large)
+    .inventory
+        .inventory__list
+            grid-gap: 2rem
+            padding: 0 3rem
+
+            .ticket-item
+                padding: 0
+
+@media screen and ( max-width: 900px)
+    .inventory
+        .inventory__list
+            padding: 0 
+
+@media screen and ( max-width: $screen-medium)
+    .inventory
+        .inventory__list
+            grid-template-columns: 1fr
+            
+
+@media screen and ( max-width: $screen-small)
+    .inventory
+        padding: 0
+
+        .inventory__list
+            grid-template-columns: 1fr
+            grid-gap: 2rem
+          

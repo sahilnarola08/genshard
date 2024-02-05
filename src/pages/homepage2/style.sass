@@ -1,0 +1,370 @@
+@import '../../_variables'
+
+.homepage-container
+    background: $homepage-background
+    width: 100%
+    color: white
+    box-sizing: border-box
+    .welcome-to-container
+        margin: 0 auto 0
+        // max-width: 90rem
+        text-align: center
+        padding: 20px 0px
+        .background-logo
+            // height: 300px
+            background-image: url(../../images/homepage/homepage-BG.svg)
+            background-image: url(../../images/homepage/homepage-BG1.svg)
+            background-repeat: no-repeat
+            background-size: cover
+            img
+                // max-width: 100%
+                // max-height: 100%
+                width: 600px
+        .welcome-content
+            // text-align: center
+            display: grid
+            justify-content: center
+            h2
+                font-size: 1.8rem
+            div
+                display: flex
+                justify-content: center
+                span
+                    height: 1px
+                    width: 200px
+                    background: $primary-theme-color
+        .actions-buttons
+            max-width: 400px
+            display: flex
+            margin: auto
+            justify-content: space-between
+            button
+                min-
+                border: 1px solid $primary-theme-color
+                color: $primary-text-color
+                border-radius: 8px
+                background: transparent
+                cursor: pointer
+                border: 1px solid $primary-theme-color
+                color: $primary-text-color
+                border-radius: 8px
+                background: transparent
+                cursor: pointer
+                width: 110px
+                height: 30px
+                font-size: 1.1rem
+
+    .learn-more-container
+        width: 100%
+        background-image: url(../../images/collections/headerBGimage.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        text-align: center
+        padding: 0px 0px 50px
+        box-sizing: border-box
+        .learn-more-video-item
+            height: 100%
+            display: flex
+            max-width: 80rem
+            padding: 0px 20px
+            margin: auto
+            justify-content: space-between
+            .learn-more
+                width: 50%
+                // padding-top: 35px
+                padding: 30px
+                box-sizing: border-box
+                h3
+                    // width: 100%
+                    text-align: start
+                    font-weight: 500
+                    font-size: 2rem
+                p
+                    width: 90%
+                    text-align: start
+                    font-size: 1.5rem
+            .video-container
+                width: 50%
+                padding-top: 35px
+                .video-item
+                    font-size: 1.5rem
+                    width: 90%
+                    height: 100%
+                    min-width: 400px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    min-height: 400px
+                    video
+                        width: 100%
+                        height: 80%
+                        border-radius: 24px
+                        object-fit: cover
+    .faq-container-mobile-view
+        display: none
+        height: 200px
+        width: 100%
+        background: $homepage-background
+    .faq-container
+        display: flex
+        justify-content: space-between
+        .faq-titles
+            width: 40%
+            display: grid
+            justify-content: end
+            background: #16161C
+            padding: 50px 50px 50px 0px
+            box-sizing: border-box
+            .faq-titles-heading
+                border-bottom: 1px solid $primary-theme-color
+                width: 200px
+                h1
+                    letter-spacing: 20px
+            .faq-title-list
+                width: 320px
+                text-align: start
+                ul
+                    list-style-type: none
+                    li
+                        font-size: 1.1rem
+                        padding-top: 20px
+                        cursor: pointer
+                        &:hover
+                            color: $primary-theme-color
+                        &.active-item
+                            color: $primary-theme-color
+                            span
+                                position: relative
+                                display: block
+                                &::before
+                                    content: ''
+                                    margin-top: 10px
+                                    position: absolute
+                                    left: -27px
+                                    height: 68%
+                                    width: 2px
+                                    background: $primary-theme-color
+
+        .faq-details
+            width: 60%
+            text-align: start
+            background: #27282E
+            padding: 50px 0px 50px 50px
+            .faq-details-title
+                h1
+                    color: $primary-theme-color
+            .faq-selected-details
+                max-width: 50rem
+                p
+                    font-size: 1.4rem
+                    white-space: break-spaces
+
+    .portfolio-container
+        padding: 50px 0px
+        h1
+            text-align: center
+            font-size: 1.3rem
+            letter-spacing: 1em
+            margin: 0px 0px 50px 0px
+        .portfolio-list-container
+            display: flex
+            flex-wrap: wrap
+            max-width: 90rem
+            margin: auto
+            .portfolio-list-item
+                width: 33.33%
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 10px
+                box-sizing: border-box
+                cursor: pointer
+                .image-div
+                    width: 200px
+                    height: 60px
+                    text-align: end
+                    padding-right: 20px
+                    border-right: 1px solid $primary-theme-color
+                    img
+                        max-width: 100%
+                        max-height: 100%
+                .return-container
+                    text-align: center
+                    padding-left: 20px
+                    h2
+                        margin: 0
+                        font-size: 3rem
+                    span
+                        display: block
+                        margin-top: -13px
+
+    .partners-container
+        text-align: center
+        background: #27282E
+        padding: 20px 0px
+        h2
+            margin: auto auto 30px auto
+            border-bottom: 1px solid red
+            width: fit-content
+            padding-bottom: 15px
+        .partners-list-container
+            display: flex
+            flex-wrap: wrap
+            max-width: 90rem
+            margin: auto
+            .partner-list-item
+                width: 33.33%
+                padding: 10px 0px
+                box-sizing: border-box
+                cursor: pointer
+                .image-div
+                    height: 120px
+                    width: 100%
+                    img
+                        height: 100%
+                        width: 100%
+                .return-container
+                    text-align: center
+                    h2
+                        margin: 0
+                        font-size: 3rem
+                    span
+                        display: block
+                        margin-top: -13px
+
+    .stay-updated-container
+        text-align: center
+        h2
+            letter-spacing: 1em
+            border-bottom: 1px solid $primary-theme-color
+            width: fit-content
+            margin: auto
+            padding: 20px
+            text-align: center
+        p
+            margin: 30px
+            font-size: 1.4rem
+        input
+            display: block
+            margin: auto
+            width: 400px
+            background: transparent
+            border: 1px solid $primary-theme-color
+            border-radius: 40px
+            height: 36px
+            color: white
+            text-align: center
+            outline: none
+            font-size: 1.3rem
+        button
+            width: 120px
+            border-radius: 40px
+            margin: 30px 0px
+            cursor: pointer
+
+    .footer-container
+        background: #27282E
+        height: 300px
+        .footer-container-item
+            display: flex
+            max-width: 90rem
+            margin: auto
+            height: 100%
+            .footer-gen-logo
+                width: 400px
+                display: grid
+                text-align: center
+                padding: 25px
+                box-sizing: border-box
+                .gen-logo-item
+                    margin: auto
+                    display: grid
+                    img
+                    span
+                        margin-top: 30px
+                        font-size: 1.3rem
+            .footer-routes-item
+                width: 100%
+                box-sizing: border-box
+                ul
+                    display: flex
+                    height: 100%
+                    flex-direction: column
+                    align-items: flex-start
+                    align-content: flex-start
+                    flex-wrap: wrap
+                    list-style: none
+                    padding: 40px 0px
+                    margin: 0px 50px
+                    box-sizing: border-box
+                    li
+                        width: 25%
+                        height: 54px
+                        cursor: pointer
+                        span
+                            &:hover
+                                color: $primary-theme-color
+
+@media screen and ( max-width: 1024px)
+    .homepage-container
+        .welcome-to-container
+            .background-logo
+                img
+                    width: 400px
+            .welcome-content
+                h2
+                    font-size: 1.4rem
+        .learn-more-container
+            .learn-more-video-item
+                display: grid
+                justify-content: center
+                flex-direction: row-reverse
+                .learn-more
+                    width: 100%
+                    p
+                        width: 100%
+                .video-container
+                    width: 100%
+                    display: flex
+                    justify-content: center
+                    padding-top: 0px
+        .faq-container
+            display: none
+        .faq-container-mobile-view
+            display: block
+        .portfolio-container
+            .portfolio-list-container
+                .portfolio-list-item
+                    width: 50%
+                    padding: 20px
+                    .image-div
+                        width: 150px
+                        height: 40px
+                        text-align: center
+        .partners-container
+            .partners-list-container
+                .partner-list-item
+                    width: 50%
+                    .image-div
+                        height: 80px
+        .stay-updated-container
+            h2
+                font-size: 1.3rem
+                padding: 20px 0px 10px
+            p
+                font-size: 1.2rem
+        .footer-container
+            height: fit-content
+            .footer-container-item
+                display: grid
+                .footer-gen-logo
+                    width: 100%
+                    .gen-logo-item
+                        span
+                            margin-top: 20px
+                .footer-routes-item
+                    height: 300px
+                    ul
+                        li
+                            width: 50%

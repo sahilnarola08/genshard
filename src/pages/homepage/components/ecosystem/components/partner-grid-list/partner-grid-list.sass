@@ -1,0 +1,165 @@
+.ecosystem-partner-list
+    border-radius: 42.8155px
+    padding: 2px 2px
+    position: relative
+    z-index: 1
+    overflow: hidden
+    --borderWidth: 3px
+    &::after
+        content: ""
+        position: absolute
+        left: 0
+        top: 0
+        z-index: -1
+        top: calc(-1 * var(--borderWidth))
+        left: calc(-1 * var(--borderWidth))
+        height: calc(100% + var(--borderWidth) * 2)
+        width: calc(100% + var(--borderWidth) * 2)
+        background: linear-gradient(320.73deg, #54C4FC 30.29%, #2479DF 60.02%, #000000 84.65%)
+        border-radius: calc(2 * var(--borderWidth))
+        z-index: -1
+        animation: animatedgradient 2s ease alternate infinite
+        background-size: 300% 300%
+    .ecosystem-partner-card
+        background: #000000
+        border-radius: 42.8155px
+        padding: 30px
+        @keyframes animatedgradient
+            0%
+                background-position: 0% 25%
+
+            50%
+                background-position: 100% 50%
+
+            100%
+                background-position: 0% 25%
+        table
+            // transform: perspective(800px) rotateX(-303deg) rotateY(0deg) rotateZ(0deg)
+            // margin-bottom: -110px !important
+            tbody
+                tr
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+                    &:last-child
+                        border-bottom: 0
+                        td
+                            border-bottom: 0
+                    td
+                        color: white
+                        border-left: 1px solid rgba(255, 255, 255, 0.2)
+                        padding: 15px
+                        &:first-child
+                            border-left: 0
+                        img
+                            filter: grayscale(1)
+    .partner-crypto-popup
+        position: absolute
+        width: 385px
+        z-index: 11
+        top: -100px
+        left: 50%
+        transform: translateX(-50%)
+        opacity: 0
+        visibility: hidden
+        transition: 0.5s all ease-in-out
+        z-index: -1
+        &.open
+            opacity: 1
+            visibility: visible
+            top: 30px
+            z-index: 1
+        .top-section
+            text-align: center
+            height: 70px
+            .crypto-image
+                max-width: 90px
+                margin: auto
+            .bg-img
+                position: absolute
+                transform: translateX(-50%)
+                left: 50%
+                top: 0
+                z-index: -1
+        .bottom-card
+            background: rgba(0, 0, 0, 0.8)
+            border-radius: 42.8155px
+            padding: 60px 20px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            gap: 10px
+            border: 2px solid #54C4FC
+            .image-part
+                img
+                    max-width: 120px
+            .content-part
+
+                .card-p
+                    font-family: 'Space Grotesk'
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 7.07483px
+                    line-height: 104.5%
+                    color: #FFFFFF
+    @keyframes bounce
+        0%
+            transform: translate(0px, 0px)
+
+        40%
+            transform: translate(0px, -12px)
+
+        80%
+            transform: translate(0px, 2px)
+
+        100%
+            transform: translate(0px, 0px)
+
+@media screen and (max-width: 992px)
+    .ecosystem-partner-list
+        .partner-crypto-popup
+            width: 300px
+            .top-section
+                height: 55px
+                .bg-img
+                    max-width: 90%
+                .crypto-image
+                    max-width: 75px
+            .bottom-card
+                border-radius: 20.8155px
+                padding: 20px 15px
+                grid-gap: 15px
+                gap: 15px
+                .image-part
+                    img
+                        max-width: 95px
+                .content-part
+                    h5
+                        font-size: 19.8424px
+                        line-height: 24px
+@media screen and (max-width: 767px)
+    .ecosystem-partner-list
+        .partner-crypto-popup
+            width: 150px
+            &.open
+                top: 15px
+            .top-section
+                height: 23px
+                .bg-img
+                    max-width: 90%
+                .crypto-image
+                    max-width: 24px
+                    margin-bottom: 10px
+            .bottom-card
+                border-radius: 11px
+                padding: 5px
+                grid-gap: 10px
+                gap: 10px
+                .image-part
+                    img
+                        max-width: 40px
+                .content-part
+                    h5
+                        font-size: 8px
+                        line-height: 14px
+                        margin-bottom: 5px !important
+                    .card-p
+                        font-size: 5px

@@ -1,0 +1,595 @@
+.create-collection
+    width: 100%
+    box-sizing: border-box
+    .required-field
+        color: red
+    .create-collection-wrapper
+        width: 100%
+        margin: 0 auto
+        padding: 15px 
+        box-sizing: border-box
+    .create-your-item
+        font-weight: 300
+        font-size: 45px
+        line-height: 89px
+        color: #000
+    .required-items
+        margin: 0
+        font-weight: 300
+        font-size: 20px
+        line-height: 15px
+        color: red
+    form
+        width: 100%
+        .form-control-wrapper
+            margin-top: 20px
+            box-sizing: border-box
+            .contract-type-wrapper
+                display: flex
+                align-items: center
+                .type-wrapper
+                    .type-radio
+                    .type-label-wrapper
+                        .type-main-label
+            .creator-input-wrapper
+                display: flex
+                align-items: center
+                gap: 12px
+                .creator-percentage
+                    position: relative
+                    margin-top: 18px
+                    input[type="number"]
+                        width: 100%
+                        max-width: 80px
+                        height: auto
+                        margin: 0 !important
+                    .percentage
+                        position: absolute
+                        bottom: 16px
+                        color: #000
+                        right: 16px
+
+            .label-wrapper
+                box-sizing: border-box
+                display: flex
+                align-items: center
+                gap: 28px
+                .main-label
+                    font-weight: 300
+                    font-size: 26px
+                    line-height: 35px
+                    color: #000000
+                    white-space: nowrap
+                .sub-label
+                    font-weight: 300
+                    font-size: 15px
+                    line-height: 30px
+                    color: #616161
+            .second-label
+                font-weight: 300
+                font-size: 18px
+                line-height: 30px
+                color: #616161
+                margin-top: 6px
+            input,.input-field,.select-field
+                width: 100%
+                font-size: 14px
+                margin-top: 18px
+                padding: 14px
+                border: 1.55002px solid #117DCC
+                border-radius: 31.2317px
+                background: transparent
+                box-sizing: border-box
+            .upload-area
+                width: 100%
+                border-radius: 24px
+                position: relative
+                margin-top: 18px
+                .upload-file
+                    position: absolute
+                    left: 0
+                    height: 100%
+                    margin: 0
+                    opacity: 0
+            .eth-token-wrapper
+                margin: 21px 0
+                display: flex
+                align-items: center
+                gap: 15px
+                .token-wrapper
+                    display: flex
+                    align-items: center
+                    width: 100%
+                    max-width: 120px
+                    border: 1.0566px solid #117DCC
+                    border-radius: 21.2896px
+                    padding: 5px 0
+                    position: relative
+                    .token-radio
+                        width: 100%
+                        height: 100%
+                        position: absolute
+                        margin: 0
+                        padding: 0
+                        opacity: 0
+                    .token-icon
+                        padding: 0 12.90px
+                        img
+                            height: 25px;
+                    .token-label-wrapper
+                        .token-main-label
+                            font-weight: 300
+                            font-size: 27.2667px
+                            line-height: 40px
+                            color: #000000
+                        .token-sub-label
+                            font-weight: 300
+                            font-size: 13.6334px
+                            line-height: 20px
+                            color: #616161
+            .display-theme-wrapper
+                display: flex
+                align-items: center
+                gap: 21.81px
+                margin-top: 25px
+                .theme-wrapper
+                    width: 100%
+                    max-width: 145px
+                    min-height: 200px
+                    border: 1.0566px solid #FF0071
+                    border-radius: 21.2896px
+                    padding: 25px 10px
+                    position: relative
+                    .display-theme-radio
+                        width: 100%
+                        height: 100%
+                        position: absolute
+                        top: 0
+                        left: 0
+                        margin: 0
+                        padding: 0
+                        opacity: 0
+                    .theme-img
+                        width: 100%
+                        max-width: 46px
+                        margin: 0 auto
+                        img
+                            width: 100%
+                    .theme-main-label
+                        margin-top: 20px
+                        font-weight: 300
+                        font-size: 27.2667px
+                        line-height: 40px
+                        text-align: center
+                        color: #000000
+                    .theme-sub-label
+                        margin-top: 8px
+                        font-weight: 300
+                        font-size: 13.6334px
+                        line-height: 20px
+                        text-align: center
+                        color: #616161
+
+        .link-label,.payment-token-label
+            font-weight: 300
+            font-size: 26px
+            line-height: 35px
+            color: #000
+            margin-top: 35px
+        .links-form-controll-wrapper
+            .link-wrapper
+                width: 100%
+                display: flex
+                align-items: center
+                gap: 26px
+                margin-top: 18px
+                .link-logo
+                    width: 34px
+                    height: 34px
+                    img
+                        width: 100%
+                input
+                    font-size: 15px
+                    width: 100%
+                    padding: 14px
+                    border: 1.55002px solid #117DCC
+                    border-radius: 31.2317px
+                    background: transparent
+                    box-sizing: border-box
+
+        .form-logo-title-wrapper
+            display: flex
+            align-items: center
+            margin-top: 56px
+            .logo-label-wrapper,.label-input-wrapper
+                display: flex
+                align-items: center
+
+            .main-label
+                margin-left: 26px
+                font-style: normal
+                font-weight: 300
+                font-size: 32px
+                line-height: 48px
+                color: #000000
+            .sub-label
+                margin-left: 14px
+                font-weight: 300
+                font-size: 20px
+                line-height: 30px
+                color: #616161
+            .add-wrapper
+                width: 100%
+                max-width: 279px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                border: 1.55002px solid #FF0071
+                border-radius: 31.2317px
+                background: transparent
+                margin-left: 28px
+                .add-btn
+                    width: 40.29px
+                    height: 40.29px
+                    overflow: hidden
+                    img
+                        width: 100%
+            input[type=checkbox]
+                margin-left: 28px
+                height: 0
+                width: 0
+                visibility: hidden
+            label
+                cursor: pointer
+                text-indent: -9999px
+                width: 48px
+                height: 24px
+                background: grey
+                display: block
+                border-radius: 100px
+                position: relative
+            label:after
+                content: ''
+                position: absolute
+                top: 5px
+                left: 5px
+                width: 14px
+                height: 14px
+                background: #000000
+                border-radius: 90px
+                transition: 0.3s
+            input:checked + label
+                background: #fff
+            input:checked + label:after
+                left: calc(100% - 5px)
+                transform: translateX(-100%)
+            label:active:after
+                width: 48px
+        .create-btn-wrapper
+            width: 100%
+            display: flex
+            justify-content: center
+            .create-btn
+                width: 100%
+                max-width: 945px
+                margin: 20px auto 0
+                background: #117DCC
+                border-radius: 23.6667px
+                font-weight: 500
+                letter-spacing: 2px
+                font-size: 30px
+                line-height: 50px
+                text-align: center
+                color: #FFFFFF
+                border-color: #117DCC
+
+.property-modal
+    position: relative
+    .header-close
+        position: absolute
+        right: 15px
+        top: 15px
+.property-wrapper
+    .property-modal-detail
+        font-weight: 500
+        font-size: 19px
+        // color: rgb(112, 122, 131)
+        opacity: 1
+        text-align: center
+        margin: -10px 0px 35px 0px
+    .property-head-wrapper
+        display: flex
+        align-items: center
+        .property-head
+            // color: #616161
+            width: 100%
+            text-align: center
+    .property-inputs-wrapper
+        .property-input-wrapper
+            display: flex
+            align-items: center
+            width: 100%
+            gap: 8px
+            margin-top: 15px
+            .close
+                width: 36px
+                height: 36px
+                border: 0px solid #616161
+                border-radius: 8px 0 0 8px
+
+            .property-input
+                width: 100%
+                border: 1px solid #616161
+                border-radius: 8px
+                &:last-child
+                    border: 0px solid #616161
+                    border-radius: 0px
+                input
+                    border: none
+                    outline: none
+                    box-sizing: border-box
+                    width: 100%
+                    background-color: transparent
+                    text-align: center
+                    font-size: 26px
+                    padding: 5px
+                .levels-input-wrapper
+                    display: flex
+                    align-items: center
+                    gap: 6px
+                    // color: #616161
+                    input[type="number"]
+                        text-align: center
+                        border: 1px solid #616161
+                        width: 100%
+                        height: auto
+                        margin: 0
+                        border-radius: 8px
+
+            .property-input-single
+                width: 100%
+                border: 1px solid #616161
+                border-radius: 8px
+                input
+                    border: none
+                    outline: none
+                    box-sizing: border-box
+                    width: 100%
+                    background-color: transparent
+                    text-align: center
+                    font-size: 26px
+                    padding: 5px
+                .levels-input-wrapper
+                    display: flex
+                    align-items: center
+                    gap: 6px
+                    // color: #616161
+                    input[type="number"]
+                        text-align: center
+                        border: 1px solid #616161
+                        width: 100%
+                        height: auto
+                        margin: 0
+                        border-radius: 8px
+    .add-more
+        margin: 15px 0 0
+        border-radius: 8px
+        font-size: 24px
+        font-weight: 500
+        line-height: 24px
+        letter-spacing: 0.01em
+        padding: 12px 19px
+        color: #FFFFFF
+        background-color: #000000
+        border: 1px solid #FFFFFF
+
+.save-btn-wrapper
+    width: 100%
+    button.save-btn
+        width: 100%
+        font-size: 22px
+        line-height: 55px
+        color: #000
+        border: 1px solid #117DCC
+        font-weight: 500
+        letter-spacing: 2px
+        text-align: center
+        cursor: pointer
+.modal.show
+    .modal-dialog.modal_wrapper
+        .modal-content
+            .upload__image-wrapper
+                position: relative
+                border-radius: 24px
+                height: 257px
+                width: 350px
+                overflow: hidden
+                img.remove-upload--btn
+                    width: 32px
+                    height: auto
+                    position: absolute
+                    top: 20px
+                    right: 20px
+                .upload-btn
+                    background-color: transparent
+                    border: none
+                    width: 60%
+
+                    img
+                        position: absolute;
+                        inset: 0px;
+                        box-sizing: border-box;
+                        padding: 0px;
+                        border: none;
+                        margin: auto;
+                        display: block;
+                        width: 0px;
+                        height: 0px;
+                        min-width: 100%;
+                        max-width: 100%;
+                        min-height: 100%;
+                        max-height: 100%;
+                        object-fit: cover;
+            .banner-image
+                height: 270px 
+                width: 100% 
+            .select-field
+                .option-img-label-wrapper
+                    display: flex
+                    align-items: center
+                    gap: 15px
+                    color: #000
+                    img
+                        width: 18px
+                        height: auto
+
+@media  ( max-width: 1024px )
+    .create-collection
+        form
+            .form-control-wrapper
+                .label-wrapper
+                    gap: 20px
+                    .main-label
+                        font-size: 28px
+                        line-height: 36px
+                        white-space: nowrap
+                    .sub-label
+                        font-size: 16px
+                        line-height: 20px
+                .second-label
+                    font-size: 20px
+                    line-height: 24px
+                input, .input-field, .select-field
+                    // padding: 10px
+                .creator-input-wrapper
+                    .creator-percentage
+                        .percentage
+                            bottom: 10px
+
+            .link-label, .payment-token-label
+                font-size: 28px
+                line-height: 36px
+            .links-form-controll-wrapper
+                .link-wrapper
+                    input
+                        padding: 10px
+            .form-logo-title-wrapper
+                .label-logo
+                    width: 25px
+                    img
+                        width: 100%
+                .main-label
+                    font-size: 28px
+                    line-height: 36px
+                    white-space: nowrap
+                    margin-left: 14px
+                .sub-label
+                    font-size: 16px
+                    line-height: 20px
+                    margin-left: 10px
+                input[type=checkbox]
+                    margin-left: 0px
+
+@media  ( max-width: 768px )
+    .create-collection
+        .create-collection-wrapper
+            padding: 92px 0 50px
+        .create-your-item
+            font-size: 40px
+            line-height: 48px
+        .required-items
+            font-size: 20px
+            line-height: 24px
+        form
+            .form-control-wrapper
+                margin-top: 24px
+                .label-wrapper
+                    .main-label
+                        font-size: 24px
+                        line-height: 30px
+                        white-space: normal
+                    .sub-label
+                        font-size: 14px
+                        line-height: 18px
+                .second-label
+                    font-size: 16px
+                    line-height: 20px
+                .creator-input-wrapper
+                    .creator-percentage
+                        .percentage
+                            bottom: 8px
+                .label-wrapper
+                input,.input-field,.select-field
+                    padding: 7px 10px
+                    
+            .link-label, .payment-token-label
+                font-size: 24px
+                line-height: 30px
+            .links-form-controll-wrapper
+                .link-wrapper
+                    gap: 16px
+            .form-logo-title-wrapper
+                .main-label
+                    font-size: 24px
+                    line-height: 30px
+                    white-space: normal
+            .create-btn-wrapper
+                .create-btn
+                    font-size: 26px
+                    line-height: 56px
+
+@media ( max-width: 480px )
+    .create-collection
+        .create-your-item
+            font-size: 32px
+            line-height: 40px
+        .required-items
+            font-size: 18px
+        form
+            .form-control-wrapper
+                .label-wrapper
+                    flex-direction: column
+                    align-items: baseline
+                    gap: 10px
+                    .main-label
+                        font-size: 20px
+                        line-height: 24px
+                .second-label
+                    font-size: 14px
+                    line-height: 18px
+                input
+                    padding: 7px 10px !important
+                    margin-top: 10px!important
+                .creator-input-wrapper
+                    flex-direction: column
+                    align-items: baseline
+                    .creator-percentage
+                        margin-top: 10px
+            .links-form-controll-wrapper
+                .link-wrapper
+                    input
+                        font-size: 14px
+            .form-logo-title-wrapper
+                flex-direction: column
+                align-items: baseline
+                margin-top: 36px
+                gap: 12px
+            .create-btn-wrapper
+                .create-btn
+                    font-size: 22px
+                    line-height: 30px
+@media ( max-width: 375px )
+    .create-collection
+        .upload__image-wrapper
+                height: 200px !important
+                width: 300px !important
+        .banner-image
+                height: 200px !important
+
+@media ( max-width: 320px )
+    .create-collection
+        .upload__image-wrapper
+                height: 180px !important
+                width: 250px !important
+        .banner-image
+                height: 200px !important

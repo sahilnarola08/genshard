@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap');
+.side_bar
+  max-width: 484px
+  width: 100%
+  background: linear-gradient(270deg, rgba(17, 125, 204, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+
+  input
+    &::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+      -webkit-appearance: none
+      margin: 0
+
+    &[type=number]
+      -moz-appearance: textfield
+
+  label > input[type="radio"] + *
+    display: inline-block
+    padding: 0.5rem 1rem
+
+  select option
+    color: black
+
+    select option:first-child
+      font-size: 0
+
+  input[type="radio"]
+    border: 1px solid #117DCC !important
+    height: 11px
+    width: 11px
+    border-radius: 50%
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    position: relative
+    cursor: pointer
+
+    &:checked::after
+      content: ''
+      background-color: #117DCC !important
+      border-radius: 50%
+      max-width: 5px
+      width: 100%
+      position: absolute
+      height: 5px
+      top: 50%
+      left: 50%
+      -webkit-transform: translate(-50%, -50%)
+      -ms-transform: translate(-50%, -50%)
+      transform: translate(-50%, -50%)
+
+  button
+    background: #117DCC
+    -webkit-box-shadow: 0px 4px 4px #117DCC
+    box-shadow: 0px 2px 3px #8a8a8b
+    border-radius: 8.2px
+    padding-top: 0px
+    max-width: 123px
+    height: 30px
+    width: 100%
+    font-weight: 300
+    font-size: 14.76px
+    line-height: 22px
+    color: #fff
+    border: none
+    margin-bottom: 24px
+    cursor: pointer
+    margin: 3px 18px 23px
+
+  .side_bar_wrapper
+    max-width: 278px
+    margin: 0 auto !important
+
+    .filters
+      padding-bottom: 100px
+      padding-top: 46px
+      .close_btn
+        display: none
+
+      .filters_heading
+        [alt="Filter"]
+          cursor: pointer
+
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        padding-left: 2px
+        margin-bottom: 20px
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+
+        .filter-title
+          font-family: 'Akshar', sans-serif !important;
+          font-weight: 300
+          font-size: 18.9867px
+          line-height: 28px
+          color: black
+          margin-right: 38px
+          letter-spacing: 1em
+          font-family: Oswald
+
+      .filter_status
+        ul
+          li:first-child
+            margin-top: 0px !important
+          li              
+            margin: 18px 0px !important
+            p
+              font-size: 20px
+              padding: 2px 16px 6px
+              border-radius: 40px
+              border: 1px solid transaprent
+              cursor: pointer
+              color: black !important
+              &.active
+                border: 1px solid #117DCC
+                cursor: default
+      .filter_type
+        border-top: 1px solid #117DCC
+        padding-top: 33.31px
+        padding-bottom: 13px
+
+        .filter_type_title
+          font-weight: 300
+          position: relative
+          font-size: 14.8786px
+          line-height: 22px
+          letter-spacing: 0.33em
+          padding-left: 20.29px
+          padding-bottom: 11.7px
+          color: black
+          display: flex
+          justify-content: space-between
+          &.remove_before
+            &::before
+              content: none
+
+          span:last-child 
+            color: #117DCC
+            cursor: pointer
+          &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            width: 3px
+            height: 19px
+            background: #117DCC
+
+        .collection_options
+          height: 159px
+          border-radius: 11px
+          background: #2C2C36
+          margin-bottom: 24px
+          margin-left: 7px
+          margin-top: 9px
+
+          ul
+            overflow-y: scroll
+
+            &::-webkit-scrollbar
+              width: 3px
+
+            &::-webkit-scrollbar-track
+              -webkit-box-shadow: inset 0 0 3px transparent
+              box-shadow: inset 0 0 3px transparent
+              border-radius: 11px
+              margin: 13.3px 0px
+
+            &::-webkit-scrollbar-thumb
+              background: #117DCC
+
+        ul
+          list-style-type: none
+          padding-left: 18px
+          max-width: 246px
+          width: 100%
+          height: 100%
+          margin: 0
+
+          li
+            margin: 12.37px 0
+            p
+              font-family: Oswald
+              font-style: normal
+              font-weight: 300
+              display: inline
+              font-size: 18px
+              line-height: 22px
+              padding-left: 13px
+              color: #FFFFFF
+              padding-left: 13.89px
+
+      .price
+        .select_currency
+          margin: 21px 19px 0px 21px
+          display: -webkit-box
+          display: -ms-flexbox
+          display: flex
+          align-items: center
+          .currency
+            // max-width: 150px
+            height: 36px
+            width: 100%
+            border: 1px solid #117DCC
+            border-radius: 10px
+            background: transparent
+            font-weight: 300
+            font-size: 18px
+            line-height: 27px
+            text-align: center
+            color: black
+            -webkit-appearance: none
+            -moz-appearance: none
+            appearance: none
+            margin: 7px 0px
+            font-family: 'Oswald'
+            padding: 0px 24px
+            outline: none
+            position: relative
+            cursor: pointer 
+            // *
+            //   color: #000
+            //   background-color: #414246
+            .currency_option
+              background: white
+              color: black
+              text-align: center
+            .currency_option:hover
+              background: #117DCC !important
+            &::after
+              content: ''
+              position: absolute
+              right: 0
+              width: 50px
+              height: 50px
+              background: red
+              z-index: 99999
+          select
+            > option:hover
+              -webkit-box-shadow: 0 0 10px 100px #000 inset
+              box-shadow: 0 0 10px 100px #000 inset
+              color: #fff
+
+            &:focus > option:checked
+              background: #117DCC !important
+              -webkit-box-shadow: 0 0 10px 100px #000 inset
+              box-shadow: 0 0 10px 100px #000 inset
+              color: #fff
+
+          #currency ~ img
+            margin-left: 15px
+
+          .Dropdown
+            cursor: pointer
+
+        .currency_min_max
+          display: -webkit-box
+          display: -ms-flexbox
+          display: flex
+          margin-bottom: 24px
+          margin-left: 13px
+          margin-top: 20px
+
+          > div input
+            width: 76px
+            height: 36px
+            border: 1px solid #117DCC
+            border-radius: 10px
+            background: transparent
+            text-align: center
+            margin: -7px 6px
+            outline: none
+            color: black
+
+          img
+            margin: 0 10px
+
+      .categories .filter_type_title
+        margin: 2px 0px !important
+        padding-left: 24px
+
+      .collections .filter_type_title
+        margin: 2px 2px
+
+@media screen and (max-width: 1024px)
+  .side_bar
+    max-width: 40% !important
+    
+
+@media screen and (max-width: 768px)
+  .side_bar
+    max-width: 50% !important
+    background: white !important
+    position: absolute
+    z-index: 1
+    top: 0
+    left: 0
+    transition: all 2s ease-in-out
+    .side_bar_wrapper
+      max-width: 278px
+      margin: 0 auto !important
+
+      .filters
+        .close_btn
+          display: block
+          position: absolute
+          top: 10px
+          right: 10px
+          svg
+            path
+              fill: #000000
+
+@media screen and (max-width: 560px)
+  .side_bar
+    max-width: 100% !important

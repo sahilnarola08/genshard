@@ -1,0 +1,107 @@
+.banner-slider
+    position: relative
+    z-index: 2
+    .slick-list
+        padding: 0 !important
+    .slick-dots
+        position: absolute
+        left: 5%
+        bottom: 10px
+        align-items: start
+        text-align: left
+        width: fit-content
+        li
+            &.slick-active
+                background:
+                button
+                    &:before
+                        background: white
+            button
+                &:before
+                    width: 10px
+                    height: 10px
+                    border: 1px solid white
+                    color: transparent
+                    border-radius: 50%
+    .banner-content
+        margin-top: 50px
+        // background-image: url("../../../../images/homepage/banner-img.svg")
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        height: 500px
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            left: 0
+            top: 0
+            height: 100%
+            width: 80%
+            background: linear-gradient(89.89deg, #972E15 19.17%, rgba(217, 217, 217, 0) 94.12%)
+        .content
+            padding: 30px 0
+            position: relative
+            z-index: 1
+            .logo-img
+                height: 260px
+                width: 260px
+                max-width: 260px
+                max-height: 260px
+            .labels-btn
+                .lables
+                    border: 0.635417px solid #FFFFFF
+                    border-radius: 28.1538px
+                    padding: 3px 5px
+                    font-family: 'Space Grotesk'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: 8px
+                    line-height: 10px
+                    text-align: center
+                    letter-spacing: 0.42em
+                    text-transform: uppercase
+                    color: #FFFFFF
+                    text-align: center
+            .user-image
+                img
+                    max-height: 250px
+                    margin-bottom: 10px
+            .paragraph-new-medium
+                color: white
+@media screen and (max-width: 1600px)
+    .banner-slider
+        .banner-content
+            height: 460px
+            .content
+                .user-image
+                    img
+                        max-height: 200px
+@media screen and (max-width: 1400px)
+    .banner-slider
+        .banner-content
+            margin-top: 30px
+            height: 440px
+            .content
+                .user-image
+                    img
+                        max-height: 170px
+@media screen and (max-width: 1200px)
+    .banner-slider
+        .banner-content
+            margin-top: 30px
+            height: 400px
+            .content
+                .user-image
+                    img
+                        max-height: 130px
+
+@media screen and (max-width: 767px)
+    .banner-slider 
+        .banner-content
+            height: 340px
+            .content 
+                padding: 20px 0
+                .user-image 
+                    img
+                        max-height: 140px

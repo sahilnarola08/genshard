@@ -1,0 +1,35 @@
+@import '../../../../_variables.sass'
+
+.select-token-wrapper
+    padding: 0.8rem 1rem
+    min-height: 3rem
+    border: 1px solid var(--color-border-200)
+    border-radius: 0.625rem
+    margin-bottom: 1rem
+    .select-token-box
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .title
+            color: var(--color-on-secondary)
+            margin: 0
+            font-size: 1.5625rem
+    .select-token-err
+        display: flex
+        justify-content: space-around
+
+
+
+
+@media screen and ( max-width: $screen-medium)      
+    .select-token-wrapper
+        padding: 0.85rem
+        .select-token-box
+            .title
+                font-size: 1.25rem
+@media screen and ( max-width: $screen-small)      
+    .select-token-wrapper
+        .select-token-box
+            align-items: center
+            
+            

@@ -1,0 +1,267 @@
+.items_side_bar
+  max-width: 484px
+  width: 100%
+  background: white
+
+  .side_bar_wrapper
+    max-width: 310px
+    margin: 0 0 0 103px
+    color: #fff
+
+    .myItems
+      padding: 47px 0 0 1px
+
+      h3
+        font-size: 19px
+        font-weight: 300
+        line-height: 28px
+        letter-spacing: 1em
+        cursor: pointer
+        color: #000000
+
+      hr
+        border-bottom: 1px solid #117DCC
+        max-width: 302px
+        margin: 27px 0 0 0
+        border-color: #117DCC
+
+      .nameAndCount
+        font-size: 18px
+        font-weight: 300
+        line-height: 27px
+        letter-spacing: 0.33em
+        margin: 28px 0 0 0
+        cursor: pointer
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-between
+        border-left: 2.53px solid #117DCC
+
+        .itemsName
+          padding-left: 23px
+          position: relative
+          color: #000000
+        
+        .itemsCount
+          color: #000000
+
+          .itemsName::before
+            content: ""
+            position: absolute
+            left: 0
+            top: 50%
+            width: 3px
+            height: 18px
+            background: #ff0071
+            -webkit-transform: translateY(-50%)
+            -ms-transform: translateY(-50%)
+            transform: translateY(-50%)
+
+    .accounts
+      margin: 60px 0 0 2px
+
+      h3
+        font-size: 18px
+        font-weight: 300
+        line-height: 28px
+        letter-spacing: 20px
+        color: #000000
+
+      hr
+        border-bottom: 1px solid #117DCC
+        max-width: 302px
+        margin: 27px 0 12px
+        border-color: #117DCC
+
+      li
+        padding: 12px 0
+        list-style-type: none
+
+        .accountName
+          text-decoration: none
+          margin: 28px 0 0 0
+          font-weight: 200
+          font-size: 18px
+          letter-spacing: 6px
+          padding-left: 23px
+          border-left: 2.53px solid #117DCC
+          color: #000000
+          cursor: pointer
+
+        a.active-link
+          color: #117DCC
+        .active-link
+          color: #117DCC
+
+// mobile-menu //
+
+.mobile-side-header
+  position: absolute
+ 
+  img
+    height: 25px
+    width: 25px
+    cursor: pointer
+    margin-left: 5px
+      
+  .mobile_side_bar
+    max-width: 484px
+    width: 100%
+    opacity: 90%
+    background: #000;
+    box-shadow: 5px 5px 5px #101010ad;
+    
+
+    .side_bar_wrapper
+      max-width: 310px
+      margin: 0 0 0 103px
+      color: #fff
+              
+
+      .myItems
+        padding: 47px 0 0 1px
+
+        h3
+          font-size: 19px
+          font-weight: 300
+          line-height: 28px
+          letter-spacing: 1em
+          cursor: pointer
+          color: #fff
+
+        hr
+          border-bottom: 1px solid #117DCC
+          max-width: 302px
+          margin: 27px 0 0 0
+          border-color: #117DCC
+
+        .nameAndCount
+          font-size: 18px
+          font-weight: 300
+          line-height: 27px
+          letter-spacing: 0.33em
+          margin: 28px 0 0 0
+          cursor: pointer
+          display: -webkit-box
+          display: -ms-flexbox
+          display: flex
+          -webkit-box-pack: justify
+          -ms-flex-pack: justify
+          justify-content: space-between
+          border-left: 2.53px solid #117DCC
+
+          .itemsName
+            padding-left: 23px
+            position: relative
+            color: #fff
+          
+          .itemsCount
+            color: #fff
+
+            .itemsName::before
+              content: ""
+              position: absolute
+              left: 0
+              top: 50%
+              width: 3px
+              height: 18px
+              background: #ff0071
+              -webkit-transform: translateY(-50%)
+              -ms-transform: translateY(-50%)
+              transform: translateY(-50%)
+
+      .accounts
+        margin: 60px 0 0 2px
+
+        h3
+          font-size: 18px
+          font-weight: 300
+          line-height: 28px
+          letter-spacing: 20px
+          color: #fff
+
+        hr
+          border-bottom: 1px solid #117DCC
+          max-width: 302px
+          margin: 27px 0 12px
+          border-color: #117DCC
+
+        li
+          padding: 12px 0
+          list-style-type: none
+
+          .accountName
+            text-decoration: none
+            margin: 28px 0 0 0
+            font-weight: 200
+            font-size: 18px
+            letter-spacing: 6px
+            padding-left: 23px
+            border-left: 2.53px solid #117DCC
+            color: #fff
+            cursor: pointer
+
+          a.active-link
+            color: #117DCC
+
+
+
+@media screen and (max-width: 2560px)
+  .mobile-side-header
+    display: none
+@media screen and (max-width: 1440px)
+  .items_side_bar
+    max-width: 410px;
+    .side_bar_wrapper 
+      max-width: 300px;
+      margin: 0 0 0 50px
+  .mobile-side-header
+    display: none
+
+@media screen and (max-width: 1024px)
+  .items_side_bar
+    display: none
+  .side_bar_wrapper
+      max-width: 270px !important
+      margin: 0 50px 0 50px !important
+      padding: 20px 0px;
+
+      h3
+        text-align: center
+  .mobile-side-header
+    display: block
+
+
+@media screen and (max-width:425px)
+  .side_bar_wrapper
+      margin: 0 30px 0 30px !important
+
+      .myItems
+        h3
+          font-size: 17px !important
+
+        hr
+          margin: 20px 0 0 0 !important
+
+        .nameAndCount
+          font-size: 15px !important
+          
+
+      .accounts
+
+        h3
+          font-size: 16px !important
+
+        hr
+          margin: 20px 0 10px !important
+
+        .accountName
+          font-size: 15px !important
+  
+    
+@media screen and (max-width:768px)
+  .items_side_bar
+    display: none

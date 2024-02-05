@@ -1,0 +1,40 @@
+.accountsRoute
+    display: none
+@media ( max-width: 768px)
+    .accountsRoute
+        margin: 30px 0 0 0
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        width: 100%
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-evenly
+
+        li
+            margin: 0 20px 0 0
+            list-style-type: none
+
+            .accountName
+                text-decoration: none
+                margin: 28px 0 0 0
+                font-weight: 200
+                font-size: 14px
+                letter-spacing: 0.3em
+                color: #000
+                cursor: pointer
+
+            a.active-link
+                color: #117DCC
+
+@media ( max-width: 480px)
+    .accountsRoute
+        justify-content: space-between
+
+        li
+          margin:  0 12px 0 0
+
+          .accountName
+            font-size: 11px
+            line-height: 16px
+            letter-spacing: 0.4em

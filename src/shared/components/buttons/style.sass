@@ -1,0 +1,62 @@
+@import '../../../_variables'
+.base-button
+    border: 1px solid #000000
+    border-radius: 0.625rem
+    padding: 0.3125rem 1.3125rem
+    background-color: transparent
+    color: #000000
+    transition: all 0.3s ease-in-out
+    cursor: pointer
+    box-sizing: border-box
+    width: 100%
+
+    &.large
+        font-size: 1.125rem
+
+    &.small
+        font-size: 0.5625rem
+        line-height: 0.8125
+        border-radius: 0.3125rem
+
+    &:hover,
+    &.active
+        
+        
+
+    &:disabled
+        cursor: not-allowed
+        background-color: #ccc
+        color: #333
+        border-color: transparent
+        &:hover
+            background-color: #ccc
+            color: #333
+
+
+.gen-button.outline--highlight
+    @extend .base-button
+    &:hover
+        background-color: #000000
+        color: #ffff
+
+
+.gen-button.outline
+    @extend .base-button
+    border-color: #117DCC !important
+
+    &:hover,
+    &.active
+        border-color: #117DCC !important
+        
+
+@media screen and ( max-width: $screen-medium)      
+    .base-button
+        padding: 0.3125rem 0.75rem
+        &.large
+            font-size: 0.75rem
+
+@media ( max-width: $screen-small)      
+    .base-button
+        &.large
+            font-size: 0.75rem
+        

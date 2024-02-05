@@ -1,0 +1,234 @@
+@import "rsuite/dist/rsuite.css";
+
+
+
+.rs-anim-fade.rs-anim-in {
+    z-index: 1050;
+}
+
+.rs-calendar-table {
+    width: 250px !important
+}
+
+.rs-calendar-month-dropdown-row-wrapper {
+    width: 265px !important
+}
+
+.rs-picker-default .rs-picker-toggle {
+    border: 1px solid #117DCC;
+    border-radius: 40px;
+}
+
+.rs-picker-toggle .rs-picker-toggle-placeholder {
+    color: #616161;
+    font-weight: 400 !important;
+    font-size: 17px !important;
+}
+
+.rs-picker-has-value .rs-btn .rs-picker-toggle-value,
+.rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+    color: #616161;
+    font-weight: 500 !important;
+    font-size: 17px;
+}
+
+.rs-calendar-table-cell-day {
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    color: black !important;
+}
+
+.rs-calendar-header-meridian {
+    font-size: 14px !important;
+}
+
+.rs-picker-daterange-header {
+    font-weight: 400 !important;
+}
+
+.rs-picker-menu .rs-calendar .rs-calendar-table-header-row .rs-calendar-table-cell-content {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.rs-picker-menu .rs-calendar .rs-calendar-month-dropdown-cell-content,
+.rs-picker-menu .rs-calendar .rs-calendar-table-cell-content {
+    font-size: 14px !important;
+    font-weight: 300 !important;
+}
+
+@media (max-width: 1440Px) {
+    .modal-dialog{
+        margin: 10px auto !important;
+    }
+    .rs-anim-fade{
+        overflow: hidden scroll !important
+    }
+    .rs-picker-daterange-panel{
+        height: 265px !important;
+    }
+    .inputs .input_wrapper input{
+        font-size: 17px !important;
+        text-align: start !important;
+        padding: 0px 4px !important;
+    }
+    /* .rs-picker-daterange-calendar-group {
+        height: 210px !important;
+        min-width: 492px !important;
+        overflow: hidden !important;
+        overflow-y: scroll !important;
+    } */
+    .rs-picker-toggle-value{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1200Px) {
+    .rs-picker-toggle .rs-picker-toggle-placeholder {
+        font-size: 13px !important;
+    }
+
+    .rs-picker-has-value .rs-btn .rs-picker-toggle-value,
+    .rs-picker-has-value .rs-picker-toggle .rs-picker-toggle-value {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rs-anim-fade.rs-anim-in {
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+
+    .rs-picker-daterange-calendar-group {
+        display: flex;
+    }
+}
+
+@media (max-width: 425px) {
+    .rs-anim-fade.rs-anim-in {
+        height: 360px !important;
+        width: 370px;
+    }
+
+    .rs-picker-daterange-header {
+        width: 350px !important;
+    }
+
+    .rs-picker-daterange-calendar-group {
+        min-width: 350px !important;
+        overflow-y: scroll;
+        display: block;
+    }
+
+    .rs-calendar-table {
+        width: 350px !important;
+    }
+
+    .rs-picker-menu .rs-picker-toolbar {
+        position: absolute !important;
+        bottom: 0 !important;
+        padding-top: 5px !important;
+    }
+
+    .rs-picker-toggle-caret {
+        display: none;
+    }
+
+    .rs-picker-toggle-clean {
+        display: none;
+    }
+
+    .rs-picker-toggle .rs-picker-toggle-placeholder {
+        font-size: 14px !important;
+    }
+
+    .rs-picker-toggle {
+        padding-right: 10px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .rs-anim-fade.rs-anim-in {
+        width: 330px;
+    }
+
+    .rs-picker-daterange-header {
+        width: 330px !important;
+    }
+
+    .rs-picker-daterange-calendar-group {
+        min-width: 330px !important;
+    }
+
+    .rs-calendar-table {
+        width: 330px !important;
+    }
+
+    .rs-picker-menu .rs-picker-toolbar {
+        position: absolute !important;
+        bottom: 0 !important;
+    }
+
+    .rs-picker-toggle-caret {
+        display: none;
+    }
+
+    .rs-picker-toggle-clean {
+        display: none;
+    }
+
+    .rs-calendar-body {
+        padding: 0px;
+    }
+
+    .rs-btn-sm {
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    .rs-anim-fade.rs-anim-in {
+        width: 300px;
+        height: 340px !important;
+    }
+
+    .rs-picker-daterange-header {
+        width: 300px !important;
+    }
+
+    .rs-picker-daterange-calendar-group {
+        min-width: 300px !important;
+        height: 250px !important;
+    }
+
+    .rs-calendar-table {
+        width: 300px !important;
+    }
+
+    .rs-picker-toggle .rs-picker-toggle-placeholder {
+        font-size: 12px !important;
+    }
+
+    .rs-picker-menu .rs-picker-toolbar {
+        position: absolute !important;
+        bottom: 0 !important;
+    }
+
+    .rs-picker-toggle-caret {
+        display: none;
+    }
+
+    .rs-picker-toggle-clean {
+        display: none;
+    }
+
+    .rs-calendar-body {
+        padding: 0px;
+    }
+
+    .rs-btn-sm {
+        padding: 4px 8px;
+        font-size: 12px !important;
+    }
+}

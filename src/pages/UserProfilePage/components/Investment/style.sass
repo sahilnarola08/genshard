@@ -1,0 +1,66 @@
+
+.investment
+    padding-top: 70px
+    .investmentCharts
+        display: flex
+        justify-content: center
+        align-items: end
+        gap: 8px
+        flex-wrap: wrap
+        box-sizing: border-box
+        .balloonGraphItem
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            font-weight: 400
+            // font-size: 34.7472px
+            line-height: 100%
+            box-sizing: border-box
+    .investmentBlock
+        margin-top: 94px
+        display: flex
+        justify-content: space-between
+        font-weight: 300
+        font-size: 32px
+        line-height: 100%
+        background-color: #09090A
+        border-radius: 20px
+        padding: 58px 44px
+        .investmentItem
+            padding-left: 16px
+
+@media (max-width:1251px)
+    .investment
+        .investmentCharts
+            .balloonGraphItem
+
+        .investmentBlock
+            font-size: 24px
+            padding: 48px 44px
+
+@media (max-width:1024px)
+    .investment .investmentBlock
+        font-size: 20px
+
+@media (max-width:825px)
+    .investment .investmentBlock
+        font-size: 13px
+        padding: 34px
+        .investmentItem
+            padding-left: 4px
+
+@media (max-width:570px)
+    .investment
+        .investmentBlock
+            flex-direction: column
+            padding: 45px 70px
+            font-size: 24px
+            .investmentItem
+                padding-left: 16px
+                margin: 10px 0
+
+@media (max-width:425px)
+    .investment 
+        .investmentBlock
+            padding: 27px

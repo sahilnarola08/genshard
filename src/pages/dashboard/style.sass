@@ -1,0 +1,101 @@
+@import '../../_variables.sass'
+
+.dashboard-page
+    align-items: center
+    width: 100%
+    margin: 3rem 0 0
+    background: #fff
+
+    .dashboard-page__content
+        margin: 0 auto
+        max-width: 90rem
+        padding: 0 4rem
+
+        .dashboard-page__content--layout
+            display: grid
+            grid-template-columns: 6fr 6fr
+            margin-top: 3rem
+            position: relative
+            padding-bottom: 5rem
+
+    .applyNowForms
+        width: 100%
+        display: flex
+        justify-content: center
+        background-color: #27282E
+        margin-top: 40px
+        padding: 32px 0
+                           
+        button
+            box-sizing: border-box
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 7px 74px 24px
+            background: linear-gradient(180deg , #76868E 0%,rgba(9,9,10 ,0) 100%)
+            margin: 0 12px
+            border: 2px solid #76868E
+            box-shadow: 0px 14px 18px -4px rgba(0,0,0,0.45 )
+            border-radius: 8px
+            @media  ( max-width: 1130px )
+                padding: 5px 35px 12px
+                    
+            .buttonName
+                font-size: 24px
+                line-height: 48px
+                color: #FFF
+                font-weight: 300
+            .applyWrapper
+                display: flex
+                .applyNow
+                    font-size: 16px 
+                    line-height: 24px
+                    font-weight: 500
+                    text-transform: uppercase
+                    color: #117DCC
+                .applyNow~img
+                    margin-left: 12px
+
+
+@media screen and (max-width: 1500px)
+    .dashboard-page
+        .dashboard-page__content
+            .dashboard-page__content--layout
+                grid-gap: 1rem
+                grid-template-columns: 4fr 4fr
+
+@media screen and (max-width: 1256px)
+    .dashboard-page
+        .dashboard-page__content
+            .dashboard-page__content--layout
+                display: flex
+                flex-direction: column-reverse
+                padding-bottom: 0
+@media  ( max-width: 991px )
+    .dashboard-page
+        .applyNowForms
+            padding: 2rem 4rem
+            flex-direction: column
+            box-sizing: border-box
+            button
+                margin: 12px 0 0
+
+@media screen and (max-width: 767px)
+    .dashboard-page
+        .dashboard-page__content
+            padding: 0 2rem
+
+@media screen and (max-width: 480px)
+    .dashboard-page
+        margin-top: 1.5rem
+
+        .dashboard-page__content
+            padding: 0 1rem
+
+        .dashboard-page__content--layout
+            margin-top: 1.75rem !important
+        
+        .applyNowForms
+            padding: 2rem 1rem
+            button
+                padding: 12px

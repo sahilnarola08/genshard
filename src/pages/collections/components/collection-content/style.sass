@@ -1,0 +1,147 @@
+.collection-content-container
+    max-width: 90rem
+    margin: auto
+    padding: 2rem 0
+    position: relative
+    .search-aquired-nft
+        display: flex
+        justify-content: space-between
+        padding: 0 1rem
+        margin: 1rem 0
+        .search-field
+            display: flex
+            border: 1px solid #117DCC
+            border-radius: 12px
+            height: 38px
+            input
+                background: transparent
+                width: 11.8rem
+                outline: none
+                border: none
+                color: black
+                padding-left: 1rem
+                box-sizing: border-box
+                font-size: 1rem
+        .paginaton-and-sort-by
+            display: flex
+            grid-gap: 12px
+            .sort-by-container
+                display: flex
+                align-items: center
+                grid-gap: 12px
+                h4
+                    margin: 0
+                    font-weight: 500
+                .sort-by-options
+                    display: flex
+                    grid-gap: 12px
+                    .sort-option-item
+                        width: fit-content
+                        height: 38px
+                        border: 2px solid #3b3b48
+                        display: flex
+                        padding: 0 12px
+                        align-items: center
+                        justify-content: center
+                        border-radius: 6px
+                        font-size: 16px
+                        cursor: pointer
+                        color: #797985
+                        span
+                            font-weight: 500
+                        &:hover, &.active-item
+                            border: 2px solid #117DCC
+                            color: #117DCC
+        .aquired-nft
+            button
+                height: 40px
+                width: 129px
+                color: white
+                background: #383846
+                border: none
+                outline: none
+                border-radius: 8px
+                font-size: 1.1rem
+                font-weight: 500
+                cursor: pointer
+                font-weight: 500
+                &.aquired-active
+                    font-weight: 500
+                    background: #117DCC
+    .collection-content-main
+        .dekstop-view-filters
+            width: 20rem
+            height: 100%
+    .mobile-view-filters
+        display: none
+        position: absolute
+        background: black
+        top: 35px
+        left: 50px
+        z-index: 1
+        width: 18rem
+        border-radius: 12px
+        .sort-by-mobile
+            display: flex
+            grid-gap: 10px
+            padding-left: 1rem
+            align-items: center
+            div
+                border-radius: 12px
+                border: 2px solid #FF0071
+                cursor: pointer
+                // width: fit-content
+                p
+                    width: -moz-fit-content
+                    width: fit-content
+                    display: flex
+                    justify-content: space-around
+                    height: 34px
+                    margin: 0
+                    padding: 0px 15px
+                    align-items: center
+                    span
+                        font-size: 22px
+                        margin-bottom: -2px
+                        transform: rotate(90deg)
+                        margin-left: 12px
+
+        .filters-and-clear
+            display: flex
+            justify-content: space-between
+            padding: 0 1rem
+            .close-filters, .clear-all
+                p
+                    display: flex
+                    align-items: center
+                    border: 1px solid grey
+                    border-radius: 6px
+                    padding: 1px 5px
+                    cursor: pointer
+                    span
+                        letter-spacing: 2px
+                        display: inline-block
+                        font-size: 26px
+                        transform: scaleY(0.5)
+                        transform-origin: 0 0
+                        margin-bottom: -36%
+                        margin-right: 2px
+            .clear-all
+                p
+                    color: #FF0071
+                    border: 1px solid #FF0071
+                    span
+                        margin-right: 0px
+                        margin-left: 4px
+                        margin-bottom: -18px
+
+@media screen and (max-width: 900px)
+    .collection-content-container
+        .mobile-view-filters
+            display: block
+        .search-aquired-nft
+            .paginaton-and-sort-by
+                display: none
+        .collection-content-main
+            .dekstop-view-filters
+                display: none

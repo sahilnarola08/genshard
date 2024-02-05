@@ -1,0 +1,111 @@
+.community-pg
+    width: 100%
+    display: inline-block
+.community-main
+    width: 100%
+    display: inline-block
+    color: #ffffff
+
+.community-container
+    max-width: 90rem
+    margin: 0 auto
+    padding: 0 4rem
+    color: #000
+
+.gs-community-nfto-main
+    padding: 60px 0
+    overflow: hidden
+    position: relative
+    width: 100%
+    display: inline-block
+    z-index: 1
+    &::after
+        content: ""
+        background: linear-gradient(180deg, #117DCC 0%, rgba(17, 125, 204, 0.38) 24%, rgba(0, 0, 0, 0) 100%)
+        position: absolute
+        left: -80px
+        width: calc(100% + 130px)
+        height: 50vh
+        top: 420px
+        opacity: 0.3
+        transform: rotate(8deg)
+        z-index: -1
+
+.gs-resolution-main
+    padding: 60px 0
+    overflow: hidden
+    position: relative
+    width: 100%
+    display: inline-block
+    background-image: url(../../images/community/dao-bg.png)
+
+.gs-academy-main
+    width: 100%
+    display: inline-block
+    background: #fff
+    padding: 30px 0
+    overflow: hidden
+    position: relative
+    min-height: calc(100vh - 253px)
+    &::after
+        content: ""
+        background: linear-gradient(204.39deg, rgba(17, 125, 204, 0.3) -6.85%, rgba(255, 255, 255, 0) 84.4%)
+        position: absolute
+        left: -80px
+        width: calc(100% + 130px)
+        height: 500px
+        top: 170px
+        opacity: 0.3
+        transform: rotate(5deg)
+    &::before
+        content: ""
+        background: linear-gradient(204.39deg, #117DCC -6.85%, rgba(255, 255, 255, 0) 84.4%)
+        opacity: 0.1
+        position: absolute
+        right: -80px
+        width: calc(100% + 80px)
+        height: 500px
+        top: 300px
+        transform: rotate(-10deg)
+    .community-container
+        position: relative
+        z-index: 7
+
+@media screen and ( max-width: 1199px)
+    .nfto-card-container, .academy-container .academy-cards-container .academy-card-item, .resolution-item-card
+        -webkit-flex-basis: 50%
+        -ms-flex-preferred-size: 50%
+        flex-basis: 50%
+        max-width: 50%
+
+@media screen and ( max-width: 991px)
+    .nfto-card-container , .academy-container .academy-cards-container .academy-card-item , .resolution-item-card
+        -webkit-flex-basis: 100%
+        -ms-flex-preferred-size: 100%
+        flex-basis: 100%
+        max-width: 100%
+    .social-media-container .social-media-links .social-media-wrapper .social-media-div
+        width: 80px
+        height: 80px
+        text-align: center
+
+@media screen and ( max-width: 650px)
+    .community-container
+        padding: 0 2rem
+    .social-media-container .header-tag-line
+        margin: 4rem 0
+        p
+            padding: 0 1rem
+            font-size: 1.3rem
+    .social-media-container .header-links .header-link
+        width: 100px
+    .social-media-container .social-media-links .social-media-wrapper .social-media-div
+        width: 60px
+        height: 60px
+        text-align: center
+        .social-image
+            width: 80%
+            height: 80%
+            img
+                width: 100%
+                height: 100%

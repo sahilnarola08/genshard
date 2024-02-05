@@ -1,0 +1,78 @@
+@import '../../_variables'
+
+.home-page
+    align-self: center
+    display: flex
+    width: 100%
+    padding: 3rem 0
+    flex-direction: column
+    align-items: center
+
+    .token-gen-locker
+        .lock__overlay
+            left: -4.625rem
+            right: -4.625rem
+            bottom: -3rem
+        .lock__content
+            transform: translate(-50%, calc(-50% + 1.5rem))
+
+    .card-form-wrapper
+        padding-top: 2.5rem
+        max-width: 76%
+        position: relative
+        z-index: 9
+
+    .home__content
+        width: 100%
+        max-width: 57.25rem
+        display: grid
+        grid-gap: 5.75rem
+        grid-template-columns: 2fr 5fr
+        margin-bottom: 2.5rem
+        position: relative
+
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            right: 0
+            top: 0
+            bottom: -0.75rem
+            width: 87.5%
+            background-color: #F3F4F5
+            border-radius: 43px
+            box-shadow: 0px 0px 10px 5px #d8d8d8
+
+        .home__content-box
+            position: relative
+            z-index: 2
+
+        .image-box
+            position: relative
+            z-index: 99
+@media  ( max-width: 960px )
+    .ehfDZd[data-reach-dialog-content]
+        margin: auto !important
+    
+@media ( max-width: 991px )
+    .home-page
+        .home__content
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+            -webkit-box-orient: vertical
+            -webkit-box-direction: normal
+            -ms-flex-direction: column
+            flex-direction: column
+            -webkit-box-align: center
+            -ms-flex-align: center
+            align-items: center
+            grid-gap: 0
+        .home__content::before
+            background-color: transparent
+@media ( max-width: 600px )
+    .home-page
+        .token-gen-locker
+            .lock__overlay
+                left: 0
+                right: 0

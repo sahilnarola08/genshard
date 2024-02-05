@@ -1,0 +1,64 @@
+.collection-header-container
+    height: 22rem
+    padding: 2rem
+    border-bottom: 2px solid #3d3d4c
+    background: url(../.../../../../../images/collections/headerBGimage.png)
+    background-repeat: no-repeat
+    background-size: cover
+    .header-container-item
+        max-width: 90rem
+        margin: auto
+        display: flex
+        justify-content: space-around
+        height: 100%
+        align-items: center
+        .header-types
+            h1
+                font-weight: 400
+                font-size: 3rem
+                margin: 0
+                color: #000
+            h2
+                font-size: 1.6rem
+                margin: 0
+                margin-bottom: 1rem
+                color: #000
+            h3
+                font-size: 1.6rem
+                width: 27rem
+                color: #000
+        .total-staked-container
+            .total-stake-item
+                padding: 1rem
+                background: #1e1f24
+                border-radius: 12px
+                border: 2px solid #33333e
+                .total-stake
+                    min-width: 16rem
+                    cursor: pointer
+                    padding: 1rem
+                    background: #2d2f38
+                    border: 1px solid #2d2f38
+                    border-bottom: 1px solid #1e1f24
+                    text-align: center
+                    &:first-child
+                        border-radius: 12px 12px 0px 0px
+                    &:last-child
+                        border-radius: 0px 0px 12px 12px
+                        border-bottom: 1px solid #2d2f38
+                    &:hover
+                        // background: #1D1D20
+                        border: 1px solid #117DCC
+                        box-sizing: border-box
+                        box-shadow: 0px 16px 42px -8px rgba(17, 125, 204, 0.4)
+                        border-radius: 8px
+                        // z-index: 1
+                    span
+                        color: white
+                        font-weight: 500
+
+@media screen and (max-width: 900px)
+    .collection-header-container
+        height: 33rem
+        .header-container-item
+            display: grid

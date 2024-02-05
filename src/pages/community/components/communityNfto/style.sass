@@ -1,0 +1,194 @@
+.community-nfto-container
+    text-align: center
+    margin-top: 4rem
+    margin-bottom: 4rem
+    .community-nfto-heading
+        position: relative
+        align-items: center
+        h1
+        span
+            position: absolute
+            left: 0
+            top: 5px
+            cursor: pointer
+            color: #117DCC
+            font-size: 24px
+
+    .project-cards
+        display: flex
+        -webkit-box-flex-wrap: wrap
+        -webkit-flex-wrap: wrap
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+        -webkit-flex-direction: row
+        -ms-flex-direction: row
+        flex-direction: row
+        width: calc(100% + 2rem)
+        margin-left: -1rem
+        box-sizing: border-box
+        margin-right: -1rem
+    .project-bottom
+        width: 100%
+        display: inline-block
+        text-align: center
+        margin-top: 40px
+        p
+            font-weight: 400
+            font-size: 24px
+            color: #117DCC
+            margin: 0
+            display: inline-block
+            cursor: pointer
+
+.nfto-card-container
+    -webkit-flex-basis: 33.333333%
+    -ms-flex-preferred-size: 33.333333%
+    flex-basis: 33.333333%
+    -webkit-box-flex: 0
+    -webkit-flex-grow: 0
+    -ms-flex-positive: 0
+    flex-grow: 0
+    max-width: 33.333333%
+    padding: 1rem
+    box-sizing: border-box
+    .nfto-card
+        background: #161616
+        color: #ffffff
+        border: 2px solid #292932
+        border-radius: 18px
+        padding: 2rem 2rem 1rem 2rem
+        position: relative
+        .nfto-card-loader
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            z-index: 2
+            background: #000000b8
+            border-radius: 8px
+            display: flex
+            align-items: center
+            justify-content: center
+        .nfto-card-faded-bg
+            content: ""
+            position: absolute
+            left: 0
+            right: 0
+            top: 0
+            bottom: 0
+            height: 170px
+            z-index: 0
+            border-radius: 8px 8px 0px 0px
+        .image-div, .project-heading, .card-token-vote, .card-vote-btn
+            position: relative
+        .image-div
+            width: 7rem
+            height: 7rem
+            margin: auto
+            overflow: hidden
+            img
+                width: 100%
+                height: 100%
+                object-fit: contain
+        .project-heading
+            font-weight: 500
+            font-size: 1.5rem
+            margin: 18px 0 5px
+        .card-token-vote
+            width: 100%
+            display: inline-block
+            h4
+                font-weight: normal
+                font-size: 20px
+                text-align: center
+                color: #76868E
+                margin: 0
+            .card-vote-counts
+                width: 100%
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-top: 6px
+                img
+                    width: 22px
+                    height: 22px
+                    margin-right: 10px
+                span
+                    font-size: 20px
+        .card-vote-btn
+            width: 100%
+            display: flex
+            margin: 32px 0 35px 0
+            align-items: center
+            justify-content: center
+            button
+                background: #117DCC
+                border: 1px solid #117DCC
+                box-sizing: border-box
+                border-radius: 8px
+                font-size: 24px
+                text-align: center
+                color: #FFFFFF
+                height: auto
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 184px
+                font-weight: 400
+                padding: 4px 0 6px
+                cursor: pointer
+                &.vote-now
+                    border: 1px dashed #12E466
+                    background: transparent
+                    color: #12E466
+        .card-bottom-links
+            width: 100%
+            display: inline-block
+            ul
+                padding: 0
+                margin: 0
+                list-style: none
+                li
+                    width: 100%
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border-top: 1px solid #76868E
+                    padding: 10px
+                    box-sizing: border-box
+                    a
+                        font-size: 16px
+                        color: #fff
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        font-weight: 400
+                        img
+                            width: 18px
+                            height: 18px
+                            margin-left: 8px
+                        span
+                            font-weight: 400
+                    .card-footer
+                        width: 100%
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        margin-top: 8px
+                        .web-link
+                            margin: 0 10px
+                            img
+                                margin-left: 0
+                                margin-right: 10px
+
+.no-project-found
+    width: 100%
+    height: 500px
+    display: flex
+    justify-content: center
+    align-items: center
+    p
+        font-size: 1.5rem
+        font-weight: 400
+.community-all-projects

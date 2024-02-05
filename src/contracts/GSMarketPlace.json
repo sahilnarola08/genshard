@@ -1,0 +1,1245 @@
+{
+    "abi": [
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "bidder",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionItemId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "bidPrice",
+                    "type": "uint256"
+                }
+            ],
+            "name": "BidMade",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "fixedItemId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                }
+            ],
+            "name": "BoughtFixedPriceItem",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionItemId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "CanceledAuction",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "auctionItemId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "lastBid",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "userFinished",
+                    "type": "address"
+                }
+            ],
+            "name": "FinishedAuction",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint8",
+                    "name": "version",
+                    "type": "uint8"
+                }
+            ],
+            "name": "Initialized",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "auctionItemId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "ListedAuction",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "fixedItemId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "ListedFixedPriceItem",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "offerItemId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "price",
+                    "type": "uint256"
+                }
+            ],
+            "name": "OfferAccepted",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "offerItemId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "OfferCancelled",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "account",
+                    "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "offerItemId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "OfferMade",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "fixedItemId",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "UnlistedFixedPriceItem",
+            "type": "event"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "itemId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "acceptOffer",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "auctionItemId",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint64",
+                    "name": "",
+                    "type": "uint64"
+                }
+            ],
+            "name": "bidCount",
+            "outputs": [
+                {
+                    "internalType": "uint32",
+                    "name": "",
+                    "type": "uint32"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint64",
+                    "name": "",
+                    "type": "uint64"
+                },
+                {
+                    "internalType": "uint32",
+                    "name": "",
+                    "type": "uint32"
+                }
+            ],
+            "name": "bidInfo",
+            "outputs": [
+                {
+                    "internalType": "uint64",
+                    "name": "auctionItemId",
+                    "type": "uint64"
+                },
+                {
+                    "internalType": "address",
+                    "name": "bidder",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "bidPrice",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "bidTime",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "enum GSMarketplace.Status",
+                    "name": "status",
+                    "type": "uint8"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "itemId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "buyFixedPriceItem",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "itemId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "cancelAuction",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "itemId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "cancelOffer",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "comission",
+            "outputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "",
+                    "type": "uint8"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint64",
+                    "name": "itemId",
+                    "type": "uint64"
+                }
+            ],
+            "name": "finishAuction",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "fixedItemId",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_nft",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "_tokenId",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "enum GSMarketplace.Status",
+                    "name": "status",
+                    "type": "uint8"
+                }
+            ],
+            "name": "getAllAuctionedIds",
+            "outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "allAuctionedItemIds",
+                    "type": "uint256[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_nft",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "_tokenId",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "enum GSMarketplace.Status",
+                    "name": "status",
+                    "type": "uint8"
+                }
+            ],
+            "name": "getAllListedIds",
+            "outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "allListedItemIds",
+                    "type": "uint256[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_nft",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "_tokenId",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "enum GSMarketplace.Status",
+                    "name": "status",
+                    "type": "uint8"
+                }
+            ],
+            "name": "getAllOfferedIds",
+            "outputs": [
+                {
+                    "internalType": "uint256[]",
+                    "name": "allOfferedItemIds",
+                    "type": "uint256[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "itemId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "getAuctionItem",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint96",
+                    "name": "offerPrice",
+                    "type": "uint96"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "tokenId",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "amount",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "address",
+                    "name": "seller",
+                    "type": "address"
+                },
+                {
+                    "internalType": "enum IAssetCommon.AssetType",
+                    "name": "assetType",
+                    "type": "uint8"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "auctionTime",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "auctionDuration",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "sellTime",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "enum GSMarketplace.Status",
+                    "name": "status",
+                    "type": "uint8"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_nft",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "_tokenId",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_seller",
+                    "type": "address"
+                }
+            ],
+            "name": "getAuctionPriceItemDetails",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint64",
+                            "name": "_itemId",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "_nft",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "_tokenId",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "_seller",
+                            "type": "address"
+                        }
+                    ],
+                    "internalType": "struct GSMarketplace.AuctionInfo[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "itemId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "getFixedPriceItem",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint96",
+                    "name": "startPrice",
+                    "type": "uint96"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "tokenId",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "amount",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "address",
+                    "name": "seller",
+                    "type": "address"
+                },
+                {
+                    "internalType": "enum IAssetCommon.AssetType",
+                    "name": "assetType",
+                    "type": "uint8"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "listingTime",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "listingDuration",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "sellTime",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "enum GSMarketplace.Status",
+                    "name": "status",
+                    "type": "uint8"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_nft",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "_tokenId",
+                    "type": "uint128"
+                }
+            ],
+            "name": "getListingPriceItemDetails",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint64",
+                            "name": "_itemId",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "_nft",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "_tokenId",
+                            "type": "uint128"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "_seller",
+                            "type": "address"
+                        }
+                    ],
+                    "internalType": "struct GSMarketplace.ListInfo[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "itemId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "getOfferItem",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint96",
+                    "name": "offerPrice",
+                    "type": "uint96"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "tokenId",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "amount",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "address",
+                    "name": "buyer",
+                    "type": "address"
+                },
+                {
+                    "internalType": "enum IAssetCommon.AssetType",
+                    "name": "assetType",
+                    "type": "uint8"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "offerTime",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "offerDuration",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "sellTime",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "enum GSMarketplace.Status",
+                    "name": "status",
+                    "type": "uint8"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_nft",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "_tokenId",
+                    "type": "uint128"
+                }
+            ],
+            "name": "getOfferPriceItemDetails",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "uint64",
+                            "name": "_itemId",
+                            "type": "uint64"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "_nft",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint128",
+                            "name": "_tokenId",
+                            "type": "uint128"
+                        }
+                    ],
+                    "internalType": "struct GSMarketplace.OfferInfo[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "validator_",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint8",
+                    "name": "comission_",
+                    "type": "uint8"
+                }
+            ],
+            "name": "initialize",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint96",
+                    "name": "startPrice",
+                    "type": "uint96"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "tokenId",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "amount",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "enum IAssetCommon.AssetType",
+                    "name": "assetType",
+                    "type": "uint8"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "auctionDuration",
+                    "type": "uint128"
+                }
+            ],
+            "name": "listAuction",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint96",
+                    "name": "price",
+                    "type": "uint96"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "tokenId",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "amount",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "enum IAssetCommon.AssetType",
+                    "name": "assetType",
+                    "type": "uint8"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "getListingDuration",
+                    "type": "uint128"
+                }
+            ],
+            "name": "listFixedPriceItem",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint64",
+                    "name": "_auctionItmId",
+                    "type": "uint64"
+                },
+                {
+                    "internalType": "uint96",
+                    "name": "bidPrice",
+                    "type": "uint96"
+                }
+            ],
+            "name": "makeBid",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "asset",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint96",
+                    "name": "offerPrice",
+                    "type": "uint96"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "tokenId",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "amount",
+                    "type": "uint128"
+                },
+                {
+                    "internalType": "enum IAssetCommon.AssetType",
+                    "name": "assetType",
+                    "type": "uint8"
+                },
+                {
+                    "internalType": "uint128",
+                    "name": "offerDuration",
+                    "type": "uint128"
+                }
+            ],
+            "name": "makeOffer",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "offerItemId",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "ids",
+                    "type": "uint256[]"
+                },
+                {
+                    "internalType": "uint256[]",
+                    "name": "values",
+                    "type": "uint256[]"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "name": "onERC1155BatchReceived",
+            "outputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "",
+                    "type": "bytes4"
+                }
+            ],
+            "stateMutability": "pure",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "_operator",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "_from",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_id",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "_value",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "_data",
+                    "type": "bytes"
+                }
+            ],
+            "name": "onERC1155Received",
+            "outputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "",
+                    "type": "bytes4"
+                }
+            ],
+            "stateMutability": "pure",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "operator",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "from",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "tokenId",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "bytes",
+                    "name": "data",
+                    "type": "bytes"
+                }
+            ],
+            "name": "onERC721Received",
+            "outputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "",
+                    "type": "bytes4"
+                }
+            ],
+            "stateMutability": "pure",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "renounceOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint8",
+                    "name": "amount",
+                    "type": "uint8"
+                }
+            ],
+            "name": "setComission",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "validator_",
+                    "type": "address"
+                }
+            ],
+            "name": "setValidator",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "bytes4",
+                    "name": "interfaceId",
+                    "type": "bytes4"
+                }
+            ],
+            "name": "supportsInterface",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "pure",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "totalComissions",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "itemId",
+                    "type": "uint256"
+                }
+            ],
+            "name": "unlistFixedPriceItem",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "validator",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "withdrawComission",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ]
+}

@@ -1,0 +1,185 @@
+.profile-container
+    // width: 100%
+    margin-left: 100px
+    box-sizing: border-box
+    background: rgba(68, 68, 68, 0.25)
+    border: 1px solid #2F2F2F
+    border-radius: 25.93px
+    padding: 40px 100px
+    .showing-as
+        // font-weight: 300
+        // font-size: 21.6393px
+        // line-height: 32px
+        color: #FFFFFF
+        opacity: 0.5
+    .vom-and-cap
+        margin-top: 13px
+        display: flex
+        gap: 12px
+        .vol-cap-btn
+            border: none
+            border: none
+            background: transparent
+            font-family: 'Space Grotesk'
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 20px
+            color: #FFFFFF
+        .selected-btn
+            padding: 2px 13px
+            background: rgba(68, 68, 68, 0.25)
+            border: 1px solid #2F2F2F
+            border-radius: 5.59691px
+    .profile-investment
+        border-radius: 20px
+        overflow: hidden
+        min-height: 50vh
+        padding: 50px 0
+        box-sizing: border-box
+        width: 100%
+        display: flex
+        gap: 25px
+        .no-investment-found
+            width: 50%
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 26px
+        .bubble-chart-item
+            width: 50%
+            height: 100%
+            .chart__bubble
+                height: 100%
+                overflow: hidden
+                width: 100%
+                .bubble-chart-text
+                    color: white
+                    font-size: 18px
+                    div
+                        &:hover
+                            font-weight: 500
+                // .bubble
+                //     fill: #a4a4a477
+                // .leaf
+                //     fill: #A2A2A8
+                //     &:nth-child(1)
+                //         fill: #87EE4E
+                //     &:nth-child(2)
+                //         fill: #8D5031
+                //     &:nth-child(3)
+                //         fill: #EB68CA
+                //     &:nth-child(4)
+                //         fill: #1F2999
+                //     &:nth-child(5)
+                //         fill: #0BE9C3
+                //     &:nth-child(6)
+                //         fill: #8A2E94
+                //     &:nth-child(7)
+                //         fill: #3352B7
+
+    .chart-details-item
+        width: 50%
+        display: flex
+        justify-content: end
+        align-items: center
+        .projects-listing
+            // height: 400px
+            // display: grid
+            // background: #F3F4F5
+            padding: 24px
+            // border-radius: 32px
+            background: #09090A
+            border-radius: 12.4376px
+            .project-listing-wrapper
+                margin-bottom: 10px
+                padding: 5px 10px
+                border-radius: 12px
+                position: relative
+                .listing-allocation
+                    padding-left: 20px
+                .divider-div
+                    position: absolute
+                    height: 100%
+                    display: flex
+                    align-items: center
+                    width: 5px
+                    left: 0
+                    // border-radius: 4px
+                    top: 0
+                .usd-allocation-bought
+                    font-size: 16px
+                    color: #fff
+                    font-weight: 500
+            // .with-allocation
+            //     background-color: #e9e9e9
+            .project-listing-div
+                display: flex
+                gap: 10px
+                width: 350px
+                box-sizing: border-box
+                justify-content: space-between
+                align-items: start
+                // margin-bottom: 6px
+.bubble-chart-container
+    justify-content: start !important
+.profile-container .profile-investment .bubble-chart-item .chart__bubble .bubble-chart-text
+    margin-left: initial !important
+@media (max-width: 1440px)
+    .profile-container
+        padding: 30px
+        .chart-details-item
+            .projects-listing
+                padding: 15px
+
+@media (max-width: 1024px)
+    .profile-container
+        margin-left: 0
+        .profile-investment
+            height: 100%
+            flex-direction: column
+            gap: 0px
+            padding: 0
+            .bubble-chart-item
+                width: 100%
+                height: 70vh
+                .chart__bubble
+                    overflow: initial
+        .chart-details-item
+            width: 100%
+            justify-content: center
+
+@media (max-width: 768px)
+    .profile-container
+        .profile-investment
+            height: 100%
+            flex-direction: column
+            .bubble-chart-item
+                width: 100%
+                height: 70vh
+                .chart__bubble
+                    overflow: initial
+                    // height: 50%
+        .chart-details-item
+            width: 100%
+
+@media (max-width: 767px)
+    .profile-container
+        padding: 20px
+        .profile-investment
+            height: 30%
+            .bubble-chart-item
+                width: 300px !important
+                height: 300px !important
+                height: 60vh
+        .chart-details-item
+            .projects-listing
+                width: 100%
+                .project-listing-div
+                    width: 100%
+                    gap: 10px
+                    .project-listing-div-name
+                        font-size: 19px
+                    .investment-percentage
+                        font-size: 19px

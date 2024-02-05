@@ -1,0 +1,95 @@
+.whyGenshardsSection
+  width: 100%
+  background-color: linear-gradient(180deg, rgba(17, 125, 204, 0.03) 0%, rgba(255, 255, 255, 0) 100%) !important
+  color: #fff
+  padding: 54px 0 0
+
+  #whyGenshard
+    font-size: 30px
+    font-weight: 600
+    line-height: 45px
+    text-align: center
+    letter-spacing: 1em
+    color: #000000
+    ~
+      hr
+        margin: 45px auto
+        width: 100%
+        max-width: 484px
+        border-bottom: 2px solid #117DCC
+
+      .genshardsForWhat
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        width: 100%
+        -ms-flex-pack: distribute
+        justify-content: space-around
+        padding-bottom: 100px
+
+        .genshardsFor
+          max-width: 181px
+          width: 100%
+          text-align: center
+          font-size: 28px
+          font-weight: 200
+
+          .genshardsForImage
+            padding-bottom: 32px
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+            -webkit-box-pack: center
+            -ms-flex-pack: center
+            justify-content: center
+            color: #117DCC
+          
+          .genshardsForText
+            color: #000000 !important
+
+@media (max-width: 1200px)
+  .whyGenshardsSection
+    #whyGenshard
+      ~hr
+        margin: 35px auto
+
+@media (max-width: 768px)
+  .whyGenshardsSection #whyGenshard
+    letter-spacing: 0.5em
+    margin-bottom: 50px
+
+    ~ hr
+      display: none
+
+    ~ .genshardsForWhat
+      -webkit-box-orient: vertical
+      -webkit-box-direction: normal
+      -ms-flex-direction: column
+      flex-direction: column
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      padding-bottom: 0
+
+      .genshardsFor
+        margin-bottom: 50px
+
+@media ( max-width: 480px)
+  .whyGenshardsSection
+    #whyGenshard
+      font-size: 20px
+      line-height: 27px
+      ~
+        hr
+        .genshardsForWhat
+          .genshardsFor
+            font-size: 22px
+            line-height: 32px
+@media ( max-width: 390px)
+  .whyGenshardsSection 
+    #whyGenshard
+      font-size: 18px
+    #whyGenshard ~ .genshardsForWhat 
+      .genshardsFor 
+        .genshardsForImage
+          padding-bottom: 26px
